@@ -139,6 +139,26 @@ Supported variables
               </h2>
             {%- endif -%}
 
+            {%- when 'title_with_rating' -%}
+              <div class="product_title_with_info">
+              {%- if product != blank -%}
+                {%- assign product_title = product.title -%}
+              {%- else -%}
+                {%- assign product_title = 'general.on_boarding.product_title' | t -%}
+              {%- endif -%}
+  
+              {%- if request.page_type == 'product' and update_url -%}
+                <h1 class="product-title {{ block.settings.heading_tag }}">
+                  {{- product_title -}}
+                </h1>
+              {%- else -%}
+                <h2 class="product-title {{ block.settings.heading_tag }}">
+                  <a href="{{ product.url }}">{{ product_title }}</a>
+                </h2>
+              {%- endif -%}
+
+              <div class="loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}"></div>
+            </div>
           {%- when 'sku' -%}
             <variant-sku class="variant-sku text-sm text-subdued" form="{{ product_form_id }}" {% if product != blank and product.selected_or_first_available_variant.sku == blank %}hidden{% endif %}>
               {{- 'product.general.sku' | t }} {% if product != blank -%}{{ product.selected_or_first_available_variant.sku -}}{%- else -%}SK-123AB{%- endif -%}

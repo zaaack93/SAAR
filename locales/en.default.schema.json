@@ -1062,6 +1062,9 @@
         "title": {
           "name": "Title"
         },
+        "title_with_rating": {
+          "name": "Title with rating"
+        },
         "sku": {
           "name": "SKU"
         },

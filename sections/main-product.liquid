@@ -332,6 +332,45 @@ quick buy information in a template, that will be extracted in JS, which ensures
       "limit": 1
     },
     {
+      "type": "title_with_rating",
+      "name": "t:sections.main_product.blocks.title_with_rating.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "t:global.text.style",
+          "options": [
+            {
+              "value": "h1",
+              "label": "H1"
+            },
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h3",
+              "label": "H3"
+            },
+            {
+              "value": "h4",
+              "label": "H4"
+            },
+            {
+              "value": "h5",
+              "label": "H5"
+            },
+            {
+              "value": "h6",
+              "label": "H6"
+            }
+          ],
+          "default": "h3"
+        }
+      ]
+    },
+    {
       "type": "title",
       "name": "t:sections.main_product.blocks.title.name",
       "limit": 1,

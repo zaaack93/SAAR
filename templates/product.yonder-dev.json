@@ -1,0 +1,338 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "loox-rating": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "contentSize": 14,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": true,
+            "emptyRatingWidget": false
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "a1890df7-8075-461e-bcf6-bde2c3987514": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>STAINLESS STEEL 5MM CUBAN CHAIN NECKLACE<\/h6>"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "a36d4994-8910-487f-9e7f-ad4742c80342": {
+          "type": "badges",
+          "settings": {
+          }
+        },
+        "ca22d63d-99bf-4cb7-8893-0bc37e22d82f": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "Stainless Steel with 18K Gold Coating",
+            "link": "",
+            "icon": "picto-jewelry",
+            "icon_width": 20,
+            "background": "#efefef",
+            "text_color": "#000000",
+            "border_color": "rgba(0,0,0,0)"
+          }
+        },
+        "d92bbfa9-a98d-4399-be77-8929e7a35bf3": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "1 Year Warranty",
+            "link": "",
+            "icon": "picto-lock",
+            "icon_width": 20,
+            "background": "rgba(0,0,0,0)",
+            "text_color": "#000000",
+            "border_color": ""
+          }
+        },
+        "672e0b90-8a9e-4a06-9966-7935a111f211": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "Made in Australia, Worn around the World.",
+            "link": "",
+            "icon": "picto-earth",
+            "icon_width": 20,
+            "background": "#efefef",
+            "text_color": "#000000",
+            "border_color": "rgba(0,0,0,0)"
+          }
+        },
+        "0ab34415-7b94-420e-8b0d-dd641ff4dee9": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "Colour",
+            "option_value_metafield": "custom.variation_value",
+            "products": "{{ product.metafields.custom.variation_products.value }}",
+            "color_selector_type": "variant"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_type": "block",
+            "color_selector_type": "color",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": true,
+            "show_below_gallery": false
+          }
+        },
+        "12cd3bdd-c55a-4c70-944a-23178c64a6c2": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "What You'll Love",
+            "content": "<p>Key Benefits Here<\/p>",
+            "page": ""
+          }
+        },
+        "32d62489-188b-4994-a3ce-fea926120515": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "WHEN YOU'LL GET IT",
+            "content": "<ul><li><strong>Free Shipping - <\/strong>We provide free shipping on all AUS & NZ orders. <\/li><li><strong>Shipped from Melbourne<\/strong> - All orders are shipped and packed from our warehouse in Melbourne. <\/li><li><strong>Same-Day Shipping<\/strong> - We offer same-day shipping on all weekday orders before 11am AEST. <\/li><\/ul><p><\/p><h5>DELIVERY TIMES<\/h5><ul><li><strong>Australia Standard<\/strong> 2-8 business days<\/li><li><strong>Australia Express<\/strong> 1-3 business days<\/li><li><strong>New Zealand Standard <\/strong>3-7 business days<\/li><li><strong>New Zealand Express <\/strong>2-4 business days <\/li><li><strong>USA<\/strong> 4-9 business days<\/li><li><strong>Rest of the world <\/strong>4-12 business days <\/li><\/ul><p><\/p><p>For more information on Customs Fees and Refunds\/Retuns, please read our <a href=\"\/pages\/shipping-information\" target=\"_blank\" title=\"Shipping Information\">Shipping Page<\/a>.<\/p>",
+            "page": ""
+          }
+        },
+        "complementary_products": {
+          "type": "complementary_products",
+          "settings": {
+            "title": "Make it a set",
+            "products_count": 2,
+            "show_below_gallery": false,
+            "stack_products": false,
+            "show_quick_buy": true
+          }
+        }
+      },
+      "block_order": [
+        "loox-rating",
+        "vendor",
+        "title",
+        "a1890df7-8075-461e-bcf6-bde2c3987514",
+        "price",
+        "a36d4994-8910-487f-9e7f-ad4742c80342",
+        "ca22d63d-99bf-4cb7-8893-0bc37e22d82f",
+        "d92bbfa9-a98d-4399-be77-8929e7a35bf3",
+        "672e0b90-8a9e-4a06-9966-7935a111f211",
+        "0ab34415-7b94-420e-8b0d-dd641ff4dee9",
+        "quantity_selector",
+        "variant_picker",
+        "buy_buttons",
+        "payment_terms",
+        "separator",
+        "description",
+        "12cd3bdd-c55a-4c70-944a-23178c64a6c2",
+        "32d62489-188b-4994-a3ce-fea926120515",
+        "complementary_products"
+      ],
+      "settings": {
+        "container_size": "xl",
+        "product_info_size": 44,
+        "show_sticky_add_to_cart": true,
+        "center_basic_info": false,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "desktop_media_grid_gap": 20,
+        "mobile_controls": "free_scroll",
+        "enable_media_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3
+      }
+    },
+    "fe4218ff-e802-4dfb-bf69-2ecddaa008d7": {
+      "type": "faq",
+      "blocks": {
+        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-category-1": {
+          "type": "category",
+          "disabled": true,
+          "settings": {
+            "title": "Order",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-1": {
+          "type": "question",
+          "settings": {
+            "question": "{{ product.metafields.custom.question_1.value }}",
+            "answer": "{{ product.metafields.custom.answer_1_ | metafield_tag }}"
+          }
+        },
+        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-2": {
+          "type": "question",
+          "settings": {
+            "question": "{{ product.metafields.custom.question_2.value }}",
+            "answer": "{{ product.metafields.custom.answer_2 | metafield_tag }}"
+          }
+        },
+        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-3": {
+          "type": "question",
+          "settings": {
+            "question": "{{ product.metafields.custom.question_3.value }}",
+            "answer": "{{ product.metafields.custom.answer_3 | metafield_tag }}"
+          }
+        },
+        "28a9f927-0233-4fb3-8668-aa622efe5471": {
+          "type": "question",
+          "settings": {
+            "question": "{{ product.metafields.custom.question_4.value }}",
+            "answer": "{{ product.metafields.custom.answer_4 | metafield_tag }}"
+          }
+        },
+        "dd5c88b1-b51b-4a70-b286-61980682dd78": {
+          "type": "question",
+          "settings": {
+            "question": "{{ product.metafields.custom.question_5.value }}",
+            "answer": "{{ product.metafields.custom.answer_5 | metafield_tag }}"
+          }
+        },
+        "5c256053-81e3-456e-be63-edcd72395e38": {
+          "type": "question",
+          "settings": {
+            "question": "{{ product.metafields.custom.question_6.value }}",
+            "answer": "{{ product.metafields.custom.answer_6 | metafield_tag }}"
+          }
+        },
+        "d725f841-635f-411d-b957-726e4125baa9": {
+          "type": "question",
+          "settings": {
+            "question": "{{ product.metafields.custom.question_7.value }}",
+            "answer": "{{ product.metafields.custom.answer_7 | metafield_tag }}"
+          }
+        },
+        "b924dd4b-9563-46bf-ac5a-11c8b890030f": {
+          "type": "question",
+          "settings": {
+            "question": "{{ product.metafields.custom.question_8.value }}",
+            "answer": "{{ product.metafields.custom.answer_8 | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-category-1",
+        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-1",
+        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-2",
+        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-3",
+        "28a9f927-0233-4fb3-8668-aa622efe5471",
+        "dd5c88b1-b51b-4a70-b286-61980682dd78",
+        "5c256053-81e3-456e-be63-edcd72395e38",
+        "d725f841-635f-411d-b957-726e4125baa9",
+        "b924dd4b-9563-46bf-ac5a-11c8b890030f"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions",
+        "content": ""
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "blocks": {
+        "loox-product-reviews": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "loox-product-reviews"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "recommendations_count": 10,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "Related products",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "fe4218ff-e802-4dfb-bf69-2ecddaa008d7",
+    "loox-product-reviews-app-section",
+    "related-products"
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "current": {
+    "icon_stroke_width": 1.5,
+    "section_vertical_spacing": "md",
+    "button_border_radius": 26,
+    "input_border_radius": 0,
+    "text_color": "#1c1c1c",
+    "background": "#efefef",
+    "secondary_background": "#ffffff",
+    "success_color": "#307a07",
+    "error_color": "#cb2b2b",
+    "header_background": "#ffffff",
+    "header_text_color": "#1c1c1c",
+    "footer_background": "#1c1c1c",
+    "footer_text_color": "#fff",
+    "primary_button_background": "#1c1c1c",
+    "primary_button_text_color": "#ffffff",
+    "modal_background": "#ffffff",
+    "modal_text_color": "#1c1c1c",
+    "product_rating_color": "#1c1c1c",
+    "heading_font": "montserrat_n5",
+    "heading_letter_spacing": 18,
+    "text_font": "nunito_sans_n4",
+    "text_font_size_desktop": 14,
+    "button_letter_spacing": 18,
+    "show_image_zoom_on_hover": false,
+    "round_color_swatches": true,
+    "color_swatch_config": "",
+    "show_quick_buy": false,
+    "cart_icon": "shopping_bag",
+    "cart_show_free_shipping_bar": false,
+    "cart_free_shipping_threshold": "0.1",
+    "social_facebook": "https:\/\/www.facebook.com\/saarcoau\/?modal=admin_todo_tour",
+    "social_twitter": "https:\/\/twitter.com\/co_saar",
+    "social_pinterest": "https:\/\/www.pinterest.com.au\/saar_au",
+    "social_instagram": "https:\/\/www.instagram.com\/saar_au\/",
+    "social_tiktok": "https:\/\/www.tiktok.com\/@saarco_au",
+    "social_linkedin": "https:\/\/linkedin.com\/company\/saarco",
+    "favicon": "shopify:\/\/shop_images\/Untitled_design_-_2023-09-19T093201.250.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/SAAR_LOGO_BLACK.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "small",
+    "checkout_sidebar_background_color": "#efefef",
+    "checkout_accent_color": "#1c1b1b",
+    "checkout_button_color": "#37c24e",
+    "heading_color": "#1c1c1c",
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "1692329972272007824": {
+        "type": "shopify:\/\/apps\/zepto-product-personalizer\/blocks\/product_personalizer_main\/7411210d-7b32-4c09-9455-e129e3be4729",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "11532412952436166569": {
+        "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-inject\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "3667842014806057753": {
+        "type": "shopify:\/\/apps\/one-click-upsell-zipify-ocu\/blocks\/app-embed\/bfe6e378-b73a-4871-b8d3-7d6ede22678e",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
+  "presets": {
+    "Allure": {
+      "section_vertical_spacing": "md",
+      "heading_color": "#1c1c1c",
+      "text_color": "#1c1c1c",
+      "background": "#efefef",
+      "secondary_background": "#ffffff",
+      "success_color": "#307a07",
+      "error_color": "#cb2b2b",
+      "header_background": "#ffffff",
+      "header_text_color": "#1c1c1c",
+      "footer_background": "#ffffff",
+      "footer_text_color": "#1c1c1c",
+      "modal_background": "#ffffff",
+      "modal_text_color": "#1c1c1c",
+      "primary_button_background": "#1c1c1c",
+      "primary_button_text_color": "#ffffff",
+      "product_rating_color": "#1c1c1c",
+      "heading_font": "univers_next_n4",
+      "heading_letter_spacing": 18,
+      "text_font": "univers_next_n4",
+      "text_font_size_desktop": 14,
+      "button_letter_spacing": 18
+    },
+    "Couture": {
+      "section_vertical_spacing": "md",
+      "heading_color": "#5c5c5c",
+      "text_color": "#5c5c5c",
+      "background": "#ffffff",
+      "secondary_background": "#ffffff",
+      "success_color": "#307a07",
+      "error_color": "#cb2b2b",
+      "header_background": "#ffffff",
+      "header_text_color": "#303030",
+      "footer_background": "#ffffff",
+      "footer_text_color": "#303030",
+      "modal_background": "#ffffff",
+      "modal_text_color": "#303030",
+      "primary_button_background": "#5c5c5c",
+      "primary_button_text_color": "#ffffff",
+      "product_rating_color": "#1c1c1c",
+      "heading_font": "futura_n4",
+      "heading_letter_spacing": 18,
+      "text_font": "century_gothic_n4",
+      "text_font_size_desktop": 14,
+      "button_letter_spacing": 18
+    },
+    "Vogue": {
+      "section_vertical_spacing": "xs",
+      "heading_color": "#303030",
+      "text_color": "#303030",
+      "background": "#ffffff",
+      "secondary_background": "#ffffff",
+      "success_color": "#307a07",
+      "error_color": "#cb2b2b",
+      "header_background": "#ffffff",
+      "header_text_color": "#303030",
+      "footer_background": "#ffffff",
+      "footer_text_color": "#303030",
+      "modal_background": "#ffffff",
+      "modal_text_color": "#303030",
+      "primary_button_background": "#f5db8b",
+      "primary_button_text_color": "#303030",
+      "product_rating_color": "#1c1c1c",
+      "heading_font": "din_neuzeit_grotesk_n3",
+      "heading_letter_spacing": 18,
+      "text_font": "futura_n4",
+      "text_font_size_desktop": 14,
+      "button_letter_spacing": 18
+    }
+  }
+}

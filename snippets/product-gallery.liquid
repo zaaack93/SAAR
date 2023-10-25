@@ -101,6 +101,9 @@ only way to do it on Shopify right now.
   {%- endif -%}
 
   <div class="product-gallery__image-list">
+    {% comment %} callout badges {% endcomment %}
+    {% render 'product-badge-callout' %}
+
     {%- comment -%}
     ----------------------------------------------------------------------------------------------------------------------
     CAROUSEL

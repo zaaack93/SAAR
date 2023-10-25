@@ -1,0 +1,9 @@
+{% if product.metafields.custom.product_callouts.value != blank %}
+<div class="callout_badges_container">
+    {% for item in product.metafields.custom.product_callouts.value %}
+        <div class="Badge-item">
+            {{item}}
+        </div>
+    {%endfor%}
+</div>
+{%endif%}

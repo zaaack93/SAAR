@@ -58,6 +58,7 @@
     {{ content_for_header }}
 
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
+    {{- 'main.css' | asset_url | stylesheet_tag: preload: true -}}
   
 	{{ shop.metafields.loox["global_html_head"] }}
 </head>
@@ -78,7 +79,7 @@
     endif
   %}
 
-  <body class="{{ features_class }}">
+  <body class="{{ features_class }} template-{{template.name}}">
     {%- render 'shadow-dom-templates' -%}
 
     <loading-bar class="loading-bar" aria-hidden="true"></loading-bar>

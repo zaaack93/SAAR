@@ -170,9 +170,11 @@ Supported variables
             {%- endif -%}
 
           {%- when 'price' -%}
-            <div class="v-stack">
+            <div class="v-stack product_with_price_container">
               {%- render 'price-list', product: product, variant: product.selected_or_first_available_variant, context: 'product', form_id: product_form_id -%}
-
+              {%- if product != blank -%}
+                {%- render 'product-badges', product: product, variant: product.selected_or_first_available_variant, types: 'custom,discount', form_id: product_form_id -%}
+              {%- endif -%}
               {%- if block.settings.show_taxes_notice -%}
                 <p class="text-sm text-subdued">
                   {%- if cart.taxes_included -%}
@@ -339,6 +341,18 @@ Supported variables
             -%}
 
           {%- when 'buy_buttons' -%}
+            {%- render 'buy-buttons',
+                product: product,
+                form_id: product_form_id,
+                show_payment_button: block.settings.show_payment_button,
+                show_gift_card_recipient: block.settings.show_gift_card_recipient,
+                atc_button_background: block.settings.atc_button_background,
+                atc_button_text_color: block.settings.atc_button_text_color,
+                payment_button_background: block.settings.payment_button_background,
+                payment_button_text_color: block.settings.payment_button_text_color
+            -%}
+
+          {%- when 'buy_buttons_with_quantity' -%}
             {%- render 'buy-buttons',
                 product: product,
                 form_id: product_form_id,

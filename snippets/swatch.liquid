@@ -72,12 +72,12 @@ Color swatch specific parameters:
       {%- if href == blank -%}
         <label class="media-swatch" for="{{ id | escape }}" data-option-value>
           <span class="sr-only">{{ value }}</span>
-          {{- media | image_url: width: media.width | image_tag: loading: 'lazy', sizes: '(max-width: 699px) 48px, 68px', widths: '48,68,96,136', class: 'object-cover' -}}
+          {{- media | image_url: width: media.width | image_tag: loading: 'lazy', sizes: '(max-width: 699px) 112px, 132px', widths: '124,132,154', class: 'object-cover' -}}
         </label>
       {%- else -%}
         <a href="{{ href }}" class="media-swatch {% if selected %}is-selected{% endif %}">
           <span class="sr-only">{{ value }}</span>
-          {{- media | image_url: width: media.width | image_tag: loading: 'lazy', sizes: '(max-width: 699px) 48px, 68px', widths: '48,68,96,136', class: 'object-cover' -}}
+          {{- media | image_url: width: media.width | image_tag: loading: 'lazy', sizes: '(max-width: 699px) 112px, 132px', widths: '124,132,154', class: 'object-cover' -}}
         </a>
       {%- endif -%}
     {%- else -%}

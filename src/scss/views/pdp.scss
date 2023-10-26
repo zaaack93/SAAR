@@ -3,6 +3,8 @@
     @media screen and (min-width: 1000px) {
       --product-gallery-thumbnail-size: 6.25rem;
       column-gap: 2.438rem;
+      position: sticky;
+      top: 0;
     }
     .product-gallery__thumbnail[aria-current="true"] {
       padding: 0px;
@@ -11,59 +13,158 @@
       }
     }
     // working on badge collouts
-    .product-gallery__image-list{
-        position: relative;
-        .callout_badges_container{
-            display: flex;
-            flex-direction: column;
-            row-gap: 5px;
-            position: absolute;
-            z-index: 2;
-            top: 10px;
-            left: 10px;
-            .Badge-item{
-                background-color: #1C1C1C;
-                color: #FFF;
-                border-radius: 22px;
-                padding: 6px 12px;
-                font-family: Nunito Sans;
-                font-size: 12px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: 1.2px;
-                text-transform: uppercase;
-                width: fit-content;
-            }
+    .product-gallery__image-list {
+      position: relative;
+      .callout_badges_container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        position: absolute;
+        z-index: 2;
+        top: 10px;
+        left: 10px;
+        .Badge-item {
+          background-color: #1c1c1c;
+          color: #fff;
+          border-radius: 22px;
+          padding: 6px 12px;
+          font-family: Nunito Sans;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 1.2px;
+          text-transform: uppercase;
+          width: fit-content;
         }
+      }
     }
   }
 
   .product-info {
     //product callout
-    .product_title_with_info{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .product-title {
-            font-family: Montserrat;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            letter-spacing: 6px;
-            text-transform: uppercase;
-        }
-        .loox-rating-content{
-            color: #1C1C1C;
-            font-family: Nunito Sans;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            text-transform: uppercase;
-        }
+    .product_title_with_info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .product-title {
+        font-family: Montserrat;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+      }
+      .loox-rating-content {
+        color: #1c1c1c;
+        font-family: Nunito Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+      }
     }
 
+    //working on second short text
+    .product-info__block-item[data-block-type="text"]:nth-child(2) {
+      .prose :where(h1, h2, h3, h4, h5, h6) {
+        font-family: Nunito Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 137.5% */
+        letter-spacing: 3.2px;
+        text-transform: uppercase;
+      }
+    }
+    .product-info__block-item[data-block-type="text"]:nth-child(3) {
+      color: #343434;
+      font-family: Nunito Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      ul {
+        row-gap: 9px;
+        li {
+          padding: 0px;
+        }
+      }
+    }
+
+    //product with price cotnainer
+    .product_with_price_container {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      --on-sale-text: 5, 0, 255;
+      --on-sale-badge-background: 5, 0, 255;
+      sale-price {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+      }
+      compare-at-price {
+        color: rgba(28, 28, 28, 0.51);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.6px;
+        text-decoration-line: strikethrough;
+        text-transform: uppercase;
+      }
+      badge-list {
+        on-sale-badge {
+          text-align: center;
+          font-family: Montserrat;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          border-radius: 22px;
+          padding: 5px 10px;
+        }
+      }
+    }
+
+    .product-info__block-item[data-block-type="product-variations"] {
+      .variant-picker__option {
+        .h-stack:not(.variant-picker__option-values) {
+          color: #343434;
+          font-family: Nunito Sans;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          .text-subdued {
+            color: inherit;
+          }
+        }
+        //option images
+        .h-stack.variant-picker__option-values {
+          column-gap: 13px;
+          .media-swatch {
+            border-radius: 22px;
+            border-color: #BEBEBE;
+            @media screen and (min-width: 700px) {
+              --swatch-size: 6.938rem;
+            }
+            &.is-selected{
+              border-color: $active-color;
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -46,18 +46,13 @@
         "a7d6fbf9-024a-470b-8df3-f7fa479dcbe5": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>benefit 1<\/li><li>benefit 2<\/li><li>benefit 3<\/li><\/ul>"
+            "text": "{{ product.metafields.custom.product_benefit | metafield_tag }}"
           }
         },
         "price": {
           "type": "price",
           "settings": {
             "show_taxes_notice": false
-          }
-        },
-        "a36d4994-8910-487f-9e7f-ad4742c80342": {
-          "type": "badges",
-          "settings": {
           }
         },
         "ca22d63d-99bf-4cb7-8893-0bc37e22d82f": {
@@ -189,9 +184,8 @@
         "vendor",
         "title",
         "a1890df7-8075-461e-bcf6-bde2c3987514",
-        "a7d6fbf9-024a-470b-8df3-f7fa479dcbe5",
         "price",
-        "a36d4994-8910-487f-9e7f-ad4742c80342",
+        "a7d6fbf9-024a-470b-8df3-f7fa479dcbe5",
         "ca22d63d-99bf-4cb7-8893-0bc37e22d82f",
         "d92bbfa9-a98d-4399-be77-8929e7a35bf3",
         "672e0b90-8a9e-4a06-9966-7935a111f211",

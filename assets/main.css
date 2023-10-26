@@ -3,6 +3,8 @@
     --product-gallery-thumbnail-size: 6.25rem;
     -moz-column-gap: 2.438rem;
          column-gap: 2.438rem;
+    position: sticky;
+    top: 0;
   }
 }
 .template-product product-gallery .product-gallery__thumbnail[aria-current=true] {
@@ -24,8 +26,8 @@
   left: 10px;
 }
 .template-product product-gallery .product-gallery__image-list .callout_badges_container .Badge-item {
-  background-color: #1C1C1C;
-  color: #FFF;
+  background-color: #1c1c1c;
+  color: #fff;
   border-radius: 22px;
   padding: 6px 12px;
   font-family: Nunito Sans;
@@ -53,11 +55,101 @@
   text-transform: uppercase;
 }
 .template-product .product-info .product_title_with_info .loox-rating-content {
-  color: #1C1C1C;
+  color: #1c1c1c;
   font-family: Nunito Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+}
+.template-product .product-info .product-info__block-item[data-block-type=text]:nth-child(2) .prose :where(h1, h2, h3, h4, h5, h6) {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+.template-product .product-info .product-info__block-item[data-block-type=text]:nth-child(3) {
+  color: #343434;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.template-product .product-info .product-info__block-item[data-block-type=text]:nth-child(3) ul {
+  row-gap: 9px;
+}
+.template-product .product-info .product-info__block-item[data-block-type=text]:nth-child(3) ul li {
+  padding: 0px;
+}
+.template-product .product-info .product_with_price_container {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  --on-sale-text: 5, 0, 255;
+  --on-sale-badge-background: 5, 0, 255;
+}
+.template-product .product-info .product_with_price_container sale-price {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+.template-product .product-info .product_with_price_container compare-at-price {
+  color: rgba(28, 28, 28, 0.51);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  text-decoration-line: strikethrough;
+  text-transform: uppercase;
+}
+.template-product .product-info .product_with_price_container badge-list on-sale-badge {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 22px;
+  padding: 5px 10px;
+}
+.template-product .product-info .product-info__block-item[data-block-type=product-variations] .variant-picker__option .h-stack:not(.variant-picker__option-values) {
+  color: #343434;
+  font-family: Nunito Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.template-product .product-info .product-info__block-item[data-block-type=product-variations] .variant-picker__option .h-stack:not(.variant-picker__option-values) .text-subdued {
+  color: inherit;
+}
+.template-product .product-info .product-info__block-item[data-block-type=product-variations] .variant-picker__option .h-stack.variant-picker__option-values {
+  -moz-column-gap: 13px;
+       column-gap: 13px;
+}
+.template-product .product-info .product-info__block-item[data-block-type=product-variations] .variant-picker__option .h-stack.variant-picker__option-values .media-swatch {
+  border-radius: 22px;
+  border-color: #BEBEBE;
+}
+@media screen and (min-width: 700px) {
+  .template-product .product-info .product-info__block-item[data-block-type=product-variations] .variant-picker__option .h-stack.variant-picker__option-values .media-swatch {
+    --swatch-size: 6.938rem;
+  }
+}
+.template-product .product-info .product-info__block-item[data-block-type=product-variations] .variant-picker__option .h-stack.variant-picker__option-values .media-swatch.is-selected {
+  border-color: #0500FF;
 }

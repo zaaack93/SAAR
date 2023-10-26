@@ -166,5 +166,40 @@
         }
       }
     }
+
+    //product button with quantity
+    .product_buy_form_wrapper{
+
+
+      .container_buy_box{
+        display: flex;
+        column-gap: 22px;
+        flex-direction: row-reverse;
+        buy-buttons{
+          flex: 1;
+        }
+        quantity-selector{
+          --quantity-selector-height: 2.5rem;
+          --quantity-selector-input-width: 1.5rem;
+          grid-auto-rows:auto;
+          border-radius: 22px;
+        }
+      }
+    }
+
+    //accordio group
+    .product-info__block-group.accordion-group{
+      .accordion  {
+        .accordion__toggle {
+            color: #1C1C1C;
+            font-family: Nunito Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 22px; /* 137.5% */
+            letter-spacing: 0.8px;
+        }
+      }
+    }
   }
 }

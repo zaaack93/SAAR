@@ -222,7 +222,7 @@ Supported variables
             {%- if product_description != blank -%}
               {%- if block.settings.collapse_content -%}
                 {%- assign accordion_title = 'product.general.description' | t -%}
-                {%- render 'accordion', title: accordion_title, content: product_description, prose_content: true, block: block -%}
+                {%- render 'accordion', title: accordion_title, content: product_description, prose_content: true, block: block,open:true -%}
               {%- else -%}
                 <div class="prose">
                   {{- product_description -}}
@@ -341,6 +341,7 @@ Supported variables
             -%}
 
           {%- when 'buy_buttons' -%}
+            
             {%- render 'buy-buttons',
                 product: product,
                 form_id: product_form_id,
@@ -353,16 +354,18 @@ Supported variables
             -%}
 
           {%- when 'buy_buttons_with_quantity' -%}
-            {%- render 'buy-buttons',
-                product: product,
-                form_id: product_form_id,
-                show_payment_button: block.settings.show_payment_button,
-                show_gift_card_recipient: block.settings.show_gift_card_recipient,
-                atc_button_background: block.settings.atc_button_background,
-                atc_button_text_color: block.settings.atc_button_text_color,
-                payment_button_background: block.settings.payment_button_background,
-                payment_button_text_color: block.settings.payment_button_text_color
-            -%}
+            <div class="product_buy_form_wrapper">
+              {%- render 'buy-buttons-with-quantity',
+                  product: product,
+                  form_id: product_form_id,
+                  show_payment_button: block.settings.show_payment_button,
+                  show_gift_card_recipient: block.settings.show_gift_card_recipient,
+                  atc_button_background: block.settings.atc_button_background,
+                  atc_button_text_color: block.settings.atc_button_text_color,
+                  payment_button_background: block.settings.payment_button_background,
+                  payment_button_text_color: block.settings.payment_button_text_color
+              -%}
+            </div>
 
           {%- when 'pickup_availability' -%}
             {%- if product != blank -%}

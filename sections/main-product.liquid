@@ -752,9 +752,51 @@ quick buy information in a template, that will be extracted in JS, which ensures
         }
       ]
     },
+    
     {
       "type": "buy_buttons",
       "name": "t:sections.main_product.blocks.buy_buttons.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_payment_button",
+          "label": "t:sections.main_product.blocks.buy_buttons.show_payment_button",
+          "info": "t:sections.main_product.blocks.buy_buttons.show_payment_button_info",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_gift_card_recipient",
+          "label": "t:sections.main_product.blocks.buy_buttons.show_gift_card_recipient",
+          "info": "t:sections.main_product.blocks.buy_buttons.show_gift_card_recipient_info",
+          "default": true
+        },
+        {
+          "type": "color",
+          "id": "atc_button_background",
+          "label": "t:sections.main_product.blocks.buy_buttons.add_to_cart_background"
+        },
+        {
+          "type": "color",
+          "id": "atc_button_text_color",
+          "label": "t:sections.main_product.blocks.buy_buttons.add_to_cart_text_color"
+        },
+        {
+          "type": "color",
+          "id": "payment_button_background",
+          "label": "t:sections.main_product.blocks.buy_buttons.payment_button_background"
+        },
+        {
+          "type": "color",
+          "id": "payment_button_text_color",
+          "label": "t:sections.main_product.blocks.buy_buttons.payment_button_text_color"
+        }
+      ]
+    },
+    {
+      "type": "buy_buttons_with_quantity",
+      "name": "t:sections.main_product.blocks.buy_buttons.name_1",
       "limit": 1,
       "settings": [
         {

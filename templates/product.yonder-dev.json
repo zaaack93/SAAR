@@ -43,16 +43,16 @@
             "text": "<h6>STAINLESS STEEL 5MM CUBAN CHAIN NECKLACE<\/h6>"
           }
         },
-        "a7d6fbf9-024a-470b-8df3-f7fa479dcbe5": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.custom.product_benefit | metafield_tag }}"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
             "show_taxes_notice": false
+          }
+        },
+        "a7d6fbf9-024a-470b-8df3-f7fa479dcbe5": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.product_benefit | metafield_tag }}"
           }
         },
         "ca22d63d-99bf-4cb7-8893-0bc37e22d82f": {
@@ -105,6 +105,7 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {
           }
         },
@@ -117,8 +118,20 @@
             "size_chart_page": ""
           }
         },
+        "8ed381e8-19ab-4523-94eb-2d2b130646e0": {
+          "type": "buy_buttons_with_quantity",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": false,
@@ -192,6 +205,7 @@
         "0ab34415-7b94-420e-8b0d-dd641ff4dee9",
         "quantity_selector",
         "variant_picker",
+        "8ed381e8-19ab-4523-94eb-2d2b130646e0",
         "buy_buttons",
         "payment_terms",
         "separator",

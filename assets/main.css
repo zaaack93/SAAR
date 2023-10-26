@@ -153,3 +153,27 @@
 .template-product .product-info .product-info__block-item[data-block-type=product-variations] .variant-picker__option .h-stack.variant-picker__option-values .media-swatch.is-selected {
   border-color: #0500FF;
 }
+.template-product .product-info .product_buy_form_wrapper .container_buy_box {
+  display: flex;
+  -moz-column-gap: 22px;
+       column-gap: 22px;
+  flex-direction: row-reverse;
+}
+.template-product .product-info .product_buy_form_wrapper .container_buy_box buy-buttons {
+  flex: 1;
+}
+.template-product .product-info .product_buy_form_wrapper .container_buy_box quantity-selector {
+  --quantity-selector-height: 2.5rem;
+  --quantity-selector-input-width: 1.5rem;
+  grid-auto-rows: auto;
+  border-radius: 22px;
+}
+.template-product .product-info .product-info__block-group.accordion-group .accordion .accordion__toggle {
+  color: #1C1C1C;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 0.8px;
+}

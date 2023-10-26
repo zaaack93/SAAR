@@ -201,5 +201,117 @@
         }
       }
     }
+
+    //feature list v2
+    .feature-badge-list-v2{
+      justify-content: space-evenly;
+      .product-info__block-item{
+        width: 100px;
+        .feature-badge {
+          flex-direction: column;
+          row-gap: 18px;
+          text-align: center;
+          font-family: Nunito Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    //complimentaory product
+    .product-info__block-item[data-block-type="complementary-products"]{
+      .complementary-products__header {
+        p{
+          color: #1C1C1C;
+          font-family: Nunito Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 22px; /* 137.5% */
+          letter-spacing: 0.8px;
+        }
+      }
+      .horizontal-product-card{
+        border-radius: 22px;
+        background: #1C1C1C;
+        padding: 18px 22px;
+        .horizontal-product-card__figure{
+          border-radius: 15px;
+          overflow: hidden;
+        }
+        .horizontal-product-card__info{
+          .product-title{
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+          }
+          price-list{
+            sale-price{
+              color: #FFF;
+              font-family: Montserrat;
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              letter-spacing: 1.56px;
+              text-transform: uppercase;
+            }
+            compare-at-price{
+              color: rgba(255, 255, 255, 0.60);
+              font-family: Montserrat;
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              letter-spacing: 1.56px;
+              text-decoration-line: strikethrough;
+              text-transform: uppercase;
+            }
+          }
+          .short_description_text{
+            color: #FFF;
+            font-family: Nunito Sans;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            letter-spacing: 1.56px;
+          }
+          .button--outline{
+            width: 100%;
+            margin-bottom: 12px;
+            color: #fff;
+            text-align: center;
+            font-family: Nunito Sans;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+          }
+          .button--primary{
+            background: #0500FF;
+            color: #FFF;
+            text-align: center;
+            font-family: Nunito Sans;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
   }
 }

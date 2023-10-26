@@ -85,6 +85,7 @@
       "description": "Description",
       "view_details": "View details",
       "add_to_cart_button": "Add to cart",
+      "view_set_button": "View set",
       "pre_order_button": "Pre-order",
       "sold_out_button": "Sold out",
       "unavailable_button": "Unavailable",

@@ -92,6 +92,9 @@ Supported variables
         elsif block.type == 'feature_with_icon' and next_block.type == 'feature_with_icon'
           assign block_group_class = 'feature-badge-list'
           assign block_group_name = 'feature-badge-list'
+        elsif block.type == 'feature_with_icon_v2' and next_block.type == 'feature_with_icon_v2'
+          assign block_group_class = 'feature-badge-list feature-badge-list-v2'
+          assign block_group_name = 'feature-badge-list'
         else
           assign allow_block_group = false
           assign block_group_class = ''
@@ -475,6 +478,41 @@ Supported variables
                 </div>
               {%- endif -%}
             {%- endif -%}
+
+            {%- when 'feature_with_icon_v2' -%}
+              {%- if block.settings.text != blank or block.settings.icon != 'none' or block.settings.custom_icon != blank -%}
+                {%- capture feature_content -%}
+                
+                  {%- if block.settings.custom_icon != blank -%}
+                    {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
+                    {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.custom_icon.width }}{%- endcapture -%}
+                    {%- capture style -%}--image-max-width: {{ block.settings.icon_width }}px{%- endcapture -%}
+                    {{- block.settings.custom_icon | image_url: width: block.settings.custom_icon.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'constrained-image', style: style -}}
+                  {%- else -%}
+                    {%- render 'icon' with block.settings.icon, width: block.settings.icon_width -%}
+                  {%- endif -%}
+  
+                  {%- if block.settings.text != blank -%}
+                    <p>{{ block.settings.text }}</p>
+                  {%- endif -%}
+                {%- endcapture -%}
+  
+                {%- assign has_border = false -%}
+  
+                {%- if block.settings.border_color != blank and block.settings.border_color != 'rgba(0,0,0,0)' -%}
+                  {%- assign has_border = true -%}
+                {%- endif -%}
+  
+                {%- if block.settings.link -%}
+                  <a href="{{ block.settings.link }}" class="feature-badge {% if has_border %}border{% endif %}" style="{% render 'surface', background: block.settings.background, text_color: block.settings.text_color, border_color: block.settings.border_color %}">
+                    {{- feature_content -}}
+                  </a>
+                {%- else -%}
+                  <div class="feature-badge {% if has_border %}border{% endif %}" style="{% render 'surface', background: block.settings.background, text_color: block.settings.text_color, border_color: block.settings.border_color %}">
+                    {{- feature_content -}}
+                  </div>
+                {%- endif -%}
+              {%- endif -%}
 
           {%- when 'liquid' -%}
             {%- if block.settings.liquid != blank -%}

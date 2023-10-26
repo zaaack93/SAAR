@@ -9,34 +9,6 @@
             "heading_tag": "h3"
           }
         },
-        "loox-rating": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "disabled": true,
-          "settings": {
-            "contentSize": 14,
-            "pattern": "",
-            "hideText": false,
-            "alignment": "",
-            "textColor": "",
-            "starColor": "",
-            "showAllReviews": false,
-            "looxOpenFloatingWidget": true,
-            "emptyRatingWidget": false
-          }
-        },
-        "vendor": {
-          "type": "vendor",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "title": {
-          "type": "title",
-          "disabled": true,
-          "settings": {
-            "heading_tag": "h2"
-          }
-        },
         "a1890df7-8075-461e-bcf6-bde2c3987514": {
           "type": "text",
           "settings": {
@@ -55,45 +27,6 @@
             "text": "{{ product.metafields.custom.product_benefit | metafield_tag }}"
           }
         },
-        "ca22d63d-99bf-4cb7-8893-0bc37e22d82f": {
-          "type": "feature_with_icon",
-          "disabled": true,
-          "settings": {
-            "text": "Stainless Steel with 18K Gold Coating",
-            "link": "",
-            "icon": "picto-jewelry",
-            "icon_width": 20,
-            "background": "#efefef",
-            "text_color": "#000000",
-            "border_color": "rgba(0,0,0,0)"
-          }
-        },
-        "d92bbfa9-a98d-4399-be77-8929e7a35bf3": {
-          "type": "feature_with_icon",
-          "disabled": true,
-          "settings": {
-            "text": "1 Year Warranty",
-            "link": "",
-            "icon": "picto-lock",
-            "icon_width": 20,
-            "background": "rgba(0,0,0,0)",
-            "text_color": "#000000",
-            "border_color": ""
-          }
-        },
-        "672e0b90-8a9e-4a06-9966-7935a111f211": {
-          "type": "feature_with_icon",
-          "disabled": true,
-          "settings": {
-            "text": "Made in Australia, Worn around the World.",
-            "link": "",
-            "icon": "picto-earth",
-            "icon_width": 20,
-            "background": "#efefef",
-            "text_color": "#000000",
-            "border_color": "rgba(0,0,0,0)"
-          }
-        },
         "0ab34415-7b94-420e-8b0d-dd641ff4dee9": {
           "type": "product_variations",
           "settings": {
@@ -101,12 +34,6 @@
             "option_value_metafield": "custom.variation_value",
             "products": "{{ product.metafields.custom.variation_products.value }}",
             "color_selector_type": "variant"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {
           }
         },
         "variant_picker": {
@@ -129,28 +56,56 @@
             "payment_button_text_color": ""
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "disabled": true,
+        "1dcfe2f8-0ec2-4ff4-b12b-2b71c61a48a0": {
+          "type": "feature_with_icon_v2",
           "settings": {
-            "show_payment_button": false,
-            "show_gift_card_recipient": false,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
+            "text": "Free Shipping",
+            "link": "",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/7082d6e2e5f6c160b0923d998afa89fa_3.png",
+            "icon_width": 52,
+            "background": "",
+            "text_color": "#343434",
+            "border_color": ""
           }
         },
-        "payment_terms": {
-          "type": "payment_terms",
-          "disabled": true,
+        "7bff4663-5084-4969-b95d-c2525f0c27d1": {
+          "type": "feature_with_icon_v2",
           "settings": {
+            "text": "Same Day Dispatch",
+            "link": "",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/rocket_1.png",
+            "icon_width": 30,
+            "background": "",
+            "text_color": "#343434",
+            "border_color": ""
           }
         },
-        "separator": {
-          "type": "separator",
-          "disabled": true,
+        "c20b2077-f52d-4c2a-84fb-6a2a30176ecc": {
+          "type": "feature_with_icon_v2",
           "settings": {
+            "text": "30-day returns",
+            "link": "",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons-02_2_1.png",
+            "icon_width": 30,
+            "background": "",
+            "text_color": "#343434",
+            "border_color": ""
+          }
+        },
+        "c2ab1a04-9307-484c-8159-5a2b9fbf5d74": {
+          "type": "feature_with_icon_v2",
+          "settings": {
+            "text": "1-year warranty",
+            "link": "",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons-03_1.png",
+            "icon_width": 48,
+            "background": "",
+            "text_color": "#343434",
+            "border_color": ""
           }
         },
         "description": {
@@ -183,7 +138,7 @@
         "complementary_products": {
           "type": "complementary_products",
           "settings": {
-            "title": "Make it a set",
+            "title": "Make it a set and save",
             "products_count": 2,
             "show_below_gallery": false,
             "stack_products": false,
@@ -193,22 +148,16 @@
       },
       "block_order": [
         "990c160a-bbdf-4543-910f-4f3df60798c2",
-        "loox-rating",
-        "vendor",
-        "title",
         "a1890df7-8075-461e-bcf6-bde2c3987514",
         "price",
         "a7d6fbf9-024a-470b-8df3-f7fa479dcbe5",
-        "ca22d63d-99bf-4cb7-8893-0bc37e22d82f",
-        "d92bbfa9-a98d-4399-be77-8929e7a35bf3",
-        "672e0b90-8a9e-4a06-9966-7935a111f211",
         "0ab34415-7b94-420e-8b0d-dd641ff4dee9",
-        "quantity_selector",
         "variant_picker",
         "8ed381e8-19ab-4523-94eb-2d2b130646e0",
-        "buy_buttons",
-        "payment_terms",
-        "separator",
+        "1dcfe2f8-0ec2-4ff4-b12b-2b71c61a48a0",
+        "7bff4663-5084-4969-b95d-c2525f0c27d1",
+        "c20b2077-f52d-4c2a-84fb-6a2a30176ecc",
+        "c2ab1a04-9307-484c-8159-5a2b9fbf5d74",
         "description",
         "12cd3bdd-c55a-4c70-944a-23178c64a6c2",
         "32d62489-188b-4994-a3ce-fea926120515",

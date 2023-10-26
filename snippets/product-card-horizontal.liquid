@@ -21,20 +21,27 @@ Supported variables
   {%- endif -%}
 
   <div class="horizontal-product-card__info">
-    <div class="v-stack gap-1 justify-items-start">
+    <div class="v-stack gap-3 justify-items-start">
       <a href="{{ product.url }}" class="product-title h6" data-instant>{{ product.title }}</a>
       {%- render 'price-list', product: product, context: 'card' -%}
+      {% if product.metafields.custom.short_description !=blank %}
+      <p class="short_description_text">{{product.metafields.custom.short_description}}</p>
+      {%endif%}
     </div>
 
     {%- if product.available and show_quick_buy -%}
+      
       {%- if product.variants.size == 1 -%}
         {%- comment -%}With one variant, we can simply render a form for direct add{%- endcomment -%}
         {%- form 'product', product, is: 'product-form' -%}
           <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
           <input type="hidden" name="quantity" value="1">
 
+          {% comment %} view set button {% endcomment %}
+          <button aria-controls="{{ modal_id }}" class="@large:horizontal-product-card__button button button--outline button--subdued">{{ 'product.general.view_set_button' | t }}</button>
+
           <button type="submit" class="@narrow:horizontal-product-card__button link">{{ 'product.general.add_to_cart_button' | t }}</button>
-          <button type="submit" class="@large:horizontal-product-card__button button button--outline button--subdued">{{ 'product.general.add_to_cart_button' | t }}</button>
+          <button type="submit" class="@large:horizontal-product-card__button button button--primary">{{ 'product.general.add_to_cart_button' | t }}</button>
         {%- endform -%}
       {%- else -%}
         {%- comment -%}Otherwise, we need to open a modal{%- endcomment -%}
@@ -44,9 +51,12 @@ Supported variables
           {%- comment -%}Content is filled dynamically in Ajax for performance reasons{%- endcomment -%}
           LOADING
         </quick-buy-modal>
+        {% comment %} view set button {% endcomment %}
+        <button aria-controls="{{ modal_id }}" class="@large:horizontal-product-card__button button button--outline button--subdued">{{ 'product.general.view_set_button' | t }}</button>
 
+        
         <button aria-controls="{{ modal_id }}" class="@narrow:horizontal-product-card__button link">{{ 'product.general.add_to_cart_button' | t }}</button>
-        <button aria-controls="{{ modal_id }}" class="@large:horizontal-product-card__button button button--outline button--subdued">{{ 'product.general.add_to_cart_button' | t }}</button>
+        <button aria-controls="{{ modal_id }}" class="@large:horizontal-product-card__button button button--primary">{{ 'product.general.add_to_cart_button' | t }}</button>
       {%- endif -%}
     {%- endif -%}
   </div>

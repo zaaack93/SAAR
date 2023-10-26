@@ -1208,6 +1208,7 @@
         },
         "feature_with_icon": {
           "name": "Feature with icon",
+          "name_v2": "Feature with icon V2",
           "show_border": "Show border"
         },
         "text": {

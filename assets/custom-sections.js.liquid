@@ -1,0 +1,236 @@
+// Define your custom element class
+class WrappingContainer extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    // Create a MutationObserver to watch for changes in the container's content
+    const observer = new MutationObserver((mutationsList) => {
+      for (const mutation of mutationsList) {
+        if (
+          mutation.type === "childList" &&
+          this.containsYourContent(mutation.target)
+        ) {
+          // Your content is now available, execute your logic
+          this.loadThirdPartyApp();
+          observer.disconnect(); // Stop observing once your content is inserted
+        }
+      }
+    });
+
+    // Start observing the container for changes
+    observer.observe(this, { childList: true, subtree: true });
+  }
+
+  containsYourContent(element) {
+    // Implement a function to check if your content is available in the element
+    // You can use a specific attribute or element structure to identify it.
+    // Return true when your content is found.
+    return element.querySelector(".ptw-app-wrapper") !== null;
+  }
+
+  loadThirdPartyApp() {
+    // Implement your logic to interact with the third-party app here
+    // This function will be called when your content is available
+
+    const noteContainer = this.querySelector(".ptw-message-note");
+    const newDiv = document.createElement("div");
+    newDiv.classList.add("note-label");
+
+    const labelElement = document.querySelector('label[for="ptw-gift-needed"]');
+
+    // Create a new text node with the label's text content
+    const labelText = labelElement.cloneNode(true);
+    labelText.querySelector("span").remove();
+    newDiv.innerHTML = "Add gift wrapping and a personal note";
+    noteContainer.prepend(newDiv);
+
+    // Get the label element by the 'for' attribute
+    const labelElement1 = document.querySelector(
+      'label[for="ptw-gift-needed"]'
+    );
+    const ptwPrice = labelElement1.querySelector(".ptw-price");
+    ptwPrice.textContent = ptwPrice.textContent.replace(/[\(\)\s]/g, "");
+
+    // Update the text content of the label
+    labelElement1.textContent = "Custom Gift Packing";
+
+    const newDivPrice = document.createElement("div");
+    newDivPrice.classList.add("ptw-price");
+    newDivPrice.innerHTML = ptwPrice.textContent;
+    labelElement1.prepend(newDivPrice);
+
+    //trigger refressh scroll slider
+    const event = new CustomEvent('slider-scroll:refresh', {
+      bubbles: true, // Allows the event to bubble up the DOM
+    });
+
+    // Dispatch the custom event
+    this.dispatchEvent(event);
+  }
+}
+
+// Define your custom element using the customElements API
+customElements.define("wraping-container", WrappingContainer);
+
+
+// this wraper is for waiting the zepto personalizer to initiate
+class FormWrappingContainer extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    const observerCallback = (mutationsList, observer) => {
+      for (const mutation of mutationsList) {
+        if (
+          mutation.type === "childList" &&
+          this.containsYourContent(mutation.target)
+        ) {
+          // Your content is now available, execute your logic
+          this.loadThirdPartyApp();
+          // Stop observing once your content is inserted
+          observer.disconnect();
+        }
+      }
+    }
+  
+    // Create a MutationObserver with a callback that can reference the observer itself
+    const observer = new MutationObserver(mutationsList => observerCallback(mutationsList, observer));
+  
+    // Start observing the container for changes
+    observer.observe(this, { childList: true, subtree: true });
+  }
+
+  containsYourContent(element) {
+    // Implement a function to check if your content is available in the element
+    // You can use a specific attribute or element structure to identify it.
+    // Return true when your content is found.
+    return element.querySelector(".product-personalizer") !== null;
+  }
+
+  loadThirdPartyApp() {
+    //this for wrappe it inside a tag 
+    if(!this.querySelector('product-personalizer-wrapper')){
+      // Step 1: Select the div element with the "product-personalizer" class
+      let divElement = this.querySelector(".product-personalizer");
+      if (divElement) {
+        // Create a new <wrapper> element
+        let wrapperElement = document.createElement('product-personalizer-wrapper');
+
+        // Clone the <legend> element
+        let clonedLegend = divElement.cloneNode(true);
+
+        // Append the cloned <legend> element to the <wrapper> element
+        wrapperElement.appendChild(clonedLegend);
+
+        // Replace the <legend> element with the <wrapper> element in the DOM
+        divElement.parentNode.replaceChild(wrapperElement, divElement);
+
+
+        // Select the .product_customizar_options <div>
+        var productOptionsDiv = document.querySelector('.product_customizar_options');
+
+        if (productOptionsDiv) {
+            // Prepend the new element to the beginning of the .product_customizar_options <div>
+            productOptionsDiv.insertBefore(this.querySelector("product-personalizer-wrapper"), productOptionsDiv.firstChild);
+        }
+      }
+    }
+  }
+}
+
+// Define your custom element using the customElements API
+customElements.define("form-wrapping-container", FormWrappingContainer);
+
+//zepto personalizer web component
+class ProductPersonalizerWrapper extends HTMLElement {
+  constructor() {
+    super();
+    // Find elements within the shadow DOM
+    this.updatePriceLineCustomizer()
+  }
+
+  updatePriceLineCustomizer() {
+    setTimeout(()=>{
+      const dateMainF = this.querySelector('.pplr-wrapper[data-main="1"]')
+      if(dateMainF){
+        const customizationPrice=dateMainF.querySelector('[data-pplr_price]').getAttribute('data-pplr_price');
+        if(customizationPrice!=0){
+          dateMainF.querySelector('.pplr_option_price_span').textContent=`$${customizationPrice}`
+        }
+        else{
+          dateMainF.querySelector('.pplr_option_price_span').textContent='Free'
+        }
+      }
+
+      //trigger refressh scroll slider
+      const event = new CustomEvent('slider-scroll:refresh', {
+        bubbles: true, // Allows the event to bubble up the DOM
+      });
+
+      // Dispatch the custom event
+      this.dispatchEvent(event);
+    },300)
+  }
+}
+
+customElements.define('product-personalizer-wrapper', ProductPersonalizerWrapper);
+
+// scroll slider container
+
+class ScrollContainer extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    const container = this.querySelector('.inner_container_items');
+    const leftButton = this.querySelector('.left-button');
+    const rightButton = this.querySelector('.right-button');
+      
+    const updateButtonVisibility = () => {
+      // Show/hide the left button based on scroll position
+      if (container.scrollLeft > 0 && leftButton) {
+        leftButton.style.visibility = 'visible';
+      } else if (leftButton) {
+        leftButton.style.visibility = 'hidden';
+      }
+      // Show/hide the right button based on scroll position
+      if (container.scrollLeft < container.scrollWidth - container.clientWidth - 30 && rightButton) {
+        rightButton.style.visibility = 'visible';
+      } else if(rightButton) {
+        rightButton.style.visibility = 'hidden';
+      }
+    };
+
+    const scrollHandler = () => {
+      updateButtonVisibility();
+    };
+
+    const resizeHandler = () => {
+      updateButtonVisibility();
+    };
+
+    leftButton?.addEventListener('click', () => {
+      debugger
+      container.scrollLeft -= 300; // Adjust the scrolling speed as needed
+    });
+
+    rightButton?.addEventListener('click', () => {
+      debugger
+      container.scrollLeft += 300; // Adjust the scrolling speed as needed
+    });
+
+    container?.addEventListener('scroll', scrollHandler);
+    window.addEventListener('resize', resizeHandler);
+    
+    updateButtonVisibility(); // Trigger initial visibility check
+
+    // Add an event listener for the refresh scrill
+    this.addEventListener('slider-scroll:refresh',updateButtonVisibility);
+  }
+}
+
+customElements.define('scroll-wrapper-slider', ScrollContainer);

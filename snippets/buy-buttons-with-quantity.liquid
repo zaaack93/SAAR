@@ -21,86 +21,97 @@ Supported variables
 
 {%- if product != blank -%}
     {%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
-  
-    {%- form 'product', product, is: 'product-form', id: form_id -%}
-      <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
-  
-      {% liquid
-        assign button_disabled = false
-  
-        if product.selected_or_first_available_variant.available == false
-          assign button_disabled = true
-          assign button_content = 'product.general.sold_out_button' | t
-        else
-          if product.template_suffix contains 'pre-order'
-            assign button_content = 'product.general.pre_order_button' | t
-          else
-            assign button_content = 'product.general.add_to_cart_button' | t
-          endif
-        endif
-      %}
-  
-      <div class="v-stack gap-4">
-        {%- if product.gift_card? and show_gift_card_recipient -%}
-          <gift-card-recipient class="gift-card-recipient v-stack gap-3">
-            {%- assign checkbox_label = 'gift_card.recipient.checkbox' | t -%}
-            {%- render 'checkbox', label: checkbox_label, name: 'properties[__shopify_send_gift_card_to_recipient]' -%}
-  
-            <div class="gift-card-recipient__fields js:hidden">
-              <div class="fieldset">
-                {%- liquid
-                  assign recipient_email_label = 'gift_card.recipient.email_label' | t
-                  render 'input', type: 'email', label: recipient_email_label, name: 'properties[Recipient email]', value: form.email, required: true
-  
-                  assign recipient_name_label = 'gift_card.recipient.name_label' | t
-                  render 'input', label: recipient_name_label, name: 'properties[Recipient name]', value: form.name
-  
-                  assign message_label = 'gift_card.recipient.message_label' | t
-                  render 'input', label: message_label, name: 'properties[Recipient message]', value: form.message, multiline: 3, maxlength: 200, show_max_characters_count: true
-                -%}
-              </div>
-            </div>
-          </gift-card-recipient>
-        {%- endif -%}
-
+    <form-wrapping-container>
+      {%- form 'product', product, is: 'product-form', id: form_id -%}
         
-        <div class="container_buy_box">
-        {%- if product.available -%}
-            {% render 'quantity-selector', variant: product.selected_or_first_available_variant, form: product_form_id %}
+        <scroll-wrapper-slider class="without-scroll scroll-customize-wrapper-mrb">
+          <span class="arrow-slider left-button">{% render 'arrow-slider-left' %}</span>
+          <span class="arrow-slider right-button">{% render 'arrow-slider-left' %}</span>
+
+          <div class="product_customizar_options inner_container_items">
+            {% render 'wrapin' %}
+          </div>
+        </scroll-wrapper-slider>
+
+        <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
+    
+        {% liquid
+          assign button_disabled = false
+    
+          if product.selected_or_first_available_variant.available == false
+            assign button_disabled = true
+            assign button_content = 'product.general.sold_out_button' | t
+          else
+            if product.template_suffix contains 'pre-order'
+              assign button_content = 'product.general.pre_order_button' | t
+            else
+              assign button_content = 'product.general.add_to_cart_button' | t
+            endif
+          endif
+        %}
+    
+        <div class="v-stack gap-4">
+          {%- if product.gift_card? and show_gift_card_recipient -%}
+            <gift-card-recipient class="gift-card-recipient v-stack gap-3">
+              {%- assign checkbox_label = 'gift_card.recipient.checkbox' | t -%}
+              {%- render 'checkbox', label: checkbox_label, name: 'properties[__shopify_send_gift_card_to_recipient]' -%}
+    
+              <div class="gift-card-recipient__fields js:hidden">
+                <div class="fieldset">
+                  {%- liquid
+                    assign recipient_email_label = 'gift_card.recipient.email_label' | t
+                    render 'input', type: 'email', label: recipient_email_label, name: 'properties[Recipient email]', value: form.email, required: true
+    
+                    assign recipient_name_label = 'gift_card.recipient.name_label' | t
+                    render 'input', label: recipient_name_label, name: 'properties[Recipient name]', value: form.name
+    
+                    assign message_label = 'gift_card.recipient.message_label' | t
+                    render 'input', label: message_label, name: 'properties[Recipient message]', value: form.message, multiline: 3, maxlength: 200, show_max_characters_count: true
+                  -%}
+                </div>
+              </div>
+            </gift-card-recipient>
           {%- endif -%}
-  
-        <buy-buttons class="buy-buttons {% if show_payment_button %}buy-buttons--has-dynamic{% endif %}" template="{{ product.template_suffix | escape }}" form="{{ form_id }}">
-          {%- if show_payment_button and atc_button_background == blank and atc_button_text_color == blank -%}
-            {%- assign atc_button_style = 'outline' -%}
-          {%- else -%}
-            {%- assign atc_button_style = 'solid' -%}
-          {%- endif -%}
-  
-          {%- render 'button', content: button_content, type: 'submit', disabled: button_disabled, style: atc_button_style, background: atc_button_background, text_color: atc_button_text_color, stretch: true -%}
-  
-          {%- if show_payment_button -%}
-            {{- form | payment_button -}}
-  
-            <style>
-              #shopify-section-{{ section.id }} .shopify-payment-button {
-                {%- if payment_button_background != blank and payment_button_background != 'rgba(0,0,0,0)' -%}
-                  --button-background: {{ payment_button_background.rgb }};
-                {%- endif -%}
-  
-                {%- if payment_button_text_color != blank and payment_button_text_color != 'rgba(0,0,0,0)' -%}
-                  --button-text-color: {{ payment_button_text_color.rgb }};
-                {%- endif -%}
-  
-                {%- unless product.selected_or_first_available_variant.available -%}
-                  display: none;
-                {%- endunless -%}
-              }
-            </style>
-          {%- endif -%}
-        </buy-buttons>
+
+          
+          <div class="container_buy_box">
+          {%- if product.available -%}
+              {% render 'quantity-selector', variant: product.selected_or_first_available_variant, form: product_form_id %}
+            {%- endif -%}
+    
+          <buy-buttons class="buy-buttons {% if show_payment_button %}buy-buttons--has-dynamic{% endif %}" template="{{ product.template_suffix | escape }}" form="{{ form_id }}">
+            {%- if show_payment_button and atc_button_background == blank and atc_button_text_color == blank -%}
+              {%- assign atc_button_style = 'outline' -%}
+            {%- else -%}
+              {%- assign atc_button_style = 'solid' -%}
+            {%- endif -%}
+    
+            {%- render 'button', content: button_content, type: 'submit', disabled: button_disabled, style: atc_button_style, background: atc_button_background, text_color: atc_button_text_color, stretch: true -%}
+    
+            {%- if show_payment_button -%}
+              {{- form | payment_button -}}
+    
+              <style>
+                #shopify-section-{{ section.id }} .shopify-payment-button {
+                  {%- if payment_button_background != blank and payment_button_background != 'rgba(0,0,0,0)' -%}
+                    --button-background: {{ payment_button_background.rgb }};
+                  {%- endif -%}
+    
+                  {%- if payment_button_text_color != blank and payment_button_text_color != 'rgba(0,0,0,0)' -%}
+                    --button-text-color: {{ payment_button_text_color.rgb }};
+                  {%- endif -%}
+    
+                  {%- unless product.selected_or_first_available_variant.available -%}
+                    display: none;
+                  {%- endunless -%}
+                }
+              </style>
+            {%- endif -%}
+          </buy-buttons>
+          </div>
         </div>
-      </div>
-    {%- endform -%}
+      {%- endform -%}
+    </form-wrapping-container>
   {%- else -%}
   <div class="container_buy_box">
         {%- if product.available -%}

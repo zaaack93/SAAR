@@ -37,7 +37,7 @@
 
 <div class="section-spacing section-spacing--tight">
   <div class="container {% unless section.settings.container_size == 'full' %}container--{{ section.settings.container_size }}{% endunless %}">
-    <div class="product">
+    <div class="product {% if section.settings.sticky_product_gallery %} sticky-product-gallery {%endif%}">
       {%- if product.media.size > 0 -%}
         {%- render 'product-gallery',
             product: product,
@@ -208,6 +208,12 @@ quick buy information in a template, that will be extracted in JS, which ensures
       "step": 1,
       "unit": "%",
       "default": 35
+    },
+    {
+      "type": "checkbox",
+      "id": "sticky_product_gallery",
+      "label": "Stick product gallery",
+      "default": false
     },
     {
       "type": "checkbox",

@@ -166,6 +166,7 @@
       "settings": {
         "container_size": "xl",
         "product_info_size": 44,
+        "sticky_product_gallery": true,
         "show_sticky_add_to_cart": true,
         "center_basic_info": false,
         "desktop_media_layout": "carousel_thumbnails_left",

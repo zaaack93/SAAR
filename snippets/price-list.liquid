@@ -15,6 +15,7 @@ Supported variables
 * hide_unit_price: if set to true unit prices are hidden (mostly useful for size constrained elements)
 * context: can be "product", "line_item" or "card". This controls how the prices are displayed (using the correct sizes)
 * form_id: if specified, the prices are updated dynamically based on the form update
+* without_trailing_zero: sale price without trailing zero
 {%- endcomment -%}
 
 {%- liquid
@@ -51,6 +52,8 @@ Supported variables
 
       {%- if settings.currency_code_enabled -%}
         {{- variant.price | money_with_currency -}}
+      {% elsif without_trailing_zero %}
+        {{- variant.price | money_without_trailing_zeros -}}
       {%- else -%}
         {{- variant.price | money -}}
       {%- endif -%}

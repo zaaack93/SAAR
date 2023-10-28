@@ -1,5 +1,5 @@
 @media screen and (min-width: 1000px) {
-  .template-product product-gallery {
+  .template-product .sticky-product-gallery product-gallery {
     --product-gallery-thumbnail-size: 6.25rem;
     -moz-column-gap: 2.438rem;
          column-gap: 2.438rem;
@@ -163,6 +163,36 @@
 .template-product .product-info .product_buy_form_wrapper .container_buy_box buy-buttons {
   flex: 1;
 }
+.template-product .product-info .product_buy_form_wrapper .container_buy_box buy-buttons button[type=submit] {
+  color: #FFF;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.template-product .product-info .product_buy_form_wrapper .container_buy_box buy-buttons button[type=submit]:hover {
+  color: #1C1C1C;
+}
+.template-product .product-info .product_buy_form_wrapper .container_buy_box buy-buttons .price-list--product sale-price {
+  color: inherit;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.template-product .product-info .product_buy_form_wrapper .container_buy_box buy-buttons .price-list--product compare-at-price {
+  display: none;
+}
 .template-product .product-info .product_buy_form_wrapper .container_buy_box quantity-selector {
   --quantity-selector-height: 2.5rem;
   --quantity-selector-input-width: 1.5rem;
@@ -234,7 +264,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 17px;
   letter-spacing: 1.6px;
   padding: 0px;
   display: flex;
@@ -311,33 +341,33 @@
   height: 90px !important;
   max-width: initial;
 }
-.template-product .product-info .ptw-app-label {
+.template-product .product-info .ptw-app-label, .template-product .product-info .pplr-checkbox .pplrlabel {
   /* Hide the default checkbox */
-  position: relative;
-  /* Define the custom appearance for the checkbox */
-  /* Style when the checkbox is checked */
 }
-.template-product .product-info .ptw-app-label input[type=checkbox] {
-  display: none;
+.template-product .product-info .ptw-app-label input[type=checkbox], .template-product .product-info .pplr-checkbox .pplrlabel input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 16px;
 }
-.template-product .product-info .ptw-app-label input[type=checkbox] + label::before {
-  position: absolute;
-  left: 0px;
-  content: " ";
+.template-product .product-info .ptw-app-label input[type=checkbox]:before, .template-product .product-info .pplr-checkbox .pplrlabel input[type=checkbox]:before {
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 1px solid;
+  border-radius: 22px;
+  background-color: transparent;
+  border-color: #343434;
+  box-sizing: border-box;
+  color: #3acfb6;
+  content: close-quote;
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  border: 1px solid #343434;
-  border-radius: 50%;
-  margin-right: 10px;
-  text-align: center;
-  line-height: 18px;
-  font-weight: bold;
-  padding: 1px;
+  height: 16px;
+  transition-duration: 0.5s;
+  transition-property: background-color, border-color;
+  width: 16px;
 }
-.template-product .product-info .ptw-app-label input[type=checkbox]:checked + label::before {
+.template-product .product-info .ptw-app-label input[type=checkbox]:checked:before, .template-product .product-info .pplr-checkbox .pplrlabel input[type=checkbox]:checked:before {
   background: radial-gradient(#0500FF 0%, #0500FF 50%, transparent 60%, transparent);
-  color: #fff;
+  border-color: #343434;
 }
 .template-product .product-info .ptw-app-wrapper {
   display: flex;
@@ -366,9 +396,9 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 15px;
   letter-spacing: 1.6px;
-  margin-left: 25px;
+  margin-left: 10px;
 }
 .template-product .product-info .ptw-app-wrapper .ptw-app-desc label[for=ptw-gift-needed] .ptw-price {
   color: #343434;
@@ -382,6 +412,9 @@
 }
 .template-product .product-info .ptw-app-wrapper .ptw-app-label {
   display: flex;
+}
+.template-product .product-info .ptw-app-wrapper .ptw-app-label input {
+  height: 15px;
 }
 .template-product .product-info .ptw-app-wrapper .ptw-app-gnote {
   display: flex;
@@ -475,7 +508,9 @@
   letter-spacing: 1.56px;
 }
 .template-product .product-info .product-info__block-item[data-block-type=complementary-products] .horizontal-product-card .horizontal-product-card__info .button--outline {
-  width: 100%;
+  min-width: 172px;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-bottom: 12px;
   color: #fff;
   text-align: center;

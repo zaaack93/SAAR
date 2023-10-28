@@ -27,6 +27,7 @@ Supported variables
 * external: if set to true and that a href is passed, it opens into a new window
 * aria_controls: the ID of the element controlled
 * block: an optional block to output theme editor attributes
+* show_price: product price
 {%- endcomment -%}
 
 {% liquid
@@ -111,6 +112,7 @@ Supported variables
 %}
 
 {%- capture button_content -%}
+
   {% if icon != blank %}
     <div class="text-with-icon">
       {%- render 'icon' with icon -%}
@@ -119,6 +121,9 @@ Supported variables
   {%- else -%}
     {{- content -}}
   {%- endif -%}
+  {% if show_price %}
+    - {%- render 'price-list', product: product, variant: product.selected_or_first_available_variant, context: 'product', form_id: product_form_id, without_trailing_zero:true -%}
+  {%endif%}
 {%- endcapture -%}
 
 {%- if href != blank -%}

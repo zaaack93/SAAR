@@ -40,7 +40,6 @@ Supported variables
           {% comment %} view set button {% endcomment %}
           <a href="{{ product.url }}" class="@large:horizontal-product-card__button button button--outline button--subdued">{{ 'product.general.view_set_button' | t }}</a>
 
-          <button type="submit" class="@narrow:horizontal-product-card__button link">{{ 'product.general.add_to_cart_button' | t }}</button>
           <button type="submit" class="@large:horizontal-product-card__button button button--primary">{{ 'product.general.add_to_cart_button' | t }}</button>
         {%- endform -%}
       {%- else -%}
@@ -55,7 +54,6 @@ Supported variables
         <a href="{{ product.url }}" class="@large:horizontal-product-card__button button button--outline button--subdued">{{ 'product.general.view_set_button' | t }}</a>
 
         
-        <button aria-controls="{{ modal_id }}" class="@narrow:horizontal-product-card__button link">{{ 'product.general.add_to_cart_button' | t }}</button>
         <button aria-controls="{{ modal_id }}" class="@large:horizontal-product-card__button button button--primary">{{ 'product.general.add_to_cart_button' | t }}</button>
       {%- endif -%}
     {%- endif -%}

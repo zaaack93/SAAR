@@ -165,16 +165,36 @@ class ProductPersonalizerWrapper extends HTMLElement {
         }
       }
 
+      // Get the <link> element that references the CSS file
+      // URL of the CSS file you want to prevent from loading
+var cssFileUrl = "https://saar-jewellery.myshopify.com/a/gwrap/css/wrapin.css";
 
-      //check every label and set the input checkbox to radiobox
-      const wrapperCheckBoxs = this.querySelectorAll('.pplr-checkbox')
-      wrapperCheckBoxs.forEach(element => {
-        const newLabel = document.createElement("label");
-        newLabel.classList.add("checkbox_label");
-        newLabel.setAttribute('for',element.querySelector('input').name)
-        element.querySelector('.pplrlabel').prepend(newLabel)
-      });
+  // Function to handle mutations in the DOM
+  function handleMutations(mutationsList, observer) {
+    for (var mutation of mutationsList) {
+      if (mutation.type === 'childList') {
+        for (var addedNode of mutation.addedNodes) {
+          if (addedNode.tagName === 'LINK' && addedNode.getAttribute('href') === cssFileUrl) {
+            // The CSS file has been added, remove it
+            addedNode.parentNode.removeChild(addedNode);
+            observer.disconnect(); // Stop observing once the CSS is removed
+          }
+        }
+      }
+    }
+  }
 
+  // Create a MutationObserver to watch for DOM changes
+  var observer = new MutationObserver(handleMutations);
+
+  // Start observing the entire document for changes
+  observer.observe(document, { childList: true, subtree: true });
+      
+      // Check if the <link> element exists
+      if (linkElement) {
+        // Remove the <link> element from the DOM
+        linkElement.parentNode.removeChild(linkElement);
+}
       //trigger refressh scroll slider
       const event = new CustomEvent('slider-scroll:refresh', {
         bubbles: true, // Allows the event to bubble up the DOM

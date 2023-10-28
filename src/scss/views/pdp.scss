@@ -205,6 +205,7 @@
     //feature list v2
     .feature-badge-list-v2{
       justify-content: space-evenly;
+      align-items: flex-end;
       .product-info__block-item{
         width: 100px;
         .feature-badge {
@@ -217,6 +218,198 @@
           font-weight: 600;
           line-height: normal;
           text-transform: uppercase;
+        }
+      }
+    }
+    .scroll-customize-wrapper-mrb{
+      margin-bottom: 27px;
+    }
+    .product_customizar_options{
+      display: flex;
+      column-gap: 20px;
+    }
+
+    //Adjust personalizer ZEPTO
+    .product-personalizer{
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 17px;
+      row-gap: 13px;
+      padding: 17px !important;
+      border-radius: 22px;
+      border: 1px solid #1C1C1C;
+      background: #F9F9F9;
+      margin-bottom: 0px !important;
+      width: 350px;
+      .pplr-wrapper.pplr-checkbox[data-main="1"]{
+        width: 100%;
+        .pplrlabel{
+          color: #1C1C1C;
+          font-family: Nunito Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 1.6px;
+          padding: 0px;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          input{
+            margin-right: 10px;
+          }
+
+          .pplr_option_price_span{
+            color: #343434;
+
+            text-align: right;
+            font-family: Nunito Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.4px;
+            flex:1;
+          }
+        }
+      }
+      .pplr-wrapper[data-main="2"]{
+        order: 3;
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        .pplrlabel{
+          color: #1C1C1C;
+          font-family: Nunito Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 14px; /* 100% */
+          letter-spacing: 1.4px;
+          width: 100%;
+          padding: 5px 0px;
+        }
+        input[type=text]{
+          border-radius: 10px;
+          border: 1px solid #1C1C1C;
+          background: #F8F8F8;
+          margin-bottom: 0px;
+          order: 3;
+          height: 27px;
+        }
+        .pplr-character-count{
+          padding: 0px;
+          position: relative;
+          color: #B5B5B5;
+          font-family: Nunito Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 14px; /* 100% */
+          letter-spacing: 1.4px;
+          flex: 1;
+          margin-bottom:8px;
+          .lt{
+            display: none;
+          }
+          .lm{
+            display: initial;
+          }
+        }
+      }
+      .pplr_image_loader{
+        width: 90px !important;
+        height: 90px !important;
+        border-radius: 10px;
+        border: 1px solid #343434;
+        overflow: hidden;
+        img{
+          width: 90px !important;
+          height: 90px !important;
+          max-width: initial;
+        }
+      }
+    }
+
+
+    //Adjust personalizer WRAPIN
+    .ptw-app-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 17px;
+      row-gap: 13px;
+      padding: 17px !important;
+      border-radius: 22px;
+      border: 1px solid #1C1C1C;
+      background: #F9F9F9;
+      margin-bottom: 0px !important;
+      width: 350px;
+      .ptw-app-desc{
+        flex: 1;
+        label[for="ptw-gift-needed"]{
+          flex: 1;
+          display: flex;
+          margin-left: 10px;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+          align-items: center;
+          color: #1C1C1C;
+          font-family: Nunito Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 1.6px;
+
+          .ptw-price{
+            color: #343434;
+            text-align: right;
+            font-family: Nunito Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.4px;
+          }
+        }
+      }
+      .ptw-app-label{
+        display: flex;
+
+      }
+      .ptw-app-gnote{
+        display: flex;
+        column-gap: 17px;
+        width: 100%;
+
+        .ptw-gift-image{
+          width: 90px !important;
+          height: 90px !important;
+          border-radius: 10px;
+          border: 1px solid #343434;
+        }
+        .ptw-message-note{
+          display: initial !important;
+          flex: 1;
+          
+            .note-label{
+              color: #1C1C1C;
+              font-family: Nunito Sans;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 14px; /* 100% */
+              letter-spacing: 1.4px;
+              margin-bottom: 15px;
+            }
+
+            textarea{
+              width: 100%;
+              border-radius: 10px;
+              border: 1px solid #1C1C1C;
+              background: #F8F8F8;
+              height: 49px;
+            }
         }
       }
     }

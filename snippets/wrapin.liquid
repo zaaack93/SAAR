@@ -1,0 +1,13 @@
+{% if template.name == 'product' and product.vendor != 'wrapin' %}
+	{% assign isWrapin = 0 %}
+	{% assign isNotWrapin = 0 %}
+	{% for tag in product.tags %}
+    	{% if tag == 'wrapin' %}
+			{% assign isWrapin = 1 %}
+		{% endif %}
+		{% if tag == 'no-wrapin' %}
+			{% assign isNotWrapin = 1 %}
+		{% endif %}
+	{% endfor %}
+	<wraping-container id='ptw-wrapin' data-language='{{request.locale.iso_code}}' data-page='product' data-tag='{% if isWrapin == 1%}wrapin{% endif%}{% if isNotWrapin == 1%}no-wrapin{% endif%}' data-productname='{{product.title}}'></wraping-container>
+{% endif %}

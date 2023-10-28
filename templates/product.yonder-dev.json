@@ -120,8 +120,8 @@
           "settings": {
             "show_below_gallery": false,
             "icon": "none",
-            "title": "What You'll Love",
-            "content": "<p>Key Benefits Here<\/p>",
+            "title": "SPECS",
+            "content": "{{ product.metafields.custom.specs | metafield_tag }}",
             "page": ""
           }
         },
@@ -130,8 +130,8 @@
           "settings": {
             "show_below_gallery": false,
             "icon": "none",
-            "title": "WHEN YOU'LL GET IT",
-            "content": "<ul><li><strong>Free Shipping - <\/strong>We provide free shipping on all AUS & NZ orders. <\/li><li><strong>Shipped from Melbourne<\/strong> - All orders are shipped and packed from our warehouse in Melbourne. <\/li><li><strong>Same-Day Shipping<\/strong> - We offer same-day shipping on all weekday orders before 11am AEST. <\/li><\/ul><p><\/p><h5>DELIVERY TIMES<\/h5><ul><li><strong>Australia Standard<\/strong> 2-8 business days<\/li><li><strong>Australia Express<\/strong> 1-3 business days<\/li><li><strong>New Zealand Standard <\/strong>3-7 business days<\/li><li><strong>New Zealand Express <\/strong>2-4 business days <\/li><li><strong>USA<\/strong> 4-9 business days<\/li><li><strong>Rest of the world <\/strong>4-12 business days <\/li><\/ul><p><\/p><p>For more information on Customs Fees and Refunds\/Retuns, please read our <a href=\"\/pages\/shipping-information\" target=\"_blank\" title=\"Shipping Information\">Shipping Page<\/a>.<\/p>",
+            "title": "SHIPPING + WARRANTY",
+            "content": "{{ product.metafields.custom.shipping_warranty | metafield_tag }}",
             "page": ""
           }
         },

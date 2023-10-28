@@ -93,7 +93,7 @@ Supported variables
           assign block_group_class = 'feature-badge-list'
           assign block_group_name = 'feature-badge-list'
         elsif block.type == 'feature_with_icon_v2' and next_block.type == 'feature_with_icon_v2'
-          assign block_group_class = 'feature-badge-list feature-badge-list-v2'
+          assign block_group_class = 'feature-badge-list feature-badge-list-v2 inner_container_items'
           assign block_group_name = 'feature-badge-list'
         else
           assign allow_block_group = false
@@ -275,33 +275,38 @@ Supported variables
                     </div>
                   {%- endif -%}
 
-                  <div class="variant-picker__option-values h-stack gap-2.5 wrap">
-                    {%- liquid
-                      for product_variation in block.settings.products
-                        assign value = product_variation.metafields[metafield_namespace][metafield_key].value
+                  <scroll-wrapper-slider class="without-scroll scroll-customize-wrapper-mrb">
+                    <span class="arrow-slider left-button">{% render 'arrow-slider-left' %}</span>
+                    <span class="arrow-slider right-button">{% render 'arrow-slider-left' %}</span>
+                    <div class="variant-picker__option-values h-stack gap-2.5 wrap inner_container_items">
+                      {%- liquid
+                        for product_variation in block.settings.products
+                          assign value = product_variation.metafields[metafield_namespace][metafield_key].value
 
-                        if product_variation == product
-                          assign selected = true
-                        else
-                          assign selected = false
-                        endif
+                          if product_variation == product
+                            assign selected = true
+                          else
+                            assign selected = false
+                          endif
 
-                        case block.settings.color_selector_type
-                          when 'color'
-                            render 'swatch' with 'color', href: product_variation.url, value: value, selected: selected
+                          case block.settings.color_selector_type
+                            when 'color'
+                              render 'swatch' with 'color', href: product_variation.url, value: value, selected: selected
 
-                          when 'variant'
-                            render 'swatch' with 'media', href: product_variation.url, value: value, media: product_variation.featured_media, selected: selected
+                            when 'variant'
+                              render 'swatch' with 'media', href: product_variation.url, value: value, media: product_variation.featured_media, selected: selected
 
-                          when 'block'
-                            render 'swatch' with 'block', href: product_variation.url, value: value, selected: selected
+                            when 'block'
+                              render 'swatch' with 'block', href: product_variation.url, value: value, selected: selected
 
-                          when 'block_swatch'
-                            render 'swatch' with 'block', href: product_variation.url, value: value, selected: selected, show_color: true
-                        endcase
-                      endfor
-                    -%}
-                  </div>
+                            when 'block_swatch'
+                              render 'swatch' with 'block', href: product_variation.url, value: value, selected: selected, show_color: true
+                          endcase
+                        endfor
+                      -%}
+                    </div>
+                  </scroll-wrapper-slider>
+
                 </div>
               </div>
             {%- endif -%}
@@ -581,6 +586,12 @@ Supported variables
       {%- if block_content != blank -%}
         {%- if allow_block_group and inside_block_group_context == false -%}
           {%- assign inside_block_group_context = true -%}
+
+          {% if block.type =='feature_with_icon_v2'%}
+            <scroll-wrapper-slider class="without-scroll without-arrows">
+              <span class="arrow-slider left-button">{% render 'arrow-slider-left' %}</span>
+              <span class="arrow-slider right-button">{% render 'arrow-slider-left' %}</span>
+          {%endif%}
           <div class="product-info__block-group {{ block_group_class }}" data-group-type="{{ block_group_name }}">
         {%- endif -%}
 
@@ -592,6 +603,10 @@ Supported variables
       {%- if inside_block_group_context and allow_block_group == false -%}
         {%- assign inside_block_group_context = false -%}
         </div>
+        
+        {% if block.type =='feature_with_icon_v2'%}
+          </scroll-wrapper-slider>
+        {%endif%}
       {%- endif -%}
     {%- endfor -%}
   </div>

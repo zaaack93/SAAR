@@ -156,6 +156,7 @@
           .media-swatch {
             border-radius: 22px;
             border-color: #BEBEBE;
+            aspect-ratio: 1;
             @media screen and (min-width: 700px) {
               --swatch-size: 6.938rem;
             }
@@ -205,9 +206,14 @@
     //feature list v2
     .feature-badge-list-v2{
       justify-content: space-evenly;
+      @media screen and (max-width: 700px) {
+        justify-content: space-between;
+        column-gap: 10px;
+      }
       align-items: flex-end;
       .product-info__block-item{
         width: 100px;
+        min-width: 100px;
         .feature-badge {
           flex-direction: column;
           row-gap: 18px;
@@ -330,7 +336,35 @@
         }
       }
     }
+    .ptw-app-label{
+      /* Hide the default checkbox */
+      position: relative;
+      input[type="checkbox"] {
+        display: none;
+      }
+      /* Define the custom appearance for the checkbox */
+      input[type="checkbox"] + label::before {
+        position: absolute;
+        left: 0px;
+        content: " ";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #343434;
+        border-radius: 50%;
+        margin-right: 10px;
+        text-align: center;
+        line-height: 18px;
+        font-weight: bold;
+        padding: 1px;
+      }
 
+      /* Style when the checkbox is checked */
+      input[type="checkbox"]:checked + label::before {
+        background: radial-gradient(#0500FF 0%,#0500FF 50%,transparent 60%,transparent);
+        color: #fff;
+      }
+  }
 
     //Adjust personalizer WRAPIN
     .ptw-app-wrapper{
@@ -349,7 +383,6 @@
         label[for="ptw-gift-needed"]{
           flex: 1;
           display: flex;
-          margin-left: 10px;
           justify-content: space-between;
           flex-direction: row-reverse;
           align-items: center;
@@ -360,6 +393,7 @@
           font-weight: 700;
           line-height: normal;
           letter-spacing: 1.6px;
+          margin-left: 25px;
 
           .ptw-price{
             color: #343434;

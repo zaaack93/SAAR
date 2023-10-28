@@ -165,6 +165,16 @@ class ProductPersonalizerWrapper extends HTMLElement {
         }
       }
 
+
+      //check every label and set the input checkbox to radiobox
+      const wrapperCheckBoxs = this.querySelectorAll('.pplr-checkbox')
+      wrapperCheckBoxs.forEach(element => {
+        const newLabel = document.createElement("label");
+        newLabel.classList.add("checkbox_label");
+        newLabel.setAttribute('for',element.querySelector('input').name)
+        element.querySelector('.pplrlabel').prepend(newLabel)
+      });
+
       //trigger refressh scroll slider
       const event = new CustomEvent('slider-scroll:refresh', {
         bubbles: true, // Allows the event to bubble up the DOM
@@ -214,12 +224,10 @@ class ScrollContainer extends HTMLElement {
     };
 
     leftButton?.addEventListener('click', () => {
-      debugger
       container.scrollLeft -= 300; // Adjust the scrolling speed as needed
     });
 
     rightButton?.addEventListener('click', () => {
-      debugger
       container.scrollLeft += 300; // Adjust the scrolling speed as needed
     });
 

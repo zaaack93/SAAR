@@ -8,6 +8,7 @@ scroll-wrapper-slider {
     position: relative;
     overflow-y: hidden;
     scroll-behavior: smooth;
+    flex-wrap: nowrap;
   }
 
   .arrow-slider{
@@ -27,6 +28,11 @@ scroll-wrapper-slider {
 
   .right-button{
     right: 0px;
+  }
+  &.without-arrows{
+    .arrow-slider{
+      display: none !important;
+    }
   }
   &.without-scroll .inner_container_items{
     &::-webkit-scrollbar {

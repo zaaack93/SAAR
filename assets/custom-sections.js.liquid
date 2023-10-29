@@ -61,6 +61,14 @@ class WrappingContainer extends HTMLElement {
     newDivPrice.innerHTML = ptwPrice.textContent;
     labelElement1.prepend(newDivPrice);
 
+
+    var linkElement = document.querySelector('link[href="https://saar-jewellery.myshopify.com/a/gwrap/css/wrapin.css"]');
+    // Check if the <link> element exists
+    if (linkElement) {
+      // Remove the <link> element from the DOM
+      linkElement.parentNode.removeChild(linkElement);
+    }
+
     //trigger refressh scroll slider
     const event = new CustomEvent('slider-scroll:refresh', {
       bubbles: true, // Allows the event to bubble up the DOM
@@ -118,7 +126,8 @@ class FormWrappingContainer extends HTMLElement {
       if (divElement) {
         // Create a new <wrapper> element
         let wrapperElement = document.createElement('product-personalizer-wrapper');
-
+        //hide the personalizer until we do all the stuff
+        wrapperElement.style.display="none";
         // Clone the <legend> element
         let clonedLegend = divElement.cloneNode(true);
 
@@ -156,45 +165,60 @@ class ProductPersonalizerWrapper extends HTMLElement {
     setTimeout(()=>{
       const dateMainF = this.querySelector('.pplr-wrapper[data-main="1"]')
       if(dateMainF){
-        const customizationPrice=dateMainF.querySelector('[data-pplr_price]').getAttribute('data-pplr_price');
-        if(customizationPrice!=0){
-          dateMainF.querySelector('.pplr_option_price_span').textContent=`$${customizationPrice}`
+        const customizationPrice=dateMainF.querySelector('.pplrcheckbox.pplraddprice')
+        const newSpanPrice = document.createElement("span");
+        newSpanPrice.classList.add("pplr_option_price_span");
+        
+        
+        if(customizationPrice==null){
+          newSpanPrice.innerHTML = 'Free';
         }
         else{
-          dateMainF.querySelector('.pplr_option_price_span').textContent='Free'
+          newSpanPrice.innerHTML = `$${customizationPrice.dataset.pplr_price}`;
         }
+        dateMainF.append(newSpanPrice);
       }
 
-      // Get the <link> element that references the CSS file
-      // URL of the CSS file you want to prevent from loading
-var cssFileUrl = "https://saar-jewellery.myshopify.com/a/gwrap/css/wrapin.css";
+      //wrapp alll the query selector and wrappe theme inside a div
+      // Create a new div element to be the wrapper
+      let wrapper = document.createElement('div');
+      wrapper.classList.add('mains-wrapper');
 
-  // Function to handle mutations in the DOM
-  function handleMutations(mutationsList, observer) {
-    for (var mutation of mutationsList) {
-      if (mutation.type === 'childList') {
-        for (var addedNode of mutation.addedNodes) {
-          if (addedNode.tagName === 'LINK' && addedNode.getAttribute('href') === cssFileUrl) {
-            // The CSS file has been added, remove it
-            addedNode.parentNode.removeChild(addedNode);
-            observer.disconnect(); // Stop observing once the CSS is removed
+      // Get all the .pplr-wrapper divs
+      const allWrapper = this.querySelectorAll('.pplr-wrapper');
+
+      allWrapper.forEach((wrapperDiv) => {
+        if (wrapperDiv.getAttribute('data-main') != '1') {
+          // Clone the div that meets the condition and append it to the wrapper
+          let cloneDiv = wrapperDiv.cloneNode(true);
+          wrapper.appendChild(cloneDiv);
+        }
+      });
+
+      // Replace the original .pplr-wrapper divs with the wrapper in the DOM
+      allWrapper.forEach((wrapperDiv) => {
+        if (wrapperDiv.getAttribute('data-main') != '1') {
+          wrapperDiv.replaceWith(wrapper);
+          debugger
+          
+          if(wrapperDiv.classList.contains('pplr-text')){
+            const labelPlacement = wrapperDiv.querySelector('.pplrlabel');
+            if(labelPlacement.textContent.trim()!=""){
+              const newCheckBox = document.createElement("input");
+              newCheckBox.type = "checkbox";
+              newCheckBox.classList.add('new-chk')
+              labelPlacement.innerHTML=newCheckBox.outerHTML+labelPlacement.innerHTML
+              labelPlacement.prepend(newCheckBox);
+            }
           }
         }
-      }
-    }
-  }
+      });
 
-  // Create a MutationObserver to watch for DOM changes
-  var observer = new MutationObserver(handleMutations);
 
-  // Start observing the entire document for changes
-  observer.observe(document, { childList: true, subtree: true });
-      
-      // Check if the <link> element exists
-      if (linkElement) {
-        // Remove the <link> element from the DOM
-        linkElement.parentNode.removeChild(linkElement);
-}
+
+
+
+      this.style.display="initial";
       //trigger refressh scroll slider
       const event = new CustomEvent('slider-scroll:refresh', {
         bubbles: true, // Allows the event to bubble up the DOM

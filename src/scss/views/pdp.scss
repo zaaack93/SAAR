@@ -278,7 +278,7 @@
       flex-wrap: wrap;
       column-gap: 17px;
       row-gap: 13px;
-      padding: 17px !important;
+      padding: 14px 16px !important;
       border-radius: 22px;
       border: 1px solid #1C1C1C;
       background: #F9F9F9;
@@ -286,6 +286,8 @@
       width: 350px;
       .pplr-wrapper.pplr-checkbox[data-main="1"]{
         width: 100%;
+        display: flex;
+        align-items: center;
         .pplrlabel{
           color: #1C1C1C;
           font-family: Nunito Sans;
@@ -316,47 +318,71 @@
           }
         }
       }
-      .pplr-wrapper[data-main="2"]{
+      .mains-wrapper{
         order: 3;
         flex: 1;
         display: flex;
-        flex-wrap: wrap;
-        .pplrlabel{
-          color: #1C1C1C;
-          font-family: Nunito Sans;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 14px; /* 100% */
-          letter-spacing: 1.4px;
-          width: 100%;
-          padding: 5px 0px;
-        }
-        input[type=text]{
-          border-radius: 10px;
-          border: 1px solid #1C1C1C;
-          background: #F8F8F8;
+        flex-direction: column;
+        row-gap: 10px;
+        .pplr-wrapper{
+          display: flex;
+          flex-wrap: wrap;
           margin-bottom: 0px;
-          order: 3;
-          height: 27px;
-        }
-        .pplr-character-count{
-          padding: 0px;
-          position: relative;
-          color: #B5B5B5;
-          font-family: Nunito Sans;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 14px; /* 100% */
-          letter-spacing: 1.4px;
-          flex: 1;
-          margin-bottom:8px;
-          .lt{
-            display: none;
+          justify-content: space-between;
+          row-gap: 6px;
+          .oindexlabel{
+            width: 100%;
+            color: #1C1C1C;
+            font-family: Nunito Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 14px; /* 100% */
+            letter-spacing: 1.4px;
+            padding: 5px 0px;
           }
-          .lm{
-            display: initial;
+          .pplrlabel{
+            color: #1C1C1C;
+            font-family: Nunito Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 14px;
+            letter-spacing: 1.4px;
+            width: fit-content;
+            padding: 0px;
+            height: fit-content;
+          }
+          input[type=text]{
+            border-radius: 10px;
+            border: 1px solid #1C1C1C;
+            background: #F8F8F8;
+            margin-bottom: 0px;
+            order: 3;
+            height: 27px;
+          }
+          .pplr-character-count{
+            padding: 0px;
+            position: relative;
+            color: #B5B5B5;
+            font-family: Nunito Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 14px;
+            letter-spacing: 1.4px;
+            width: fit-content;
+            margin-bottom: 0px;
+            top: 0;
+            height: fit-content;
+            overflow: hidden;
+            margin-left: auto;
+            .lt{
+              display: none;
+            }
+            .lm{
+              display: initial;
+            }
           }
         }
       }

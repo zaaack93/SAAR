@@ -191,33 +191,22 @@ class ProductPersonalizerWrapper extends HTMLElement {
         if (wrapperDiv.getAttribute('data-main') != '1') {
           // Clone the div that meets the condition and append it to the wrapper
           let cloneDiv = wrapperDiv.cloneNode(true);
-          wrapper.appendChild(cloneDiv);
-        }
-      });
-
-      // Replace the original .pplr-wrapper divs with the wrapper in the DOM
-      allWrapper.forEach((wrapperDiv) => {
-        if (wrapperDiv.getAttribute('data-main') != '1') {
-          wrapperDiv.replaceWith(wrapper);
-          debugger
-          
           if(wrapperDiv.classList.contains('pplr-text')){
-            const labelPlacement = wrapperDiv.querySelector('.pplrlabel');
+            const labelPlacement = cloneDiv.querySelector('.pplrlabel');
             if(labelPlacement.textContent.trim()!=""){
+              labelPlacement.classList.add('label-with-check')
               const newCheckBox = document.createElement("input");
               newCheckBox.type = "checkbox";
-              newCheckBox.classList.add('new-chk')
-              labelPlacement.innerHTML=newCheckBox.outerHTML+labelPlacement.innerHTML
               labelPlacement.prepend(newCheckBox);
             }
+            else{
+              cloneDiv.querySelector('input[type="text"]').name=`properties[${cloneDiv.querySelector('.oindexlabel').textContent}]`
+            }
           }
+          wrapper.appendChild(cloneDiv);
+          wrapperDiv.replaceWith(wrapper);
         }
       });
-
-
-
-
-
       this.style.display="initial";
       //trigger refressh scroll slider
       const event = new CustomEvent('slider-scroll:refresh', {

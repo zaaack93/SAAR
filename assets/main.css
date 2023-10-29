@@ -63,7 +63,7 @@
   line-height: normal;
   text-transform: uppercase;
 }
-.template-product .product-info .product-info__block-item[data-block-type=text]:nth-child(2) .prose :where(h1, h2, h3, h4, h5, h6) {
+.template-product .product-info .product-info-type-text:nth-child(-n+2) .prose :where(h1, h2, h3, h4, h5, h6) {
   font-family: Nunito Sans;
   font-size: 16px;
   font-style: normal;
@@ -72,7 +72,7 @@
   letter-spacing: 3.2px;
   text-transform: uppercase;
 }
-.template-product .product-info .product-info__block-item[data-block-type=text]:nth-child(3) {
+.template-product .product-info .product-info-type-text:nth-child(even) {
   color: #343434;
   font-family: Nunito Sans;
   font-size: 16px;
@@ -80,10 +80,10 @@
   font-weight: 400;
   line-height: normal;
 }
-.template-product .product-info .product-info__block-item[data-block-type=text]:nth-child(3) ul {
+.template-product .product-info .product-info-type-text:nth-child(even) ul {
   row-gap: 9px;
 }
-.template-product .product-info .product-info__block-item[data-block-type=text]:nth-child(3) ul li {
+.template-product .product-info .product-info-type-text:nth-child(even) ul li {
   padding: 0px;
 }
 .template-product .product-info .product_with_price_container {
@@ -233,6 +233,7 @@
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
+  padding: 0px;
 }
 .template-product .product-info .scroll-customize-wrapper-mrb {
   margin-bottom: 27px;
@@ -569,6 +570,37 @@
   line-height: normal;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+}
+
+.product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=title-with-rating] {
+  margin-block-end: 0.813rem;
+}
+.product-Yonder-dev .product-info__block-list .product-info-type-text:nth-child(-n+2) {
+  margin-block-start: 0rem;
+  margin-block-end: 1.063rem;
+}
+.product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=price] {
+  margin-block-start: 0rem;
+  margin-block-end: 1.25rem;
+}
+.product-Yonder-dev .product-info__block-list .product-info-type-text:nth-child(even) {
+  margin-block-start: 0rem;
+  margin-block-end: 1.75rem;
+}
+.product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=product-variations] {
+  margin-block-start: 0rem;
+  margin-block-end: 1.625rem;
+}
+.product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=buy-buttons-with-quantity] {
+  margin-block-start: 0rem;
+  margin-block-end: 2.25rem;
+}
+.product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=buy-buttons-with-quantity] .scroll-customize-wrapper-mrb {
+  margin-block-end: 1.438rem;
+}
+.product-Yonder-dev .product-info__block-list .block-product-feature_with_icon_v2 {
+  margin-block-start: 0rem;
+  margin-block-end: 2.25rem;
 }
 
 scroll-wrapper-slider {

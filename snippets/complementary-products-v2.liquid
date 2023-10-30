@@ -46,13 +46,13 @@ Supported variables
           {{- complementary_products -}}
         </div>
       {%- else -%}
-        <div class="sm-max:hidden">
+        <div class="lg-max:hidden">
           <scroll-carousel id="{{ carousel_id }}" class="complementary-products__product-list complementary-products__product-list--carousel scroll-area snap-x">
             {{- complementary_products -}}
           </scroll-carousel>
         </div>
 
-        <div class="v-stack gap-5 sm:hidden">
+        <div class="v-stack gap-5 lg:hidden">
           {%- assign carousel_mobile_id = 'complementary-products-mobile-carousel-' | append: block.id -%}
 
           <scroll-carousel id="{{ carousel_mobile_id }}" class="complementary-products__product-list complementary-products__product-list--carousel bleed scroll-area snap-x">

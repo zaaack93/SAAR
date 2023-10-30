@@ -80,7 +80,7 @@
     endif
   %}
 
-  <body class="{{ features_class }} template-{{template.name}} {{template | replace: '.' :'-'}}">
+  <body class="{{ features_class }} template-{{template.name}} template--{{template | replace: '.' :'-'}}">
     {%- render 'shadow-dom-templates' -%}
 
     <loading-bar class="loading-bar" aria-hidden="true"></loading-bar>

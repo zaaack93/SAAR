@@ -62,7 +62,8 @@ class WrappingContainer extends HTMLElement {
     labelElement1.prepend(newDivPrice);
 
 
-    var linkElement = document.querySelector('link[href="https://saar-jewellery.myshopify.com/a/gwrap/css/wrapin.css"]');
+    let linkElement = document.querySelector('link[href*="wrapin.css"]');
+
     // Check if the <link> element exists
     if (linkElement) {
       // Remove the <link> element from the DOM

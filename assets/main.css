@@ -556,7 +556,7 @@
   background: #F8F8F8;
   height: 49px;
 }
-.template-product .product-info .product-info__block-item[data-block-type=complementary_products_v2] .complementary-products__header p {
+.template-product .product-info .product-info__block-item[data-block-type=complementary-products-v2] .complementary-products__header p {
   color: #1C1C1C;
   font-family: Nunito Sans;
   font-size: 16px;
@@ -565,16 +565,16 @@
   line-height: 22px; /* 137.5% */
   letter-spacing: 0.8px;
 }
-.template-product .product-info .product-info__block-item[data-block-type=complementary_products_v2] .horizontal-product-card {
+.template-product .product-info .product-info__block-item[data-block-type=complementary-products-v2] .horizontal-product-card {
   border-radius: 22px;
   background: #1C1C1C;
   padding: 18px 22px;
 }
-.template-product .product-info .product-info__block-item[data-block-type=complementary_products_v2] .horizontal-product-card .horizontal-product-card__figure {
+.template-product .product-info .product-info__block-item[data-block-type=complementary-products-v2] .horizontal-product-card .horizontal-product-card__figure {
   border-radius: 15px;
   overflow: hidden;
 }
-.template-product .product-info .product-info__block-item[data-block-type=complementary_products_v2] .horizontal-product-card .horizontal-product-card__info .product-title {
+.template-product .product-info .product-info__block-item[data-block-type=complementary-products-v2] .horizontal-product-card .horizontal-product-card__info .product-title {
   color: #FFF;
   font-family: Montserrat;
   font-size: 15px;
@@ -584,7 +584,7 @@
   letter-spacing: 1.8px;
   text-transform: uppercase;
 }
-.template-product .product-info .product-info__block-item[data-block-type=complementary_products_v2] .horizontal-product-card .horizontal-product-card__info price-list sale-price {
+.template-product .product-info .product-info__block-item[data-block-type=complementary-products-v2] .horizontal-product-card .horizontal-product-card__info price-list sale-price {
   color: #FFF;
   font-family: Montserrat;
   font-size: 13px;
@@ -594,7 +594,7 @@
   letter-spacing: 1.56px;
   text-transform: uppercase;
 }
-.template-product .product-info .product-info__block-item[data-block-type=complementary_products_v2] .horizontal-product-card .horizontal-product-card__info price-list compare-at-price {
+.template-product .product-info .product-info__block-item[data-block-type=complementary-products-v2] .horizontal-product-card .horizontal-product-card__info price-list compare-at-price {
   color: rgba(255, 255, 255, 0.6);
   font-family: Montserrat;
   font-size: 13px;
@@ -605,7 +605,7 @@
   text-decoration-line: strikethrough;
   text-transform: uppercase;
 }
-.template-product .product-info .product-info__block-item[data-block-type=complementary_products_v2] .horizontal-product-card .horizontal-product-card__info .short_description_text {
+.template-product .product-info .product-info__block-item[data-block-type=complementary-products-v2] .horizontal-product-card .horizontal-product-card__info .short_description_text {
   color: #FFF;
   font-family: Nunito Sans;
   font-size: 13px;
@@ -614,11 +614,9 @@
   line-height: normal;
   letter-spacing: 1.56px;
 }
-.template-product .product-info .product-info__block-item[data-block-type=complementary_products_v2] .horizontal-product-card .horizontal-product-card__info .button--outline {
+.template-product .product-info .product-info__block-item[data-block-type=complementary-products-v2] .horizontal-product-card .horizontal-product-card__info .action-container {
   min-width: 172px;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-bottom: 12px;
+  width: 172px;
   color: #fff;
   text-align: center;
   font-family: Nunito Sans;
@@ -629,17 +627,57 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
-.template-product .product-info .product-info__block-item[data-block-type=complementary_products_v2] .horizontal-product-card .horizontal-product-card__info .button--primary {
+.template-product .product-info .product-info__block-item[data-block-type=complementary-products-v2] .horizontal-product-card .horizontal-product-card__info .action-container .button--outline {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 12px;
+  width: 100%;
+  padding-inline: 10px;
+  color: inherit;
+}
+.template-product .product-info .product-info__block-item[data-block-type=complementary-products-v2] .horizontal-product-card .horizontal-product-card__info .action-container .button--primary {
   background: #0500FF;
-  color: #FFF;
-  text-align: center;
-  font-family: Nunito Sans;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  width: 100%;
+  padding-inline: 10px;
+}
+.template-product .product-info horizontal-product-card {
+  position: relative;
+}
+.template-product .product-info horizontal-product-card .icon-helper {
+  position: absolute;
+  top: 23px;
+  right: 17px;
+  cursor: pointer;
+  z-index: 2;
+}
+.template-product .product-info horizontal-product-card:not(.expanded-area-button) .short_description_text {
+  display: none;
+}
+.template-product .product-info horizontal-product-card:not(.expanded-area-button) .icon-helper.remove-icon {
+  display: none;
+}
+.template-product .product-info horizontal-product-card.expanded-area-button {
+  min-height: 130px;
+}
+.template-product .product-info horizontal-product-card.expanded-area-button .icon-helper.question-icon {
+  display: none;
+}
+.template-product .product-info horizontal-product-card.expanded-area-button .horizontal-product-card__info {
+  height: 100%;
+  row-gap: 15px;
+  max-width: 70%;
+}
+.template-product .product-info horizontal-product-card.expanded-area-button .horizontal-product-card__figure {
+  display: none;
+}
+.template-product .product-info horizontal-product-card.expanded-area-button price-list {
+  display: none;
+}
+.template-product .product-info horizontal-product-card.expanded-area-button .short_description_text {
+  display: initial;
+}
+.template-product .product-info horizontal-product-card.expanded-area-button .shopify-product-form {
+  display: none;
 }
 
 .product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=title-with-rating] {

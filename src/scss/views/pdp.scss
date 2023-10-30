@@ -565,7 +565,7 @@
     }
 
     //complimentaory product
-    .product-info__block-item[data-block-type="complementary_products_v2"]{
+    .product-info__block-item[data-block-type="complementary-products-v2"]{
       .complementary-products__header {
         p{
           color: #1C1C1C;
@@ -628,10 +628,9 @@
             line-height: normal;
             letter-spacing: 1.56px;
           }
-          .button--outline{
+          .action-container{
             min-width: 172px;
-            width: fit-content;
-            margin-bottom: 12px;
+            width: 172px;
             color: #fff;
             text-align: center;
             font-family: Nunito Sans;
@@ -641,20 +640,62 @@
             line-height: normal;
             letter-spacing: 1.5px;
             text-transform: uppercase;
-          }
-          .button--primary{
-            background: #0500FF;
-            color: #FFF;
-            text-align: center;
-            font-family: Nunito Sans;
-            font-size: 15px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
+            .button--outline{
+              width: fit-content;
+              margin-bottom: 12px;
+              width: 100%;
+              padding-inline: 10px;
+              color: inherit;
+            }
+            .button--primary{
+              background: #0500FF;
+              width: 100%;
+              padding-inline: 10px;
+            }
           }
         }
+      }
+    }
+    horizontal-product-card{
+      position: relative;
+      .icon-helper{
+        position: absolute;
+        top: 23px;
+        right: 17px;
+        cursor: pointer;
+        z-index: 2;
+      }
+
+    }
+    horizontal-product-card:not(.expanded-area-button){
+      .short_description_text{
+        display: none;
+      }
+      .icon-helper.remove-icon{
+        display: none;
+      }
+    }
+    horizontal-product-card.expanded-area-button{
+      min-height: 130px;
+      .icon-helper.question-icon{
+        display: none; 
+      }
+      .horizontal-product-card__info{
+        height: 100%;
+        row-gap: 15px;
+        max-width: 70%;
+      }
+      .horizontal-product-card__figure{
+        display: none;
+      }
+      price-list{
+        display: none;
+      }
+      .short_description_text{
+        display: initial;
+      }
+      .shopify-product-form{
+        display: none;
       }
     }
   }

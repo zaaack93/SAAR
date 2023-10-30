@@ -135,8 +135,8 @@
             "page": ""
           }
         },
-        "complementary_products": {
-          "type": "complementary_products",
+        "89897725-a72c-4e98-a0ea-11eee6038dd3": {
+          "type": "complementary_products_v2",
           "settings": {
             "title": "Make it a set and save",
             "products_count": 2,
@@ -161,7 +161,7 @@
         "description",
         "12cd3bdd-c55a-4c70-944a-23178c64a6c2",
         "32d62489-188b-4994-a3ce-fea926120515",
-        "complementary_products"
+        "89897725-a72c-4e98-a0ea-11eee6038dd3"
       ],
       "settings": {
         "container_size": "xl",

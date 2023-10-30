@@ -13,7 +13,13 @@ Supported variables
 * show_quick_buy: show or not the quick buy (which open a modal if the product contains more than 1 choice)
 {%- endcomment -%}
 
-<div class="horizontal-product-card">
+<horizontal-product-card class="horizontal-product-card for-mobile-view">
+  <span class="icon-helper question-icon">
+    {% render 'icon-question-cercle' %}
+  </span>
+  <span class="icon-helper remove-icon">
+    {% render 'icon-remove-cercle' %}
+  </span>
   {%- if product.featured_media -%}
     <a href="{{ product.url }}" class="horizontal-product-card__figure" data-instant>
       {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: '100px', widths: '100,150,200,250,300', class: 'horizontal-product-card__image' -}}
@@ -39,7 +45,6 @@ Supported variables
 
           {% comment %} view set button {% endcomment %}
           <div class="action-container">
-            <a href="{{ product.url }}" class="horizontal-product-card__button button button--outline button--subdued">{{ 'product.general.view_set_button' | t }}</a>
             <button aria-controls="{{ modal_id }}" class="horizontal-product-card__button button button--primary">{{ 'product.general.add_to_cart_button' | t }}</button>
         </div>
         {%- endform -%}
@@ -53,10 +58,9 @@ Supported variables
         </quick-buy-modal>
         {% comment %} view set button {% endcomment %}
         <div class="action-container">
-            <a href="{{ product.url }}" class="horizontal-product-card__button button button--outline button--subdued">{{ 'product.general.view_set_button' | t }}</a>
             <button aria-controls="{{ modal_id }}" class="horizontal-product-card__button button button--primary">{{ 'product.general.add_to_cart_button' | t }}</button>
         </div>
       {%- endif -%}
     {%- endif -%}
   </div>
-</div>
+</horizontal-product-card>

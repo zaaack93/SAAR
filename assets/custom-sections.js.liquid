@@ -274,4 +274,26 @@ class ScrollContainer extends HTMLElement {
   }
 }
 
-customElements.define('scroll-wrapper-slider', ScrollContainer);
+
+class horizontalProductCard extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    const questionButton = this.querySelector('.question-icon');
+    const removeButton = this.querySelector('.remove-icon');
+      
+    questionButton?.addEventListener('click', () => {
+      this.classList.add('expanded-area-button')
+    });
+
+    removeButton?.addEventListener('click', () => {
+      this.classList.remove('expanded-area-button')
+    });
+  }
+}
+
+
+
+customElements.define('horizontal-product-card', horizontalProductCard);

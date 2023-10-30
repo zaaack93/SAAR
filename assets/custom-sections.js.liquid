@@ -241,7 +241,7 @@ class ScrollContainer extends HTMLElement {
         leftButton.style.visibility = 'hidden';
       }
       // Show/hide the right button based on scroll position
-      if (container.scrollLeft < container.scrollWidth - container.clientWidth - 30 && rightButton) {
+      if (container.scrollLeft < container.scrollWidth - container.clientWidth - 10 && rightButton) {
         rightButton.style.visibility = 'visible';
       } else if(rightButton) {
         rightButton.style.visibility = 'hidden';

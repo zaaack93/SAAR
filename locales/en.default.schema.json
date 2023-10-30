@@ -1184,6 +1184,7 @@
         },
         "complementary_products": {
           "name": "Complementary products",
+          "name_1": "Complementary products v2",
           "instructions": "To select complementary products, use the Search & Discovery app. [Learn more](https:\/\/help.shopify.com\/en\/manual\/online-store\/search-and-discovery\/product-recommendations#complementary-products)",
           "products_count": "Products count",
           "show_below_gallery": "Show below gallery on desktop",

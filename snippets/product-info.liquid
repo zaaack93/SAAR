@@ -428,6 +428,12 @@ Supported variables
               </div>
             {%- endif -%}
 
+          {%- when 'complementary_products_v2' -%}
+            {%- unless block.settings.show_below_gallery -%}
+              {%- render 'complementary-products-v2', product: product, block: block -%}
+            {%- endunless -%}
+
+
           {%- when 'complementary_products' -%}
             {%- unless block.settings.show_below_gallery -%}
               {%- render 'complementary-products', product: product, block: block -%}

@@ -203,6 +203,14 @@ class ProductPersonalizerWrapper extends HTMLElement {
             else{
               cloneDiv.querySelector('input[type="text"]').name=`properties[${cloneDiv.querySelector('.oindexlabel').textContent}]`
             }
+
+            //recalculate pplr account 
+            cloneDiv.querySelector('input[type="text"]').addEventListener('input',(e)=>{
+              setTimeout(() => {
+                cloneDiv.querySelector('.pplr-character-count .ct').textContent=e.target.value.length
+              }, 300);
+            })
+            cloneDiv.querySelector('.pplr-character-count .ct').textContent=cloneDiv.querySelector('input[type="text"]').value.length
           }
           wrapper.appendChild(cloneDiv);
           wrapperDiv.replaceWith(wrapper);

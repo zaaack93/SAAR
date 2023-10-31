@@ -178,6 +178,61 @@
         "max_image_zoom_level": 3
       }
     },
+    "5d6d3d1e-f4ad-4482-9e54-65563e1687e4": {
+      "type": "multi-column-v2",
+      "blocks": {
+        "template--16431405170819__5d6d3d1e-f4ad-4482-9e54-65563e1687e4-image_with_text-1": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SAAR-44_3113c53c-9eaf-4ed9-b640-d1f04930ac68.jpg",
+            "title": "As a Statement Piece",
+            "heading_tag": "h4",
+            "content": "<p>Sometimes, simplicity speaks volumes.  Let the Josh necklace stand alone as your statement piece. Its clean lines and substantial weight make it the focal point of any outfit. Whether dressing up or down, Josh is the key.<\/p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "template--16431405170819__5d6d3d1e-f4ad-4482-9e54-65563e1687e4-image_with_text-2": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SAAR-201.jpg",
+            "title": "As a Set",
+            "heading_tag": "h4",
+            "content": "<p>For a balanced and polished look, consider complementing the Josh necklace with other minimalist necklaces and bracelets from our collection. Experiment with styles and textures to create a unique pairing that reflects your personal style. <\/p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "template--16431405170819__5d6d3d1e-f4ad-4482-9e54-65563e1687e4-image_with_text-3": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SAAR-77.jpg",
+            "title": "Layering",
+            "heading_tag": "h4",
+            "content": "<p>Master the art of layering with the Josh necklace. Pair it with another necklace of a similar style but varying widths or lengths to achieve a stylish contrast. The result is a layered look that showcases your attention to detail and fashion-forward sensibility.<\/p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16431405170819__5d6d3d1e-f4ad-4482-9e54-65563e1687e4-image_with_text-1",
+        "template--16431405170819__5d6d3d1e-f4ad-4482-9e54-65563e1687e4-image_with_text-2",
+        "template--16431405170819__5d6d3d1e-f4ad-4482-9e54-65563e1687e4-image_with_text-3"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "columns_per_row": 3,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "md",
+        "subheading": "",
+        "title": "How to style the josh",
+        "content": "<p>Tips on how to style your new favourite piece<\/p>"
+      }
+    },
     "fe4218ff-e802-4dfb-bf69-2ecddaa008d7": {
       "type": "faq",
       "blocks": {
@@ -308,6 +363,7 @@
   },
   "order": [
     "main",
+    "5d6d3d1e-f4ad-4482-9e54-65563e1687e4",
     "fe4218ff-e802-4dfb-bf69-2ecddaa008d7",
     "loox-product-reviews-app-section",
     "related-products"

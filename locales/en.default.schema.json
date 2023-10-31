@@ -1283,6 +1283,7 @@
     },
     "multi_column": {
       "name": "Multi-column",
+      "name_1": "Column with image",
       "stack_on_mobile": "Stack columns on mobile",
       "columns_per_row": "Columns per row (desktop)",
       "overlap_image": "Overlap image with heading",
@@ -1298,7 +1299,8 @@
       },
       "presets": {
         "multi_column": {
-          "name": "Multi-column"
+          "name": "Multi-column",
+          "name_1": "Column with image"
         }
       }
     },

@@ -827,3 +827,71 @@ scroll-wrapper-slider.without-arrows .arrow-slider {
 scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
   display: none;
 }
+
+.multi-column-with-text-v2 {
+  --section-vertical-spacing: var(--section-without-border-vertical-spacing);
+  --section-vertical-spacing-tight: var(--section-without-border-vertical-spacing-tight);
+}
+@media screen and (min-width: 1000px) {
+  .multi-column-with-text-v2 .main-stack-container {
+    --section-stack-gap: 3.438rem;
+  }
+}
+.multi-column-with-text-v2 .main-stack-container .section-header .prose h2 {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+.multi-column-with-text-v2 .main-stack-container .section-header .prose p {
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  color: #343434;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.multi-column-with-text-v2 .main-stack-container .multi-column__item {
+  border-radius: 22px;
+  border: 1px solid #343434;
+  background: #EFEFEF;
+  overflow: hidden;
+  row-gap: 1.438rem;
+}
+.multi-column-with-text-v2 .main-stack-container .multi-column__item .figure-part {
+  border-bottom: 1px solid #343434;
+}
+.multi-column-with-text-v2 .main-stack-container .multi-column__item .text-part {
+  padding: 0px 35px 34px;
+}
+.multi-column-with-text-v2 .main-stack-container .multi-column__item .text-part .heading-part {
+  color: #343434;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: initial;
+}
+.multi-column-with-text-v2 .main-stack-container .multi-column__item .text-part .content-part {
+  -webkit-margin-before: 0.688rem;
+          margin-block-start: 0.688rem;
+}
+.multi-column-with-text-v2 .main-stack-container .multi-column__item .text-part .content-part p {
+  color: #343434;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

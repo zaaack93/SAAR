@@ -222,6 +222,8 @@
             letter-spacing: 1.4px;
             text-transform: uppercase;
             column-gap: 8px;
+            padding-top: 13px;
+            padding-bottom: 13px;
             @media screen and (max-width: 999px) {
               column-gap: 6px;
               padding-left: 10px;
@@ -408,6 +410,7 @@
             margin-bottom: 0px;
             order: 3;
             height: 27px;
+            padding: 5px 10px;
           }
           .pplr-character-count{
             padding: 0px;
@@ -559,6 +562,7 @@
               border: 1px solid #1C1C1C;
               background: #F8F8F8;
               height: 49px;
+              padding: 10px;
             }
         }
       }

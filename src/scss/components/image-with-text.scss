@@ -17,6 +17,10 @@
                     line-height: normal;
                     letter-spacing: 6.4px;
                     text-transform: uppercase;
+                    @media screen and (max-width: 999px) {
+                        font-size: 24px;
+                        padding-inline: 20px;
+                    }
                 }
                 p{
                     margin-block-start: 1rem;
@@ -27,6 +31,9 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
+                    @media screen and (max-width: 999px) {
+                        font-size: 16px;
+                    }
                 }
             }
         }
@@ -37,11 +44,18 @@
             background: #EFEFEF;
             overflow: hidden;
             row-gap: 1.438rem;
+            @media screen and (max-width: 999px) {
+                border-radius: 20px;
+                row-gap: 1.813rem;
+            }
             .figure-part{
                 border-bottom: 1px solid #343434;
             }
             .text-part{
                 padding:0px 35px 34px;
+                @media screen and (max-width: 999px) {
+                    padding:0px 30px 28px;
+                }
                 .heading-part{
                     color: #343434;
                     text-align: center;
@@ -51,6 +65,9 @@
                     font-weight: 600;
                     line-height: normal;
                     text-transform: initial;
+                    @media screen and (max-width: 999px) {
+                        font-size: 18.906px;
+                    }
                 }
                 .content-part {
                     margin-block-start: 0.688rem;
@@ -62,8 +79,29 @@
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
+                        @media screen and (max-width: 999px) {
+                            font-size: 15px;
+                        }
                     }
                 }
+            }
+        }
+    }
+
+
+    .page-dots{
+        margin-top: 30px;
+        column-gap: 15px;
+        .tap-area{
+            width: 13px;
+            height: 13px;
+            &::after{
+                background: #D9D9D9;
+            }
+        }
+        .tap-area[aria-current="true"]{
+            &::after{
+                background: #0500FF;
             }
         }
     }

@@ -693,105 +693,80 @@
 }
 
 .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=title-with-rating] {
-  -webkit-margin-after: 0.813rem;
-          margin-block-end: 0.813rem;
+  margin-block-end: 0.813rem;
 }
 @media screen and (max-width: 999px) {
   .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=title-with-rating] {
-    -webkit-margin-after: 1.188rem;
-            margin-block-end: 1.188rem;
+    margin-block-end: 1.188rem;
   }
 }
 .template--product-Yonder-dev .product-info__block-list .product-info-type-text:nth-child(-n+2) {
-  -webkit-margin-before: 0rem;
-          margin-block-start: 0rem;
-  -webkit-margin-after: 1.063rem;
-          margin-block-end: 1.063rem;
+  margin-block-start: 0rem;
+  margin-block-end: 1.063rem;
 }
 @media screen and (max-width: 999px) {
   .template--product-Yonder-dev .product-info__block-list .product-info-type-text:nth-child(-n+2) {
-    -webkit-margin-after: 1.063rem;
-            margin-block-end: 1.063rem;
+    margin-block-end: 1.063rem;
   }
 }
 .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=price] {
-  -webkit-margin-before: 0rem;
-          margin-block-start: 0rem;
-  -webkit-margin-after: 1.25rem;
-          margin-block-end: 1.25rem;
+  margin-block-start: 0rem;
+  margin-block-end: 1.25rem;
 }
 @media screen and (max-width: 999px) {
   .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=price] {
-    -webkit-margin-after: 1.375rem;
-            margin-block-end: 1.375rem;
+    margin-block-end: 1.375rem;
   }
 }
 .template--product-Yonder-dev .product-info__block-list .product-info-type-text:nth-child(even) {
-  -webkit-margin-before: 0rem;
-          margin-block-start: 0rem;
-  -webkit-margin-after: 1.75rem;
-          margin-block-end: 1.75rem;
+  margin-block-start: 0rem;
+  margin-block-end: 1.75rem;
 }
 @media screen and (max-width: 999px) {
   .template--product-Yonder-dev .product-info__block-list .product-info-type-text:nth-child(even) {
-    -webkit-margin-after: 1.375rem;
-            margin-block-end: 1.375rem;
+    margin-block-end: 1.375rem;
   }
 }
 .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=product-variations] {
-  -webkit-margin-before: 0rem;
-          margin-block-start: 0rem;
-  -webkit-margin-after: 1.625rem;
-          margin-block-end: 1.625rem;
+  margin-block-start: 0rem;
+  margin-block-end: 1.625rem;
 }
 @media screen and (max-width: 999px) {
   .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=product-variations] {
-    -webkit-margin-after: 1.188rem;
-            margin-block-end: 1.188rem;
+    margin-block-end: 1.188rem;
   }
 }
 .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=buy-buttons-with-quantity] {
-  -webkit-margin-before: 0rem;
-          margin-block-start: 0rem;
-  -webkit-margin-after: 2.25rem;
-          margin-block-end: 2.25rem;
+  margin-block-start: 0rem;
+  margin-block-end: 2.25rem;
 }
 .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=buy-buttons-with-quantity] .scroll-customize-wrapper-mrb {
-  -webkit-margin-after: 1.438rem;
-          margin-block-end: 1.438rem;
+  margin-block-end: 1.438rem;
 }
 @media screen and (max-width: 999px) {
   .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=buy-buttons-with-quantity] {
-    -webkit-margin-after: 2.188rem;
-            margin-block-end: 2.188rem;
+    margin-block-end: 2.188rem;
   }
   .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=buy-buttons-with-quantity] .scroll-customize-wrapper-mrb {
-    -webkit-margin-after: 1.563rem;
-            margin-block-end: 1.563rem;
+    margin-block-end: 1.563rem;
   }
 }
 .template--product-Yonder-dev .product-info__block-list .block-product-feature_with_icon_v2 {
-  -webkit-margin-before: 0rem;
-          margin-block-start: 0rem;
-  -webkit-margin-after: 2.313rem;
-          margin-block-end: 2.313rem;
+  margin-block-start: 0rem;
+  margin-block-end: 2.313rem;
 }
 @media screen and (max-width: 999px) {
   .template--product-Yonder-dev .product-info__block-list .block-product-feature_with_icon_v2 {
-    -webkit-margin-after: 2.063rem;
-            margin-block-end: 2.063rem;
+    margin-block-end: 2.063rem;
   }
 }
 .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=accordion-group] {
-  -webkit-margin-before: 0rem;
-          margin-block-start: 0rem;
-  -webkit-margin-after: 2.05rem;
-          margin-block-end: 2.05rem;
+  margin-block-start: 0rem;
+  margin-block-end: 2.05rem;
 }
 @media screen and (max-width: 999px) {
   .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=accordion-group] {
-    -webkit-margin-after: 2.05rem;
-            margin-block-end: 2.05rem;
+    margin-block-end: 2.05rem;
   }
 }
 
@@ -848,9 +823,14 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
   letter-spacing: 6.4px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 999px) {
+  .multi-column-with-text-v2 .main-stack-container .section-header .prose h2 {
+    font-size: 24px;
+    padding-inline: 20px;
+  }
+}
 .multi-column-with-text-v2 .main-stack-container .section-header .prose p {
-  -webkit-margin-before: 1rem;
-          margin-block-start: 1rem;
+  margin-block-start: 1rem;
   color: #343434;
   text-align: center;
   font-family: Nunito Sans;
@@ -859,6 +839,11 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
   font-weight: 400;
   line-height: normal;
 }
+@media screen and (max-width: 999px) {
+  .multi-column-with-text-v2 .main-stack-container .section-header .prose p {
+    font-size: 16px;
+  }
+}
 .multi-column-with-text-v2 .main-stack-container .multi-column__item {
   border-radius: 22px;
   border: 1px solid #343434;
@@ -866,11 +851,22 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
   overflow: hidden;
   row-gap: 1.438rem;
 }
+@media screen and (max-width: 999px) {
+  .multi-column-with-text-v2 .main-stack-container .multi-column__item {
+    border-radius: 20px;
+    row-gap: 1.813rem;
+  }
+}
 .multi-column-with-text-v2 .main-stack-container .multi-column__item .figure-part {
   border-bottom: 1px solid #343434;
 }
 .multi-column-with-text-v2 .main-stack-container .multi-column__item .text-part {
   padding: 0px 35px 34px;
+}
+@media screen and (max-width: 999px) {
+  .multi-column-with-text-v2 .main-stack-container .multi-column__item .text-part {
+    padding: 0px 30px 28px;
+  }
 }
 .multi-column-with-text-v2 .main-stack-container .multi-column__item .text-part .heading-part {
   color: #343434;
@@ -882,9 +878,13 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
   line-height: normal;
   text-transform: initial;
 }
+@media screen and (max-width: 999px) {
+  .multi-column-with-text-v2 .main-stack-container .multi-column__item .text-part .heading-part {
+    font-size: 18.906px;
+  }
+}
 .multi-column-with-text-v2 .main-stack-container .multi-column__item .text-part .content-part {
-  -webkit-margin-before: 0.688rem;
-          margin-block-start: 0.688rem;
+  margin-block-start: 0.688rem;
 }
 .multi-column-with-text-v2 .main-stack-container .multi-column__item .text-part .content-part p {
   color: #343434;
@@ -894,4 +894,24 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media screen and (max-width: 999px) {
+  .multi-column-with-text-v2 .main-stack-container .multi-column__item .text-part .content-part p {
+    font-size: 15px;
+  }
+}
+.multi-column-with-text-v2 .page-dots {
+  margin-top: 30px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.multi-column-with-text-v2 .page-dots .tap-area {
+  width: 13px;
+  height: 13px;
+}
+.multi-column-with-text-v2 .page-dots .tap-area::after {
+  background: #D9D9D9;
+}
+.multi-column-with-text-v2 .page-dots .tap-area[aria-current=true]::after {
+  background: #0500FF;
 }

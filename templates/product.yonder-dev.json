@@ -221,6 +221,7 @@
         "template--16431405170819__5d6d3d1e-f4ad-4482-9e54-65563e1687e4-image_with_text-3"
       ],
       "settings": {
+        "container_size": "lg",
         "separate_section_with_border": false,
         "columns_per_row": 3,
         "stack_on_mobile": false,
@@ -231,6 +232,37 @@
         "subheading": "",
         "title": "How to style the josh",
         "content": "<p>Tips on how to style your new favourite piece<\/p>"
+      }
+    },
+    "cb8cdc52-3333-4840-a2e4-8ee560c759cc": {
+      "type": "video",
+      "blocks": {
+        "template--16431405170819__cb8cdc52-3333-4840-a2e4-8ee560c759cc-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "what makes saar special?",
+            "heading_tag": "h2"
+          }
+        },
+        "template--16431405170819__cb8cdc52-3333-4840-a2e4-8ee560c759cc-play-1": {
+          "type": "play",
+          "settings": {
+            "icon_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "template--16431405170819__cb8cdc52-3333-4840-a2e4-8ee560c759cc-heading-1",
+        "template--16431405170819__cb8cdc52-3333-4840-a2e4-8ee560c759cc-play-1"
+      ],
+      "settings": {
+        "autoplay": false,
+        "show_controls": true,
+        "video_size": "fill",
+        "video": "shopify:\/\/files\/videos\/IMG-9322.mov",
+        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "poster": "shopify:\/\/shop_images\/IMG_9F2F3B28BD17-1_1.png",
+        "text_color": "#ffffff"
       }
     },
     "fe4218ff-e802-4dfb-bf69-2ecddaa008d7": {
@@ -364,6 +396,7 @@
   "order": [
     "main",
     "5d6d3d1e-f4ad-4482-9e54-65563e1687e4",
+    "cb8cdc52-3333-4840-a2e4-8ee560c759cc",
     "fe4218ff-e802-4dfb-bf69-2ecddaa008d7",
     "loox-product-reviews-app-section",
     "related-products"

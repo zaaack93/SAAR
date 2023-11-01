@@ -265,6 +265,107 @@
         "text_color": "#ffffff"
       }
     },
+    "06fab0ff-2370-44b6-ad1a-05ff2a603db6": {
+      "type": "text-with-icons-v2",
+      "blocks": {
+        "template--16431405170819__06fab0ff-2370-44b6-ad1a-05ff2a603db6-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify:\/\/shop_images\/SAAR-70.jpg",
+            "icon_width": 200,
+            "mobile_icon_width": 200,
+            "title": "",
+            "content": "<p>Rings designs are on point! Shipping was super fast too. Will buy again.<br\/><br\/><strong>@Daniel<\/strong><\/p>"
+          }
+        },
+        "template--16431405170819__06fab0ff-2370-44b6-ad1a-05ff2a603db6-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "custom_icon": "shopify:\/\/shop_images\/Saar_StudioShootJanuary2023-84_492f29d3-db8c-4e69-803e-6b7e123ace91.jpg",
+            "icon_width": 200,
+            "mobile_icon_width": 200,
+            "title": "",
+            "content": "<p>My partner simply won't shut up about his new chain! Thank you so much.<br\/><br\/><strong>@Nicola<\/strong><\/p>"
+          }
+        },
+        "template--16431405170819__06fab0ff-2370-44b6-ad1a-05ff2a603db6-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "custom_icon": "shopify:\/\/shop_images\/SAAR-118.jpg",
+            "icon_width": 200,
+            "mobile_icon_width": 200,
+            "title": "",
+            "content": "<p>High quality pieces that I can wear with anything anywhere. The fact they are waterproof makes it even better.<br\/><br\/><strong>@Will<\/strong><\/p>"
+          }
+        },
+        "91087ad4-fd07-4a48-945a-c992ba3d28fb": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "custom_icon": "shopify:\/\/shop_images\/SAAR-201.jpg",
+            "icon_width": 200,
+            "mobile_icon_width": 200,
+            "title": "",
+            "content": "<p>High quality pieces that I can wear with anything anywhere. The fact they are waterproof makes it even better.<br\/><br\/><strong>@Will<\/strong><\/p>"
+          }
+        },
+        "14d77b8c-7e4d-4278-b504-23d258f69b5a": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "custom_icon": "shopify:\/\/shop_images\/SAAR-4.jpg",
+            "icon_width": 200,
+            "mobile_icon_width": 200,
+            "title": "",
+            "content": "<p>My partner simply won't shut up about his new chain! Thank you so much.<br\/><br\/><strong>@Nicola<\/strong><\/p>"
+          }
+        },
+        "27a25ec5-a627-402c-af84-c429f841495a": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "custom_icon": "shopify:\/\/shop_images\/SAAR-205.jpg",
+            "icon_width": 200,
+            "mobile_icon_width": 200,
+            "title": "",
+            "content": "<p>My partner simply won't shut up about his new chain! Thank you so much.<br\/><br\/><strong>@Nicola<\/strong><\/p>"
+          }
+        },
+        "a433e35d-cf22-47de-a990-e23916a9fa90": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "custom_icon": "shopify:\/\/shop_images\/SAAR-4.jpg",
+            "icon_width": 200,
+            "mobile_icon_width": 200,
+            "title": "",
+            "content": "<p>My partner simply won't shut up about his new chain! Thank you so much.<br\/><br\/><strong>@Nicola<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16431405170819__06fab0ff-2370-44b6-ad1a-05ff2a603db6-item-1",
+        "template--16431405170819__06fab0ff-2370-44b6-ad1a-05ff2a603db6-item-2",
+        "template--16431405170819__06fab0ff-2370-44b6-ad1a-05ff2a603db6-item-3",
+        "91087ad4-fd07-4a48-945a-c992ba3d28fb",
+        "14d77b8c-7e4d-4278-b504-23d258f69b5a",
+        "27a25ec5-a627-402c-af84-c429f841495a",
+        "a433e35d-cf22-47de-a990-e23916a9fa90"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "stack_on_mobile": false,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "<p>Join 25,000+<\/p><p>happy customers <\/p>",
+        "content": "<p>And counting! This isn't just a one night stand.<\/p>"
+      }
+    },
     "fe4218ff-e802-4dfb-bf69-2ecddaa008d7": {
       "type": "faq",
       "blocks": {
@@ -397,6 +498,7 @@
     "main",
     "5d6d3d1e-f4ad-4482-9e54-65563e1687e4",
     "cb8cdc52-3333-4840-a2e4-8ee560c759cc",
+    "06fab0ff-2370-44b6-ad1a-05ff2a603db6",
     "fe4218ff-e802-4dfb-bf69-2ecddaa008d7",
     "loox-product-reviews-app-section",
     "related-products"

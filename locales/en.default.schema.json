@@ -1558,6 +1558,7 @@
     },
     "text_with_icons": {
       "name": "Text with icons",
+      "name_1": "Text with icons V2",
       "stack_on_mobile": "Stack on mobile",
       "icon_color": "Icon color",
       "blocks": {
@@ -1567,7 +1568,8 @@
       },
       "presets": {
         "text_with_icons": {
-          "name": "Text with icons"
+          "name": "Text with icons",
+          "name_1": "Text with icons V2"
         }
       }
     },

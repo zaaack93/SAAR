@@ -335,19 +335,41 @@ class SwiperComponent extends HTMLElement {
 
     // Configure Swiper with the retrieved options
     const swiperOptions = {
-      slidesPerView: 5,
-      spaceBetween: 20,
-      freeMode: true,
-      autoHeight:true,
-      loop:true,
-      grabCursor: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+      slidesPerView: 1.3,
+        spaceBetween: 20,
+        freeMode: true,
+        grabCursor: true,
+        loop: true,
+        autoHeight:true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2
+          },
+          768: {
+            slidesPerView: 3
+          },
+          1024: {
+            slidesPerView: 3.5
+          },
+          1320: {
+            slidesPerView: 4.5
+          },
+          1600: {
+            slidesPerView: 5
+          }
+        }
     };
 
     const mySwiper = new Swiper(this, swiperOptions);
+    this.classList.add('ready-slider')
   }
 }
 

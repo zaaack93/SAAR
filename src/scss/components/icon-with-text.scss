@@ -1,5 +1,92 @@
 .shopify-section--text-with-icons-v2{
     --section-vertical-spacing: var(--section-without-border-vertical-spacing);
     --section-vertical-spacing-tight: var(--section-without-border-vertical-spacing-tight);
+    .section-spacing--tight{
+        margin-block: 0px;
+        padding-block: var(--section-vertical-spacing-tight);
+    }
+    .main-stack-container{
+        row-gap: 3.438rem;
+    }
+    .section-header{
+        .prose{
+            p{
+                color: #343434;
+                text-align: center;
+                font-family: Nunito Sans;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-block-start: 1.5rem;
+            }
+            h2{
+                color: #000;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 6.4px;
+                text-transform: uppercase;
+                p{
+                    font-family: inherit;
+                    font-size: inherit;
+                    font-weight: inherit;
+                    color: inherit;
+                    letter-spacing: inherit;
+                    text-transform: inherit;
+                    margin-block: 0px;
+                }
+            }
+        }
+    }
 
+    .text-with-icons{
+        .text-with-icons__item{
+            min-width: 21.875rem;
+            border-radius: 22px;
+            border: 1px solid #343434;
+            background: #EFEFEF;
+            padding-block-start: 2.563rem;
+            padding-block-end: 2rem;
+
+            .constrained-image{
+                border-radius: 22px;
+                border: 1px solid #000;
+            }
+            .content-part{
+                color: #343434;
+                font-family: Nunito Sans;
+                font-size: 16px;
+                padding-inline: 2.375rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 20px;
+            }
+        }
+    }
+
+    .swiper{
+        width: 100%;
+        height: 100%;
+        .swiper-wrapper{
+            margin-bottom: 3.5rem;
+        }
+        .swiper-pagination{
+            bottom: 0;
+            .swiper-pagination-bullet{
+                width: 12px;
+                height: 12px;
+                background: #fff;
+                margin-inline: 6px;
+                opacity: 1;
+            }
+            .swiper-pagination-bullet.swiper-pagination-bullet-active{
+                background: #0500FF;
+            }
+        }
+    }
 }

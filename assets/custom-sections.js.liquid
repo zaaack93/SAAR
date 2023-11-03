@@ -318,3 +318,37 @@ class horizontalProductCard extends HTMLElement {
 
 
 customElements.define('horizontal-product-card', horizontalProductCard);
+
+class SwiperComponent extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.initSwiper();
+  }
+
+  initSwiper() {
+    // Retrieve options from data attributes
+    const loop = this.getAttribute('data-loop') === 'true';
+    const autoplay = parseInt(this.getAttribute('data-autoplay')) || false;
+
+    // Configure Swiper with the retrieved options
+    const swiperOptions = {
+      slidesPerView: 5,
+      spaceBetween: 20,
+      freeMode: true,
+      autoHeight:true,
+      loop:true,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    };
+
+    const mySwiper = new Swiper(this, swiperOptions);
+  }
+}
+
+customElements.define('swiper-component', SwiperComponent);

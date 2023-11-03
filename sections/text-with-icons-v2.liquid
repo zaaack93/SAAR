@@ -1,13 +1,13 @@
 {%- if section.blocks.size > 0 -%}
-<div class="section-spacing section-spacing--tight {% if section.settings.separate_section_with_border %}bordered-section{% endif %}">
-  <div class="container">
+<div class="section-spacing section-spacing--tight {% if section.settings.separate_section_with_border %}bordered-section{% endif %}" style="{% render 'surface', background: section.settings.block_background %}">
+  <div class="">
     <div class="section-stack main-stack-container">
             {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: section.settings.content_alignment -%}
     
     <div class="v-stack gap-8">
       {%- capture section_content -%}
         {%- for block in section.blocks -%}
-          <div class="text-with-icons__item {% if forloop.first %}is-selected{% endif %} {% unless section.settings.stack_on_mobile %}snap-center{% endunless %}" role="group" aria-label="{{ 'general.accessibility.item_nth_of_count' | t: index: forloop.index, count: section.blocks.size }}" {{ block.shopify_attributes }}>
+          <div class="text-with-icons__item swiper-slide {% if forloop.first %}is-selected{% endif %} {% unless section.settings.stack_on_mobile %}snap-center{% endunless %}" role="group" aria-label="{{ 'general.accessibility.item_nth_of_count' | t: index: forloop.index, count: section.blocks.size }}" {{ block.shopify_attributes }}>
             <div class="v-stack gap-6 justify-items-center sm:justify-items-{{ section.settings.text_alignment }}">
               {%- if block.settings.custom_icon != blank -%}
                 {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
@@ -22,7 +22,8 @@
               {%- endif -%}
 
               {%- if block.settings.title != blank or block.settings.content != blank -%}
-                <div class="v-stack gap-2 text-center sm:text-{{ section.settings.text_alignment }}">
+                <div class="v-stack gap-2 text-center sm:text-{{ section.settings.text_alignment }} content-part">
+                  {% render 'rating-group-bag' %}
                   {%- if block.settings.title != blank -%}
                     <p class="h6">{{ block.settings.title }}</p>
                   {%- endif -%}
@@ -37,20 +38,15 @@
             </div>
           </div>
         {%- endfor -%}
+
       {%- endcapture -%}
 
-      {%- if section.settings.stack_on_mobile -%}
-        <div class="text-with-icons text-with-icons--stacked" role="region" style="{% render 'surface', text_color: section.settings.text_color %}">
-          {{- section_content -}}
-        </div>
-      {%- else -%}
-        {%- assign carousel_id = 'text-with-icons-' | append: section.id -%}
-
-        <div id="{{ carousel_id }}" class="text-with-icons full-bleed " role="region" style="{% render 'surface', text_color: section.settings.text_color %}">
-          {{- section_content -}}
-        </div>
-
-      {%- endif -%}
+      <swiper-component data-loop="true" data-autoplay="2000" class="swiper text-with-icons text-with-icons--stacked" role="region" style="{% render 'surface', text_color: section.settings.text_color %}">
+          <div class="swiper-wrapper">
+            {{- section_content -}}
+          </div>
+        <div class="swiper-pagination"></div>
+        </swiper-component>
     </div>
     </div>
   </div>
@@ -73,12 +69,6 @@
     "default": true
   },
   {
-    "type": "checkbox",
-    "id": "stack_on_mobile",
-    "label": "t:sections.text_with_icons.stack_on_mobile",
-    "default": false
-  },
-  {
     "type": "color",
     "id": "icon_color",
     "label": "t:sections.text_with_icons.icon_color"
@@ -87,6 +77,11 @@
     "type": "color",
     "id": "text_color",
     "label": "t:global.text.text"
+  },
+  {
+      "type": "color",
+      "id": "block_background",
+      "label": "t:sections.image_with_text_block.block_background"
   },
   {
     "type": "select",

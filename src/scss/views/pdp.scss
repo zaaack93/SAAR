@@ -6,7 +6,7 @@
         --product-gallery-thumbnail-size: 6.25rem;
         column-gap: 2.438rem;
         position: sticky;
-        top: 0;
+        top: var(--container-gutter);
       }
     }
   }

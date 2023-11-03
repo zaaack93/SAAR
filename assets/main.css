@@ -4,7 +4,7 @@
     -moz-column-gap: 2.438rem;
          column-gap: 2.438rem;
     position: sticky;
-    top: 0;
+    top: var(--container-gutter);
   }
 }
 @media screen and (max-width: 999px) {
@@ -693,80 +693,105 @@
 }
 
 .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=title-with-rating] {
-  margin-block-end: 0.813rem;
+  -webkit-margin-after: 0.813rem;
+          margin-block-end: 0.813rem;
 }
 @media screen and (max-width: 999px) {
   .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=title-with-rating] {
-    margin-block-end: 1.188rem;
+    -webkit-margin-after: 1.188rem;
+            margin-block-end: 1.188rem;
   }
 }
 .template--product-Yonder-dev .product-info__block-list .product-info-type-text:nth-child(-n+2) {
-  margin-block-start: 0rem;
-  margin-block-end: 1.063rem;
+  -webkit-margin-before: 0rem;
+          margin-block-start: 0rem;
+  -webkit-margin-after: 1.063rem;
+          margin-block-end: 1.063rem;
 }
 @media screen and (max-width: 999px) {
   .template--product-Yonder-dev .product-info__block-list .product-info-type-text:nth-child(-n+2) {
-    margin-block-end: 1.063rem;
+    -webkit-margin-after: 1.063rem;
+            margin-block-end: 1.063rem;
   }
 }
 .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=price] {
-  margin-block-start: 0rem;
-  margin-block-end: 1.25rem;
+  -webkit-margin-before: 0rem;
+          margin-block-start: 0rem;
+  -webkit-margin-after: 1.25rem;
+          margin-block-end: 1.25rem;
 }
 @media screen and (max-width: 999px) {
   .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=price] {
-    margin-block-end: 1.375rem;
+    -webkit-margin-after: 1.375rem;
+            margin-block-end: 1.375rem;
   }
 }
 .template--product-Yonder-dev .product-info__block-list .product-info-type-text:nth-child(even) {
-  margin-block-start: 0rem;
-  margin-block-end: 1.75rem;
+  -webkit-margin-before: 0rem;
+          margin-block-start: 0rem;
+  -webkit-margin-after: 1.75rem;
+          margin-block-end: 1.75rem;
 }
 @media screen and (max-width: 999px) {
   .template--product-Yonder-dev .product-info__block-list .product-info-type-text:nth-child(even) {
-    margin-block-end: 1.375rem;
+    -webkit-margin-after: 1.375rem;
+            margin-block-end: 1.375rem;
   }
 }
 .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=product-variations] {
-  margin-block-start: 0rem;
-  margin-block-end: 1.625rem;
+  -webkit-margin-before: 0rem;
+          margin-block-start: 0rem;
+  -webkit-margin-after: 1.625rem;
+          margin-block-end: 1.625rem;
 }
 @media screen and (max-width: 999px) {
   .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=product-variations] {
-    margin-block-end: 1.188rem;
+    -webkit-margin-after: 1.188rem;
+            margin-block-end: 1.188rem;
   }
 }
 .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=buy-buttons-with-quantity] {
-  margin-block-start: 0rem;
-  margin-block-end: 2.25rem;
+  -webkit-margin-before: 0rem;
+          margin-block-start: 0rem;
+  -webkit-margin-after: 2.25rem;
+          margin-block-end: 2.25rem;
 }
 .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=buy-buttons-with-quantity] .scroll-customize-wrapper-mrb {
-  margin-block-end: 1.438rem;
+  -webkit-margin-after: 1.438rem;
+          margin-block-end: 1.438rem;
 }
 @media screen and (max-width: 999px) {
   .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=buy-buttons-with-quantity] {
-    margin-block-end: 2.188rem;
+    -webkit-margin-after: 2.188rem;
+            margin-block-end: 2.188rem;
   }
   .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=buy-buttons-with-quantity] .scroll-customize-wrapper-mrb {
-    margin-block-end: 1.563rem;
+    -webkit-margin-after: 1.563rem;
+            margin-block-end: 1.563rem;
   }
 }
 .template--product-Yonder-dev .product-info__block-list .block-product-feature_with_icon_v2 {
-  margin-block-start: 0rem;
-  margin-block-end: 2.313rem;
+  -webkit-margin-before: 0rem;
+          margin-block-start: 0rem;
+  -webkit-margin-after: 2.313rem;
+          margin-block-end: 2.313rem;
 }
 @media screen and (max-width: 999px) {
   .template--product-Yonder-dev .product-info__block-list .block-product-feature_with_icon_v2 {
-    margin-block-end: 2.063rem;
+    -webkit-margin-after: 2.063rem;
+            margin-block-end: 2.063rem;
   }
 }
 .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=accordion-group] {
-  margin-block-start: 0rem;
-  margin-block-end: 2.05rem;
+  -webkit-margin-before: 0rem;
+          margin-block-start: 0rem;
+  -webkit-margin-after: 2.05rem;
+          margin-block-end: 2.05rem;
 }
 @media screen and (max-width: 999px) {
   .template--product-Yonder-dev .product-info__block-list .product-info__block-item[data-block-type=accordion-group] {
-    margin-block-end: 2.05rem;
+    -webkit-margin-after: 2.05rem;
+            margin-block-end: 2.05rem;
   }
 }
 
@@ -830,7 +855,8 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
   }
 }
 .multi-column-with-text-v2 .main-stack-container .section-header .prose p {
-  margin-block-start: 1rem;
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
   color: #343434;
   text-align: center;
   font-family: Nunito Sans;
@@ -884,7 +910,8 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
   }
 }
 .multi-column-with-text-v2 .main-stack-container .multi-column__item .text-part .content-part {
-  margin-block-start: 0.688rem;
+  -webkit-margin-before: 0.688rem;
+          margin-block-start: 0.688rem;
 }
 .multi-column-with-text-v2 .main-stack-container .multi-column__item .text-part .content-part p {
   color: #343434;
@@ -914,4 +941,9 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
 }
 .multi-column-with-text-v2 .page-dots .tap-area[aria-current=true]::after {
   background: #0500FF;
+}
+
+.shopify-section--text-with-icons-v2 {
+  --section-vertical-spacing: var(--section-without-border-vertical-spacing);
+  --section-vertical-spacing-tight: var(--section-without-border-vertical-spacing-tight);
 }

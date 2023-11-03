@@ -40,7 +40,7 @@
           "type": "variant_picker",
           "settings": {
             "hide_sold_out_variants": false,
-            "selector_type": "block",
+            "selector_type": "dropdown",
             "color_selector_type": "color",
             "size_chart_page": ""
           }
@@ -184,10 +184,10 @@
         "template--16431405170819__5d6d3d1e-f4ad-4482-9e54-65563e1687e4-image_with_text-1": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SAAR-44_3113c53c-9eaf-4ed9-b640-d1f04930ac68.jpg",
-            "title": "As a Statement Piece",
+            "image": "{{ product.metafields.custom.style_image_1.value }}",
+            "title": "{{ product.metafields.custom.style_heading_1.value }}",
             "heading_tag": "h4",
-            "content": "<p>Sometimes, simplicity speaks volumes.  Let the Josh necklace stand alone as your statement piece. Its clean lines and substantial weight make it the focal point of any outfit. Whether dressing up or down, Josh is the key.<\/p>",
+            "content": "{{ product.metafields.custom.style_paragraph_1 | metafield_tag }}",
             "link_url": "",
             "link_text": ""
           }
@@ -195,10 +195,10 @@
         "template--16431405170819__5d6d3d1e-f4ad-4482-9e54-65563e1687e4-image_with_text-2": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SAAR-201.jpg",
-            "title": "As a Set",
+            "image": "{{ product.metafields.custom.style_image_2.value }}",
+            "title": "{{ product.metafields.custom.style_heading_2.value }}",
             "heading_tag": "h4",
-            "content": "<p>For a balanced and polished look, consider complementing the Josh necklace with other minimalist necklaces and bracelets from our collection. Experiment with styles and textures to create a unique pairing that reflects your personal style. <\/p>",
+            "content": "{{ product.metafields.custom.style_paragraph_2 | metafield_tag }}",
             "link_url": "",
             "link_text": ""
           }
@@ -206,10 +206,10 @@
         "template--16431405170819__5d6d3d1e-f4ad-4482-9e54-65563e1687e4-image_with_text-3": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SAAR-77.jpg",
-            "title": "Layering",
+            "image": "{{ product.metafields.custom.style_image_3.value }}",
+            "title": "{{ product.metafields.custom.style_heading_3.value }}",
             "heading_tag": "h4",
-            "content": "<p>Master the art of layering with the Josh necklace. Pair it with another necklace of a similar style but varying widths or lengths to achieve a stylish contrast. The result is a layered look that showcases your attention to detail and fashion-forward sensibility.<\/p>",
+            "content": "{{ product.metafields.custom.style_paragraph_3 | metafield_tag }}",
             "link_url": "",
             "link_text": ""
           }
@@ -230,8 +230,8 @@
         "text_alignment": "center",
         "spacing": "md",
         "subheading": "",
-        "title": "How to style the josh",
-        "content": "<p>Tips on how to style your new favourite piece<\/p>"
+        "title": "{{ product.metafields.custom.style_section_heading.value }}",
+        "content": "<p>{{ product.metafields.custom.style_section_subheading | metafield_tag }}<\/p>"
       }
     },
     "cb8cdc52-3333-4840-a2e4-8ee560c759cc": {
@@ -240,7 +240,7 @@
         "template--16431405170819__cb8cdc52-3333-4840-a2e4-8ee560c759cc-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "what makes saar special?",
+            "text": "{{ product.metafields.custom.video_title.value }}",
             "heading_tag": "h2"
           }
         },
@@ -258,10 +258,10 @@
       "settings": {
         "autoplay": false,
         "show_controls": true,
-        "video_size": "fill",
-        "video": "shopify:\/\/files\/videos\/IMG-9322.mov",
-        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "poster": "shopify:\/\/shop_images\/IMG_9F2F3B28BD17-1_1.png",
+        "video_size": "lg",
+        "video": "{{ product.metafields.custom.video_for_pdp.value }}",
+        "external_video_url": "",
+        "poster": "{{ product.metafields.custom.video_banner_image.value }}",
         "text_color": "#ffffff"
       }
     },
@@ -355,6 +355,7 @@
         "27a25ec5-a627-402c-af84-c429f841495a",
         "a433e35d-cf22-47de-a990-e23916a9fa90"
       ],
+      "disabled": true,
       "settings": {
         "separate_section_with_border": false,
         "stack_on_mobile": false,

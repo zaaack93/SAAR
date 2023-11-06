@@ -14,6 +14,7 @@
                 margin-block-start: 1.5rem;
                 @media screen and (max-width: 769px) {
                     font-size: 16px;
+                    margin-block-start: 1rem;
                 }
             }
             h2{
@@ -38,6 +39,7 @@
                 @media screen and (max-width: 769px) {
                     font-size: 24px;
                     letter-spacing: 4.8px;
+                    padding-inline: 2rem;
                 }
             }
         }
@@ -59,6 +61,7 @@
                @media screen and (max-width:990px) {
                 .table-wrapper:not(.u-NoScrollbar) {
                   padding-bottom: 22Px;
+                  overflow: auto;
               }
       
               .table-wrapper:not(.u-NoScrollbar)::-webkit-scrollbar {
@@ -95,10 +98,10 @@
             table-layout: initial;
             @media only screen and (max-width: 990px){
               min-width: 900px;
-              table-layout: auto;
+              table-layout: fixed;
             }
             @media only screen and (max-width: 660px){
-              min-width: 500px;
+              min-width: calc(100% + 3.5rem);
             }
             tr{
               border: 0.5px solid #CCC;
@@ -127,6 +130,10 @@
               .uncheck-icon{
                 width: 23px;
                   height: 23px;
+                  @media only screen and (max-width: 768px){
+                    width: 18px;
+                    height: 18px;
+                  }
               }
             }
             
@@ -134,7 +141,7 @@
             tr:first-child td:first-child{
               border-top-left-radius: 20px;
               @media only screen and (max-width: 768px){
-                width: 6.75rem;
+                width: calc(100% - 6.2rem);
               }
             }
             /*第一欄最後列：左下*/
@@ -160,6 +167,12 @@
             line-height: 28px; /* 140% */
             letter-spacing: 4px;
             text-transform: uppercase;
+            @media only screen and (max-width: 990px){
+              font-size: 12px;
+              line-height: 16px; /* 133.333% */
+              letter-spacing: 2.4px;
+              padding: 0.8rem 0.5rem;
+            }
           }
           .comparison-table  .th-ligne .first-tab-item{
             color: #858585;
@@ -170,6 +183,11 @@
             line-height: 34.803px; /* 174.014% */
             text-transform: uppercase;
             text-align: start;
+            @media only screen and (max-width: 990px){
+              font-size: 15px;
+              line-height: 18px; /* 120% */
+              padding: 1.3rem 1rem;
+            }
           }
           .comparison-table td {
             padding: 1rem;
@@ -180,12 +198,11 @@
             font-weight: 600;
             line-height: 34.803px; /* 174.014% */
             text-transform: uppercase;
-            // @media only screen and (max-width: 768px){
-            //   font-size: 14px;
-            //   line-height: normal;
-            //   padding: 0.8rem 1rem;
-            //   width: 6.1375rem;
-            // }
+            @media only screen and (max-width: 990px){
+              font-size: 15px;
+              line-height: normal;
+              width: 6rem;
+            }
           }
           
           .comparison-table td:not(:first-child) {
@@ -198,9 +215,11 @@
               }
             }
             td:nth-child(2), td:nth-child(3) {
+              @media only screen and (min-width: 991px){
                 max-width: 250px;
                 width: 250px;
                 padding-inline: 3.313rem;
+              }
             }
           }
 

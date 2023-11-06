@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @media screen and (min-width: 1000px) {
   .template--product-Yonder-dev .sticky-product-gallery product-gallery {
-    --product-gallery-thumbnail-size: 6.25rem;
+    --product-gallery-thumbnail-size: 6.2rem;
     -moz-column-gap: 2.438rem;
          column-gap: 2.438rem;
     position: sticky;
@@ -1071,6 +1071,7 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
 @media screen and (max-width: 769px) {
   .comparatif-table-section .section-header .prose p {
     font-size: 16px;
+    margin-block-start: 1rem;
   }
 }
 .comparatif-table-section .section-header .prose h2 {
@@ -1097,6 +1098,7 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
   .comparatif-table-section .section-header .prose h2 {
     font-size: 24px;
     letter-spacing: 4.8px;
+    padding-inline: 2rem;
   }
 }
 @media screen and (max-width: 990px) {
@@ -1105,6 +1107,7 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
   }
   .comparatif-table-section .comparison-table .table-wrapper:not(.u-NoScrollbar) {
     padding-bottom: 22Px;
+    overflow: auto;
   }
   .comparatif-table-section .comparison-table .table-wrapper:not(.u-NoScrollbar)::-webkit-scrollbar {
     height: 2px;
@@ -1141,12 +1144,12 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
 @media only screen and (max-width: 990px) {
   .comparatif-table-section table {
     min-width: 900px;
-    table-layout: auto;
+    table-layout: fixed;
   }
 }
 @media only screen and (max-width: 660px) {
   .comparatif-table-section table {
-    min-width: 500px;
+    min-width: calc(100% + 3.5rem);
   }
 }
 .comparatif-table-section table tr {
@@ -1182,12 +1185,18 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
   width: 23px;
   height: 23px;
 }
+@media only screen and (max-width: 768px) {
+  .comparatif-table-section table td .uncheck-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
 .comparatif-table-section table tr:first-child td:first-child {
   border-top-left-radius: 20px;
 }
 @media only screen and (max-width: 768px) {
   .comparatif-table-section table tr:first-child td:first-child {
-    width: 6.75rem;
+    width: calc(100% - 6.2rem);
   }
 }
 .comparatif-table-section table tr:last-child td:first-child {
@@ -1210,6 +1219,14 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
   letter-spacing: 4px;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 990px) {
+  .comparatif-table-section .comparison-table .th-ligne td {
+    font-size: 12px;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: 2.4px;
+    padding: 0.8rem 0.5rem;
+  }
+}
 .comparatif-table-section .comparison-table .th-ligne .first-tab-item {
   color: #858585;
   font-family: Nunito Sans;
@@ -1219,6 +1236,13 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
   line-height: 34.803px; /* 174.014% */
   text-transform: uppercase;
   text-align: start;
+}
+@media only screen and (max-width: 990px) {
+  .comparatif-table-section .comparison-table .th-ligne .first-tab-item {
+    font-size: 15px;
+    line-height: 18px; /* 120% */
+    padding: 1.3rem 1rem;
+  }
 }
 .comparatif-table-section .comparison-table td {
   padding: 1rem;
@@ -1230,6 +1254,13 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
   line-height: 34.803px; /* 174.014% */
   text-transform: uppercase;
 }
+@media only screen and (max-width: 990px) {
+  .comparatif-table-section .comparison-table td {
+    font-size: 15px;
+    line-height: normal;
+    width: 6rem;
+  }
+}
 .comparatif-table-section .comparison-table td:not(:first-child) {
   text-align: center;
 }
@@ -1238,10 +1269,12 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
     padding: 1rem 1.3rem;
   }
 }
-.comparatif-table-section .comparison-table tr:first-child td:nth-child(2), .comparatif-table-section .comparison-table tr:first-child td:nth-child(3) {
-  max-width: 250px;
-  width: 250px;
-  padding-inline: 3.313rem;
+@media only screen and (min-width: 991px) {
+  .comparatif-table-section .comparison-table tr:first-child td:nth-child(2), .comparatif-table-section .comparison-table tr:first-child td:nth-child(3) {
+    max-width: 250px;
+    width: 250px;
+    padding-inline: 3.313rem;
+  }
 }
 .comparatif-table-section .comparison-table th {
   text-align: center;

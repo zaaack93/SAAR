@@ -1,0 +1,360 @@
+{%- if section.blocks.size > 0 -%}
+    <style>
+      #shopify-section-{{ section.id }} {
+        --multi-column-gap: {% if section.settings.spacing == 'xs' %}1.5rem{% elsif section.settings.spacing == 'sm' %}2.5rem{% elsif section.settings.spacing == 'md' %}3.125rem{% else %}4.375rem{% endif %};
+        --multi-column-column-width: {% if section.settings.stack_on_mobile and section.settings.content_alignment != 'center' %}100%{% else %}53vw{% endif %};
+        --multi-column-grid: {% if section.settings.stack_on_mobile %}auto / repeat(auto-fit, var(--multi-column-column-width)){% else %}auto / auto-flow var(--multi-column-column-width){% endif %};
+        --multi-column-content-alignment: safe {{ section.settings.content_alignment }};
+      }
+  
+      @media screen and (min-width: 700px) {
+        #shopify-section-{{ section.id }} {
+          --multi-column-columns-per-row: 2;
+          --multi-column-column-width: {% if section.settings.stack_on_mobile %}calc(100% / var(--multi-column-columns-per-row) - var(--multi-column-gap) * ((var(--multi-column-columns-per-row) - 1) / var(--multi-column-columns-per-row))){% else %}38vw{% endif %};
+        }
+      }
+  
+      @media screen and (min-width: 999px) {
+        #shopify-section-{{ section.id }} {
+          --multi-column-gap: {% if section.settings.spacing == 'xs' %}1.875rem{% elsif section.settings.spacing == 'sm' %}3.125rem{% elsif section.settings.spacing == 'md' %}4.375rem{% else %}5.625rem{% endif %};
+          --multi-column-columns-per-row: {{ section.settings.columns_per_row }};
+          --multi-column-column-width: calc(100% / var(--multi-column-columns-per-row) - var(--multi-column-gap) * ((var(--multi-column-columns-per-row) - 1) / var(--multi-column-columns-per-row)));
+          --multi-column-grid: auto / repeat(auto-fit, var(--multi-column-column-width));
+        }
+      }
+
+      {%- if section.settings.box_color != 'rgba(0,0,0,0)' and section.settings.box_color != '' -%}
+        #shopify-section-{{ section.id }} table {
+          background-color:{{section.settings.box_color}};
+        }
+      {%- endif -%}
+  
+      {%- if section.settings.first_column_color != 'rgba(0,0,0,0)' and section.settings.first_column_color != '' -%}
+        #shopify-section-{{ section.id }} table th:nth-child(2) ,
+        #shopify-section-{{ section.id }} table td:nth-child(2){
+          background-color:{{section.settings.first_column_color}};
+        }
+      {%- endif -%}
+    </style>
+    {% assign isTrouve = true %}
+    {%- for block in section.blocks -%}
+      {% if block.settings.title != blank or block.settings.content != blank  or block.settings.image != blank %}
+        {% assign isTrouve = true %}
+      {%endif%}
+    {% endfor %}
+    {% if isTrouve %}
+      <div class="section-spacing {% if section.settings.separate_section_with_border %}bordered-section{% endif %}">
+        <div class="container {% unless section.settings.container_size == 'full' %}container--{{ section.settings.container_size }}{% endunless %}">
+          <div class="section-stack main-stack-container">
+            {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: section.settings.content_alignment -%}
+    
+            {% comment %} {% endcomment %}
+            <div class="table-container">
+                
+                
+                <div class="comparison-table">
+                    <table>
+                        <tr class="th-ligne">
+                            <td class="first-tab-item">The Details</td>
+                            {% if section.settings.our_company_image != blank%}
+                              <td>{{ section.settings.our_company_image | image_url: width: 500 | image_tag }}</td>
+                            {% elsif section.settings.our_company_title != blank %}
+                              <td>{{ section.settings.our_company_title }}</td>
+                            {% endif %}
+        
+                            {% if section.settings.competition1_image != blank %}
+                              <td>{{ section.settings.competition1_image | image_url: width: 500 | image_tag }}</td>
+                            {% elsif section.settings.competition1_title != blank %}
+                              <td>{{ section.settings.competition1_title }}</td>
+                            {% endif %}
+        
+                            {% if section.settings.competition2_image != blank %}
+                              <td>{{ section.settings.competition2_image | image_url: width: 500 | image_tag }}</td>
+                            {% elsif section.settings.competition2_title != blank %}
+                              <td>{{ section.settings.competition2_title }}</td>
+                            {% endif %}
+                            {% if section.settings.competition3_image != blank %}
+                              <td>{{ section.settings.competition3_image | image_url: width: 500 | image_tag }}</td>
+                            {% elsif section.settings.competition3_title != blank %}
+                              <td>{{ section.settings.competition3_title }}</td>
+                            {% endif %}
+                            {% if section.settings.competition4_image != blank %}
+                              <td>{{ section.settings.competition4_image | image_url: width: 500 | image_tag }}</td>
+                            {% elsif section.settings.competition4_title != blank %}
+                              <td>{{ section.settings.competition4_title }}</td>
+                            {% endif %}
+                        </tr>
+                    {%- for item in section.blocks -%}
+                        <tr>
+                            <td>{{ item.settings.comparison_item }}</td>
+                            {% if section.settings.our_company_title != blank or section.settings.our_company_image != blank %}
+                            <td>
+                                {%- if item.settings.competition1 == 'checklist' -%}
+                                    {% render 'icon-comp-check'%}
+                                {%else%}
+                                    {% render 'icon-comp-uncheck'%}
+                                {%endif%}
+                            </td>
+                            {% endif %}
+                            {% if section.settings.competition1_title != blank or section.settings.competition1_image != blank %}
+                            <td>
+                                {%- if item.settings.competition2 == 'checklist' -%}
+                                    {% render 'icon-comp-check'%}
+                                {%else%}
+                                    {% render 'icon-comp-uncheck'%}
+                                {%endif%}
+                            </td>
+                            {% endif %}
+                            {% if section.settings.competition2_title != blank or section.settings.competition2_image != blank %}
+                            <td>
+                                {%- if item.settings.competition3 == 'checklist' -%}
+                                    {% render 'icon-comp-check'%}
+                                {%else%}
+                                    {% render 'icon-comp-uncheck'%}
+                                {%endif%}
+                            </td>
+                            {% endif %}
+                            {% if section.settings.competition3_title != blank or section.settings.competition3_image != blank %}
+                            <td>
+                                {%- if item.settings.competition4 == 'checklist' -%}
+                                    {% render 'icon-comp-check'%}
+                                {%else%}
+                                    {% render 'icon-comp-uncheck'%}
+                                {%endif%}
+                            </td>
+                            {% endif %}
+                          </tr>
+                    {%- endfor -%}
+                    </table>
+                  </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    {%endif%}
+  {%- endif -%}
+  
+  {% schema %}
+  {
+    "name": "Campare table",
+    "class": "shopify-section--multi-column comparatif-table-section",
+    "tag": "section",
+    "disabled_on": {
+      "groups": ["header", "custom.overlay"]
+    },
+    "settings": [
+      {
+        "type": "select",
+        "id": "container_size",
+        "label": "t:global.sizes.section_width",
+        "options": [
+          {
+            "value": "lg",
+            "label": "t:global.sizes.large"
+          },
+          {
+            "value": "xl",
+            "label": "t:global.sizes.x_large"
+          },
+          {
+            "value": "full",
+            "label": "t:global.sizes.full_width"
+          }
+        ],
+        "default": "lg"
+      },
+      {
+        "type": "checkbox",
+        "id": "separate_section_with_border",
+        "label": "t:global.section.separate_section_with_border",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "columns_per_row",
+        "min": 2,
+        "max": 6,
+        "label": "t:sections.multi_column.columns_per_row",
+        "default": 3
+      },
+      {
+        "type": "checkbox",
+        "id": "stack_on_mobile",
+        "label": "t:sections.multi_column.stack_on_mobile",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "overlap_image",
+        "label": "t:sections.multi_column.overlap_image",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "content_alignment",
+        "label": "t:global.position.content_position",
+        "options": [
+          {
+            "value": "start",
+            "label": "t:global.position.left"
+          },
+          {
+            "value": "center",
+            "label": "t:global.position.center"
+          },
+          {
+            "value": "end",
+            "label": "t:global.position.right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "header",
+        "content": "t:global.section.header_category"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "subheading",
+        "label": "t:global.text.subheading",
+        "default": "About"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "t:global.text.heading",
+        "default": "Multi-column"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "t:global.text.content"
+      },
+      {
+        "type": "header",
+        "content": "Columns Settings"
+      },
+      {
+        "type": "text",
+        "label": "Our Company Title",
+        "id": "our_company_title",
+        "default": "Our Company"
+      },
+      {
+        "type": "image_picker",
+        "id": "our_company_image",
+        "label": "Our Company Image",
+        "info": "Replace column title with an image."
+      },
+      {
+        "type": "text",
+        "label": "Competition 1 Title",
+        "id": "competition1_title",
+        "default": "The Competition"
+      },
+      {
+        "type": "image_picker",
+        "id": "competition1_image",
+        "label": "Image 1",
+        "info": "Replace column title with an image."
+      },
+      {
+        "type": "text",
+        "label": "Competition 2 Title",
+        "id": "competition2_title",
+        "default": "The Competition"
+      },
+      {
+        "type": "image_picker",
+        "id": "competition2_image",
+        "label": "Image 2",
+        "info": "Replace column title with an image."
+      },
+      {
+        "type": "text",
+        "label": "Competition 3 Title",
+        "id": "competition3_title",
+        "default": "The Competition"
+      },
+      {
+        "type": "image_picker",
+        "id": "competition3_image",
+        "label": "Image 3",
+        "info": "Replace column title with an image."
+      },
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "box_color",
+        "label": "Table color"
+      },
+      {
+        "type": "color",
+        "id": "first_column_color",
+        "label": "First column color"
+      }
+    ],
+    "blocks": [
+        {
+            "type": "repeatable",
+            "name": "Comparison Item",
+            "settings": [
+              {
+                "type": "text",
+                "label": "Comparison Item",
+                "id": "comparison_item"
+              },
+              {
+                "type": "select",
+                "id": "competition1",
+                "label": "Column icon 1",
+                "default": "checklist",
+                "options": [
+                  { "value": "checklist", "label": "Check" },
+                  { "value": "uncheck", "label": "Uncheck" }
+                ]
+              },
+              {
+                "type": "select",
+                "id": "competition2",
+                "label": "Column icon 2",
+                "default": "checklist",
+                "options": [
+                  { "value": "checklist", "label": "Check" },
+                  { "value": "uncheck", "label": "Uncheck" }
+                ]
+              },
+              {
+                "type": "select",
+                "id": "competition3",
+                "label": "Column icon 3",
+                "default": "checklist",
+                "options": [
+                  { "value": "checklist", "label": "Check" },
+                  { "value": "uncheck", "label": "Uncheck" }
+                ]
+              },
+              {
+                "type": "select",
+                "id": "competition4",
+                "label": "Column icon 4",
+                "default": "checklist",
+                "options": [
+                  { "value": "checklist", "label": "Check" },
+                  { "value": "uncheck", "label": "Uncheck" }
+                ]
+              }
+            ]
+          }
+    ],
+    "presets": [{
+        "name": "Compare table"
+    }]
+  }
+  {% endschema %}

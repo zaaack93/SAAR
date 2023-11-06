@@ -442,6 +442,86 @@
         "content": "<p>And counting! This isn't just a one night stand.<\/p>"
       }
     },
+    "2075ff39-709e-40bc-82ff-ce2a02648392": {
+      "type": "compare-table",
+      "blocks": {
+        "b6a07f1d-0c2b-4a37-b568-c3c3051a5cfc": {
+          "type": "repeatable",
+          "settings": {
+            "comparison_item": "Reinforced Materials",
+            "competition1": "checklist",
+            "competition2": "uncheck",
+            "competition3": "checklist",
+            "competition4": "checklist"
+          }
+        },
+        "cfc0db4d-170e-429a-846d-7a33e7fa8e72": {
+          "type": "repeatable",
+          "settings": {
+            "comparison_item": "Water & sweat resistant",
+            "competition1": "checklist",
+            "competition2": "uncheck",
+            "competition3": "checklist",
+            "competition4": "checklist"
+          }
+        },
+        "c373f3e3-45bf-4d99-8ee4-5624474c82d6": {
+          "type": "repeatable",
+          "settings": {
+            "comparison_item": "Hypoallergenic",
+            "competition1": "checklist",
+            "competition2": "uncheck",
+            "competition3": "checklist",
+            "competition4": "checklist"
+          }
+        },
+        "36000254-8b2f-4dfe-89a2-d94845a6c75e": {
+          "type": "repeatable",
+          "settings": {
+            "comparison_item": "quality guarantee",
+            "competition1": "checklist",
+            "competition2": "uncheck",
+            "competition3": "checklist",
+            "competition4": "checklist"
+          }
+        },
+        "a94ede5c-a853-4ddf-b4cd-7d5b51cb63c8": {
+          "type": "repeatable",
+          "settings": {
+            "comparison_item": "1 Year warranty",
+            "competition1": "checklist",
+            "competition2": "uncheck",
+            "competition3": "checklist",
+            "competition4": "checklist"
+          }
+        }
+      },
+      "block_order": [
+        "b6a07f1d-0c2b-4a37-b568-c3c3051a5cfc",
+        "cfc0db4d-170e-429a-846d-7a33e7fa8e72",
+        "c373f3e3-45bf-4d99-8ee4-5624474c82d6",
+        "36000254-8b2f-4dfe-89a2-d94845a6c75e",
+        "a94ede5c-a853-4ddf-b4cd-7d5b51cb63c8"
+      ],
+      "settings": {
+        "container_size": "sm",
+        "separate_section_with_border": true,
+        "columns_per_row": 3,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "subheading": "",
+        "title": "WHAT MAKES SAAR SPECIAL?",
+        "content": "<p>The devil is in the details.<\/p>",
+        "our_company_title": "The Details",
+        "our_company_image": "shopify:\/\/shop_images\/image_9.png",
+        "competition1_title": "Other Brands",
+        "competition2_title": "",
+        "competition3_title": "",
+        "box_color": "#EFEFEF",
+        "first_column_color": "#343434"
+      }
+    },
     "loox-product-reviews-app-section": {
       "type": "apps",
       "blocks": {
@@ -488,6 +568,7 @@
     "cb8cdc52-3333-4840-a2e4-8ee560c759cc",
     "fe4218ff-e802-4dfb-bf69-2ecddaa008d7",
     "2a9568ac-7f04-4b99-bdb1-b19a1da46ba9",
+    "2075ff39-709e-40bc-82ff-ce2a02648392",
     "loox-product-reviews-app-section",
     "related-products"
   ]

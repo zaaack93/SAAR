@@ -203,6 +203,27 @@ class ProductPersonalizerWrapper extends HTMLElement {
             else{
               cloneDiv.querySelector('input[type="text"]').name=`properties[${cloneDiv.querySelector('.oindexlabel').textContent}]`
             }
+            //hide the scond point
+            if (cloneDiv.getAttribute('data-main') == '3') {
+              cloneDiv.style.display="none"
+              // Find the div with data-main="1"
+              let wrapper = this.querySelector('div[data-main="1"]');
+
+              // Find the checkbox element inside the wrapper
+              let checkbox = wrapper.querySelector('input[type="checkbox"]');
+
+              // Add an event listener to the checkbox
+              checkbox.addEventListener('change', function () {
+                if (checkbox.checked) {
+                  // The checkbox is checked
+                  cloneDiv.style.display="flex"
+                } else {
+                  // The checkbox is unchecked
+                  cloneDiv.style.display="none"
+                }
+              });
+            }
+            
 
             //recalculate pplr account 
             cloneDiv.querySelector('input[type="text"]').addEventListener('input',(e)=>{

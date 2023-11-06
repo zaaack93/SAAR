@@ -411,6 +411,20 @@
             order: 3;
             height: 27px;
             padding: 5px 10px;
+            flex: auto;
+          }
+          .key_layout_sub{
+            order: 4;
+            vertical-align: middle;
+            display: inline-flex;
+            align-items: center;
+            width: 40px;
+            height: 28px;
+            font-size: 25px;
+            justify-content: center;
+          }
+          .key_layout{
+            bottom: 0px;
           }
           .pplr-character-count{
             padding: 0px;
@@ -428,6 +442,8 @@
             height: fit-content;
             overflow: hidden;
             margin-left: auto;
+            width:50%;
+            top: 3px;
             .lt{
               display: none;
             }

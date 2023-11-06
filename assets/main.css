@@ -409,6 +409,20 @@
   order: 3;
   height: 27px;
   padding: 5px 10px;
+  flex: auto;
+}
+.template--product-Yonder-dev .product-info .product-personalizer .mains-wrapper .pplr-wrapper .key_layout_sub {
+  order: 4;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  width: 40px;
+  height: 28px;
+  font-size: 25px;
+  justify-content: center;
+}
+.template--product-Yonder-dev .product-info .product-personalizer .mains-wrapper .pplr-wrapper .key_layout {
+  bottom: 0px;
 }
 .template--product-Yonder-dev .product-info .product-personalizer .mains-wrapper .pplr-wrapper .pplr-character-count {
   padding: 0px;
@@ -428,6 +442,8 @@
   height: fit-content;
   overflow: hidden;
   margin-left: auto;
+  width: 50%;
+  top: 3px;
 }
 .template--product-Yonder-dev .product-info .product-personalizer .mains-wrapper .pplr-wrapper .pplr-character-count .lt {
   display: none;

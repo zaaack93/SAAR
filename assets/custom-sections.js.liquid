@@ -439,9 +439,9 @@ class ProductGalleryScroller extends ProductGalleryNavigation {
       const clientHeight = this.clientHeight;
       // Calculate the available space for scrolling
       const availableScrollSpace = scrollHeight - clientHeight;
-
+    console.log(availableScrollSpace,scrollTop)
     // Show/hide top shadow when at the bottom
-    if (scrollTop === availableScrollSpace || scrollTop > 0) {
+    if (scrollTop > 0 && availableScrollSpace > 0) {
       scroller.classList.add('at-top');
     }
     

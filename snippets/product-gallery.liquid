@@ -222,7 +222,7 @@ only way to do it on Shopify right now.
 
     {%- if show_thumbnails_mobile or show_thumbnails_desktop -%}
       <safe-sticky class="product-gallery__thumbnail-list {% unless show_thumbnails_mobile %}hidden{% endunless %} {% unless show_thumbnails_desktop %}md:hidden{% else %}md:block{% endunless %}">
-        <product-gallery-navigation align-selected aria-controls="{{ product_gallery_carousel_id }}" class="product-gallery__thumbnail-scroller bleed md:unbleed">
+        <product-gallery-navigaion-scroller align-selected aria-controls="{{ product_gallery_carousel_id }}" class="product-gallery__thumbnail-scroller bleed md:unbleed">
           {%- if product != blank -%}
             {%- for media in product.media -%}
               <button type="button" class="product-gallery__thumbnail" {% if filtered_indexes contains media.position %}hidden{% endif %} data-media-type="{{ media.media_type }}" data-media-position="{{ media.position }}" data-media-id="{{ media.id }}" aria-current="{% if media == default_media %}true{% else %}false{% endif %}" aria-label="{{ 'general.accessibility.go_to_item' | t: index: forloop.index | escape }}">
@@ -248,7 +248,7 @@ only way to do it on Shopify right now.
               </button>
             {%- endfor -%}
           {%- endif -%}
-        </product-gallery-navigation>
+        </product-gallery-navigaion-scroller>
       </safe-sticky>
     {%- endif -%}
 

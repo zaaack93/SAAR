@@ -3,7 +3,7 @@
   .sticky-product-gallery{
     product-gallery{
       @media screen and (min-width: 1000px) {
-        --product-gallery-thumbnail-size: 6.2rem;
+        --product-gallery-thumbnail-size: 6.25rem;
         column-gap: 2.438rem;
         position: sticky;
         top: var(--container-gutter);
@@ -796,5 +796,59 @@
 
     
     
+  }
+
+  @media screen and (min-width: 1000px) {
+    //product thummbnails 
+    .product-gallery__thumbnail-list {
+      product-gallery-navigaion-scroller{
+        row-gap: 10px;
+      }
+    }
+    .product-gallery__thumbnail-list::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50px; /* Set the desired shadow height */
+      background: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0));
+      pointer-events: none;
+      z-index: 2;
+    }
+    
+    /* Create a shadow effect at the bottom of the scroller */
+    .product-gallery__thumbnail-list::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50px; /* Set the desired shadow height */
+      background: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0));
+      pointer-events: none;
+      transform: rotate(180deg);
+      z-index: 2;
+    }
+
+    /* Show top shadow when at the top */
+    .product-gallery__thumbnail-list.at-top::before {
+      display: block;
+    }
+
+    /* Show bottom shadow when at the bottom */
+    .product-gallery__thumbnail-list.at-bottom::after {
+      display: block;
+    }
+
+    /* Hide top shadow when not at the top */
+    .product-gallery__thumbnail-list:not(.at-top)::before {
+      display: none;
+    }
+
+    /* Hide bottom shadow when not at the bottom */
+    .product-gallery__thumbnail-list:not(.at-bottom)::after {
+      display: none;
+    }
   }
 }

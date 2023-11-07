@@ -419,12 +419,7 @@ class ProductGalleryScroller extends ProductGalleryNavigation {
     window.addEventListener('resize', this.handleResize);
   }
 
-  handleResize(){
-    if (window.innerWidth > 999) {
-      this.observeContainerAndMeasureHeight();
-      this.scrollEffect()
-    }
-  }
+
   scrollEffect(){
     this.addEventListener('scroll', () => {
       this.scrollCalculator()
@@ -450,7 +445,7 @@ class ProductGalleryScroller extends ProductGalleryNavigation {
     }
 
     // Show/hide bottom shadow when there's enough space to scroll
-    if (availableScrollSpace > 0 && availableScrollSpace > scrollTop) {
+    if (availableScrollSpace > 0 && availableScrollSpace - 10 > scrollTop) {
       scroller.classList.add('at-bottom');
     } else {
       scroller.classList.remove('at-bottom');
@@ -458,22 +453,29 @@ class ProductGalleryScroller extends ProductGalleryNavigation {
   }
 
   observeContainerAndMeasureHeight() {
-  const container = document.querySelector('.product-gallery__media.is-initial');
+    const container = document.querySelector('.product-gallery__media.is-initial');
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        // The container is in the viewport, and the image is likely rendered
-        const containerHeight = container.getBoundingClientRect().height;
-        this.style.maxHeight=`${containerHeight}px`
-        // You can do additional actions here, like removing the observer
-        // if you no longer need it.
-        observer.disconnect();
-      }
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // The container is in the viewport, and the image is likely rendered
+          const containerHeight = container.getBoundingClientRect().height;
+          this.style.maxHeight=`${containerHeight}px`
+          // You can do additional actions here, like removing the observer
+          // if you no longer need it.
+          observer.disconnect();
+        }
+      });
     });
-  });
-  observer.observe(container);
-}
+    observer.observe(container);
+  }
+
+  handleResize(){
+    if (window.innerWidth > 999) {
+      this.observeContainerAndMeasureHeight();
+      this.scrollEffect()
+    }
+  }
 
 
 }

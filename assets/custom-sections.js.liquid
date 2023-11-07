@@ -1,3 +1,4 @@
+import {ProductGalleryNavigation,BuyButtons} from "{{ 'theme.js' | asset_url }}"; // Import the theme web component
 // Define your custom element class
 class WrappingContainer extends HTMLElement {
   constructor() {
@@ -201,7 +202,8 @@ class ProductPersonalizerWrapper extends HTMLElement {
               labelPlacement.prepend(newCheckBox);
             }
             else{
-              cloneDiv.querySelector('input[type="text"]').name=`properties[${cloneDiv.querySelector('.oindexlabel').textContent}]`
+              if (cloneDiv.querySelector('.oindexlabel'))
+                cloneDiv.querySelector('input[type="text"]').name=`properties[${cloneDiv.querySelector('.oindexlabel').textContent}]`
             }
             //hide the scond point
             if (cloneDiv.getAttribute('data-main') == '3') {
@@ -231,10 +233,14 @@ class ProductPersonalizerWrapper extends HTMLElement {
               span.addEventListener('click', () => {
                 // Hide the parent key_layout div when a span is clicked
                 cloneDiv.querySelector('.key_layout').style.display = 'none';
+                cloneDiv.querySelector('.key_layout').style.visibility = 'hidden';
               });
             });
 
-            //recalculate pplr account 
+            //
+            cloneDiv.querySelector('.key_layout_sub').addEventListener('click',(e)=>{
+              cloneDiv.querySelector('.key_layout').style.visibility = 'visible';
+            })
             cloneDiv.querySelector('input[type="text"]').addEventListener('input',(e)=>{
               setTimeout(() => {
                 cloneDiv.querySelector('.pplr-character-count .ct').textContent=e.target.value.length
@@ -406,7 +412,6 @@ class SwiperComponent extends HTMLElement {
 customElements.define('swiper-component', SwiperComponent);
 
 
-import {ProductGalleryNavigation} from "{{ 'theme.js' | asset_url }}"; // Import the theme web component
 
 // Extend it
 class ProductGalleryScroller extends ProductGalleryNavigation {
@@ -434,7 +439,6 @@ class ProductGalleryScroller extends ProductGalleryNavigation {
       const clientHeight = this.clientHeight;
       // Calculate the available space for scrolling
       const availableScrollSpace = scrollHeight - clientHeight;
-    console.log(availableScrollSpace,scrollTop)
     // Show/hide top shadow when at the bottom
     if (scrollTop > 0 && availableScrollSpace > 0) {
       scroller.classList.add('at-top');
@@ -482,3 +486,67 @@ class ProductGalleryScroller extends ProductGalleryNavigation {
 
 // Create the custom elements
 window.customElements.define('product-gallery-navigaion-scroller', ProductGalleryScroller);
+
+
+
+
+class BuyButtonsCustom extends BuyButtons {
+  constructor() {
+    super();
+  }
+
+
+  addToCartNote(){
+    var ptwProdName = $("#ptw-productname").val();
+    var ptw_gift_note = $("#ptw-text-message").val();
+    var ptwVariantId = ptwSettings.variant_id;
+
+
+    if (typeof ptw_gift_note != "undefined" && ptw_gift_note != "") {
+      var ptwProductProps = {
+        "Gift Note": ptw_gift_note,
+        "Product Name": ptwProdName,
+      };
+    } else {
+      var ptwProductProps = { "Product Name": ptwProdName };
+    }
+
+    var ptwProductParams = {
+      type: "POST",
+
+      url: "/cart/add.js",
+
+      data: {
+        items: [
+          {
+            quantity: 1,
+            id: ptwVariantId,
+            properties: ptwProductProps,
+          },
+        ],
+      },
+
+      dataType: "json",
+
+      cache: false,
+
+      async: false,
+    };
+    $.ajax(ptwProductParams).done(function (data) {
+      console.log("Gift Wrap Added");
+    });
+  }
+  connectedCallback() {
+    window.addEventListener('pplrAddToCartCompleted' , async (e) => {
+      if($("#ptw-gift-needed").is(":checked")){
+        await this.addToCartNote()
+      }
+    })
+  }
+
+ 
+
+}
+
+// Create the custom elements
+window.customElements.define('buy-buttons-custom', BuyButtonsCustom);

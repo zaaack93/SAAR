@@ -27,7 +27,7 @@
             "background_opacity": 0,
             "text_color": "#ffffff",
             "border_color": "",
-            "gradient_overlay": "linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(4, 4, 4, 0.65) 100%)"
+            "gradient_overlay": "linear-gradient(179deg, rgba(202, 202, 202, 0.01), rgba(4, 4, 4, 0.65) 100%)"
           }
         }
       },
@@ -57,7 +57,7 @@
         "7bc8e59e-666f-4cf4-b327-23fc87c137e4": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/rocket_1.png"
+            "image": "shopify:\/\/shop_images\/Saar_Rocket-White_b3d51e5c-671c-44b3-9ae6-5f7ba5d80b02.png"
           }
         },
         "template--16342372515971__59925ca0-6b14-4a5b-adf6-6dcd6bfb6860-text-2": {
@@ -69,7 +69,7 @@
         "bdc6df2a-df71-4725-8eb7-3097bb4aaf12": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saar-Icons-02_2_1.png"
+            "image": "shopify:\/\/shop_images\/Saar_Clock-White_3ece2cf8-424a-4402-9406-efa185a80430.png"
           }
         },
         "2c33c772-2c63-4efd-ac00-b4d2bebf0aee": {
@@ -81,7 +81,7 @@
         "6bf4b349-9405-4159-80cc-1f3878cc7637": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saar-Icons-03_1.png"
+            "image": "shopify:\/\/shop_images\/Saar_Hands-White.png"
           }
         }
       },
@@ -143,47 +143,90 @@
           "type": "item",
           "settings": {
             "icon": "picto-delivery-truck",
+            "custom_icon": "shopify:\/\/shop_images\/Rings_designs_are_on_point_Shipping_was_super_fast_too._Will_buy_again_1.jpg",
             "icon_width": 200,
             "mobile_icon_width": 200,
-            "title": "Free shipping",
-            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
+            "title": "",
+            "content": "<p>Rings designs are on point! Shipping was super fast too. Will buy again. <\/p><p><strong>@Daniel<\/strong><\/p>"
           }
         },
         "template--16342372515971__20863d68-a9bf-4c04-b4da-436c2d571790-item-2": {
           "type": "item",
           "settings": {
             "icon": "picto-customer-support",
+            "custom_icon": "shopify:\/\/shop_images\/My_partner_simply_won_t_shut_up_about_his_new_chain_Thank_you_so_much_1.png",
             "icon_width": 200,
             "mobile_icon_width": 200,
-            "title": "Customer service",
-            "content": "<p>We are available from monday to friday to answer your questions.<\/p>"
+            "title": "",
+            "content": "<p>My partner simply won't shut up about his new chain! Thanks so much.<\/p><p><strong>@Nicola<\/strong><\/p>"
           }
         },
         "template--16342372515971__20863d68-a9bf-4c04-b4da-436c2d571790-item-3": {
           "type": "item",
           "settings": {
             "icon": "picto-shield",
+            "custom_icon": "shopify:\/\/shop_images\/Timeless_piece_high_quality_and_fast_shipping_2.jpg",
             "icon_width": 200,
             "mobile_icon_width": 200,
-            "title": "Secure payment",
-            "content": "<p>Your payment information is processed securely.<\/p>"
+            "title": "",
+            "content": "<p>Timeless piece, high quality and fast shipping. Thanks guys ! <\/p><p><strong>@Tim<\/strong><\/p>"
+          }
+        },
+        "cb7d3d65-d647-43f2-b71c-e963ecb4118a": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "custom_icon": "shopify:\/\/shop_images\/Hugh_quality_pieces_that_I_can_wear_with_anything_anywhere._The_fact_they_are_waterproof_makes_it_even_better_1.jpg",
+            "icon_width": 200,
+            "mobile_icon_width": 200,
+            "title": "",
+            "content": "<p>High quality pieces that I can wear with anything anywhere. The fact they're waterproof makes it even better.<\/p><p><strong>@Will<\/strong><\/p>"
+          }
+        },
+        "2e6f6e37-4b60-445d-8d37-6cffcc652007": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "custom_icon": "shopify:\/\/shop_images\/Literally_never_took_it_off_from_the_day_it_arrived_best_chain_I_own_for_sure_1_1.jpg",
+            "icon_width": 200,
+            "mobile_icon_width": 200,
+            "title": "",
+            "content": "<p>Literally never took it off from the day it arrived, best chain I own for sure. <\/p><p><strong>@Tommy<\/strong><\/p>"
           }
         }
       },
       "block_order": [
         "template--16342372515971__20863d68-a9bf-4c04-b4da-436c2d571790-item-1",
         "template--16342372515971__20863d68-a9bf-4c04-b4da-436c2d571790-item-2",
-        "template--16342372515971__20863d68-a9bf-4c04-b4da-436c2d571790-item-3"
+        "template--16342372515971__20863d68-a9bf-4c04-b4da-436c2d571790-item-3",
+        "cb7d3d65-d647-43f2-b71c-e963ecb4118a",
+        "2e6f6e37-4b60-445d-8d37-6cffcc652007"
       ],
       "settings": {
         "separate_section_with_border": true,
-        "icon_color": "",
+        "icon_color": "#ffffff",
         "text_color": "",
-        "block_background": "",
+        "block_background": "#d9d9d9",
         "text_alignment": "center",
-        "subheading": "About",
-        "title": "",
-        "content": ""
+        "subheading": "",
+        "title": "<p>Join 25,000+ <\/p><p>happy customers <\/p>",
+        "content": "<p>This isn't just a one night stand. <\/p>"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "subheading": "Want to save?",
+        "title": "Subscribe & Save 10% off your first order",
+        "content": "<p>We hate spam - so you'll only ever receive exclusive promos and styling tips. <\/p>",
+        "button_text": "Subscribe",
+        "text_color": "#1c1c1c",
+        "button_background": "",
+        "button_text_color": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "collection-list": {
@@ -311,8 +354,8 @@
         "image_size": "md",
         "show_text_outside": false,
         "space_items": false,
-        "stack_collections": false,
-        "collections_per_row_desktop": 4,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
         "subheading": "",
         "title": "",
         "content": "",
@@ -320,39 +363,70 @@
         "circle_button_text_color": "#ffffff"
       }
     },
-    "newsletter": {
-      "type": "newsletter",
-      "disabled": true,
-      "settings": {
-        "separate_section_with_border": true,
-        "image_size": "auto",
-        "subheading": "Keep me updated",
-        "title": "Newsletter",
-        "content": "<p>A short sentence describing what someone will receive by subscribing.<\/p>",
-        "button_text": "Subscribe",
-        "text_color": "#1c1c1c",
-        "button_background": "",
-        "button_text_color": "",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
     "blog-posts": {
       "type": "blog-posts",
-      "disabled": true,
       "settings": {
         "separate_section_with_border": true,
         "blog": "news",
         "posts_count": 3,
         "stack_on_mobile": false,
-        "show_category": true,
+        "show_category": false,
         "show_excerpt": true,
         "show_read_more": true,
         "subheading": "",
-        "title": "Blog posts",
+        "title": "In the News",
         "content": "",
-        "button_link": "",
-        "button_text": "View all"
+        "button_link": "shopify:\/\/blogs\/news",
+        "button_text": "View all articles"
+      }
+    },
+    "17d9acea-40a3-4d05-b295-20d15721b6fd": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16342372515971__17d9acea-40a3-4d05-b295-20d15721b6fd-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Feeling Lucky?"
+          }
+        },
+        "template--16342372515971__17d9acea-40a3-4d05-b295-20d15721b6fd-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "WIN a $300 SAAR gift card",
+            "heading_tag": "h1"
+          }
+        },
+        "template--16342372515971__17d9acea-40a3-4d05-b295-20d15721b6fd-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        },
+        "4a3940f9-3760-4ed3-909b-113370ad5083": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "Enter Competition",
+            "url": "shopify:\/\/pages\/https-saarco-com-au-pages-300-gift-card",
+            "background": "#1c1c1c",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16342372515971__17d9acea-40a3-4d05-b295-20d15721b6fd-subheading-1",
+        "template--16342372515971__17d9acea-40a3-4d05-b295-20d15721b6fd-heading-1",
+        "template--16342372515971__17d9acea-40a3-4d05-b295-20d15721b6fd-richtext-1",
+        "4a3940f9-3760-4ed3-909b-113370ad5083"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "image": "shopify:\/\/shop_images\/SAAR-180.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/SAAR-69.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
       }
     }
   },
@@ -361,8 +435,9 @@
     "59925ca0-6b14-4a5b-adf6-6dcd6bfb6860",
     "featured-collections",
     "20863d68-a9bf-4c04-b4da-436c2d571790",
-    "collection-list",
     "newsletter",
-    "blog-posts"
+    "collection-list",
+    "blog-posts",
+    "17d9acea-40a3-4d05-b295-20d15721b6fd"
   ]
 }

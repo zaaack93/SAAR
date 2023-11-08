@@ -30,10 +30,10 @@
       "settings": {
         "enable_sticky": false,
         "show_separation_border": true,
-        "reduce_padding": true,
+        "reduce_padding": false,
         "logo": "{{ shop.brand.logo }}",
-        "logo_max_width": 140,
-        "logo_mobile_max_width": 100,
+        "logo_max_width": 110,
+        "logo_mobile_max_width": 95,
         "menu": "main-menu",
         "sidebar_menu": "",
         "menu_open_trigger": "hover",

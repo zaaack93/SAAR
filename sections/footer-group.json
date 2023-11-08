@@ -9,7 +9,8 @@
           "type": "item",
           "settings": {
             "icon": "picto-delivery-truck",
-            "icon_width": 40,
+            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons-01.png",
+            "icon_width": 60,
             "mobile_icon_width": 40,
             "title": "<strong>same day dispatch<\/strong>",
             "content": ""
@@ -18,9 +19,10 @@
         "icon-2": {
           "type": "item",
           "settings": {
-            "icon": "picto-star",
-            "icon_width": 24,
-            "mobile_icon_width": 36,
+            "icon": "picto-lock",
+            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons-03.png",
+            "icon_width": 60,
+            "mobile_icon_width": 40,
             "title": "<strong>1 year warranty<\/strong>",
             "content": ""
           }
@@ -29,9 +31,10 @@
           "type": "item",
           "settings": {
             "icon": "picto-award-gift",
-            "icon_width": 24,
-            "mobile_icon_width": 24,
-            "title": "<strong>Secure payments<\/strong>",
+            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons-02_2.png",
+            "icon_width": 60,
+            "mobile_icon_width": 40,
+            "title": "<strong>30 Day Returns<\/strong>",
             "content": ""
           }
         },
@@ -39,8 +42,9 @@
           "type": "item",
           "settings": {
             "icon": "picto-plane",
-            "icon_width": 24,
-            "mobile_icon_width": 24,
+            "custom_icon": "shopify:\/\/shop_images\/rocket_1.png",
+            "icon_width": 60,
+            "mobile_icon_width": 40,
             "title": "<strong>Free & fast shipping<\/strong>",
             "content": ""
           }
@@ -53,10 +57,10 @@
         "icon-3"
       ],
       "settings": {
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "stack_on_mobile": false,
-        "icon_color": "",
-        "text_color": "",
+        "icon_color": "#0500ff",
+        "text_color": "#000000",
         "text_alignment": "center"
       }
     },
@@ -71,37 +75,52 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "newsletter": {
-          "type": "newsletter",
-          "disabled": true,
-          "settings": {
-            "title": "Newsletter",
-            "content": "<p>Sign up to our newsletter to receive exclusive offers.<\/p>",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        },
-        "links": {
+        "09c17099-76b0-4296-88a2-3756d92c5884": {
           "type": "links",
           "settings": {
-            "menu": "footer",
+            "menu": "new-support-menu",
             "show_menu_title": true
           }
         },
         "text": {
           "type": "text",
+          "settings": {
+            "title": "On a mission",
+            "content": "<p>At SAAR, our mission is to redefine men's jewellery with timeless pieces that elevate your style and inspire confidence. We believe in crafting jewellery that effortlessly complements your individuality and stands the test of time.<\/p>",
+            "enable_follow_on_shop": false
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "title": "join our community & save",
+            "content": "<p>Subscribe and receive 10% off your first order. <\/p>",
+            "button_background": "#0500ff",
+            "button_text_color": ""
+          }
+        },
+        "30df12aa-183b-43f7-97bb-a312cbaf1e6d": {
+          "type": "links",
+          "settings": {
+            "menu": "the-fine-details",
+            "show_menu_title": true
+          }
+        },
+        "links": {
+          "type": "links",
           "disabled": true,
           "settings": {
-            "title": "About",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.<\/p>",
-            "enable_follow_on_shop": true
+            "menu": "footer",
+            "show_menu_title": true
           }
         }
       },
       "block_order": [
+        "09c17099-76b0-4296-88a2-3756d92c5884",
+        "text",
         "newsletter",
-        "links",
-        "text"
+        "30df12aa-183b-43f7-97bb-a312cbaf1e6d",
+        "links"
       ],
       "settings": {
         "separate_section_with_border": false,

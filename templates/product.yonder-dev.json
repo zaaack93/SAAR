@@ -12,7 +12,7 @@
         "a1890df7-8075-461e-bcf6-bde2c3987514": {
           "type": "text",
           "settings": {
-            "text": "<h6>STAINLESS STEEL 5MM CUBAN CHAIN NECKLACE<\/h6>"
+            "text": "<h6>{{ product.metafields.custom.product_subtitle.value }}<\/h6>"
           }
         },
         "price": {
@@ -265,94 +265,6 @@
         "text_color": "#ffffff"
       }
     },
-    "fe4218ff-e802-4dfb-bf69-2ecddaa008d7": {
-      "type": "faq",
-      "blocks": {
-        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-category-1": {
-          "type": "category",
-          "disabled": true,
-          "settings": {
-            "title": "Order",
-            "icon": "none",
-            "icon_width": 16
-          }
-        },
-        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-1": {
-          "type": "question",
-          "settings": {
-            "question": "{{ product.metafields.custom.question_1.value }}",
-            "answer": "{{ product.metafields.custom.answer_1_ | metafield_tag }}"
-          }
-        },
-        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-2": {
-          "type": "question",
-          "settings": {
-            "question": "{{ product.metafields.custom.question_2.value }}",
-            "answer": "{{ product.metafields.custom.answer_2 | metafield_tag }}"
-          }
-        },
-        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-3": {
-          "type": "question",
-          "settings": {
-            "question": "{{ product.metafields.custom.question_3.value }}",
-            "answer": "{{ product.metafields.custom.answer_3 | metafield_tag }}"
-          }
-        },
-        "28a9f927-0233-4fb3-8668-aa622efe5471": {
-          "type": "question",
-          "settings": {
-            "question": "{{ product.metafields.custom.question_4.value }}",
-            "answer": "{{ product.metafields.custom.answer_4 | metafield_tag }}"
-          }
-        },
-        "dd5c88b1-b51b-4a70-b286-61980682dd78": {
-          "type": "question",
-          "settings": {
-            "question": "{{ product.metafields.custom.question_5.value }}",
-            "answer": "{{ product.metafields.custom.answer_5 | metafield_tag }}"
-          }
-        },
-        "5c256053-81e3-456e-be63-edcd72395e38": {
-          "type": "question",
-          "settings": {
-            "question": "{{ product.metafields.custom.question_6.value }}",
-            "answer": "{{ product.metafields.custom.answer_6 | metafield_tag }}"
-          }
-        },
-        "d725f841-635f-411d-b957-726e4125baa9": {
-          "type": "question",
-          "settings": {
-            "question": "{{ product.metafields.custom.question_7.value }}",
-            "answer": "{{ product.metafields.custom.answer_7 | metafield_tag }}"
-          }
-        },
-        "b924dd4b-9563-46bf-ac5a-11c8b890030f": {
-          "type": "question",
-          "settings": {
-            "question": "{{ product.metafields.custom.question_8.value }}",
-            "answer": "{{ product.metafields.custom.answer_8 | metafield_tag }}"
-          }
-        }
-      },
-      "block_order": [
-        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-category-1",
-        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-1",
-        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-2",
-        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-3",
-        "28a9f927-0233-4fb3-8668-aa622efe5471",
-        "dd5c88b1-b51b-4a70-b286-61980682dd78",
-        "5c256053-81e3-456e-be63-edcd72395e38",
-        "d725f841-635f-411d-b957-726e4125baa9",
-        "b924dd4b-9563-46bf-ac5a-11c8b890030f"
-      ],
-      "settings": {
-        "separate_section_with_border": true,
-        "show_categories": false,
-        "subheading": "Need help?",
-        "title": "Frequently Asked Questions",
-        "content": ""
-      }
-    },
     "2a9568ac-7f04-4b99-bdb1-b19a1da46ba9": {
       "type": "text-with-icons-v2",
       "blocks": {
@@ -360,66 +272,55 @@
           "type": "item",
           "settings": {
             "icon": "picto-delivery-truck",
-            "custom_icon": "shopify:\/\/shop_images\/SAAR-212.jpg",
+            "custom_icon": "{{ product.metafields.custom.review_image_1.value }}",
             "icon_width": 200,
             "mobile_icon_width": 200,
             "title": "",
-            "content": "<p>Rings designs are on point! Shipping was super fast too. Will buy again. <br\/><br\/><strong>@Daniel<\/strong><\/p>"
+            "content": "{{ product.metafields.custom.review_text_1 | metafield_tag }}"
           }
         },
         "template--16431405170819__2a9568ac-7f04-4b99-bdb1-b19a1da46ba9-item-2": {
           "type": "item",
           "settings": {
             "icon": "picto-customer-support",
-            "custom_icon": "shopify:\/\/shop_images\/SAAR-77.jpg",
+            "custom_icon": "{{ product.metafields.custom.review_image_2.value }}",
             "icon_width": 200,
             "mobile_icon_width": 200,
             "title": "",
-            "content": "<p>My partner simply won't shut up about his new chain! Thank you so much.<br\/><br\/><strong>@Nicola<\/strong><\/p>"
+            "content": "{{ product.metafields.custom.review_text_2 | metafield_tag }}"
           }
         },
         "template--16431405170819__2a9568ac-7f04-4b99-bdb1-b19a1da46ba9-item-3": {
           "type": "item",
           "settings": {
             "icon": "picto-shield",
-            "custom_icon": "shopify:\/\/shop_images\/SAAR-205.jpg",
+            "custom_icon": "{{ product.metafields.custom.review_image_3.value }}",
             "icon_width": 200,
             "mobile_icon_width": 200,
             "title": "",
-            "content": "<p>High quality pieces that I can wear with anything anywhere. The fact they are waterproof makes it even better..<br\/><br\/><strong>@Will<\/strong><\/p>"
+            "content": "{{ product.metafields.custom.review_text_3 | metafield_tag }}"
           }
         },
         "07bdfd6c-cb76-46cc-8f33-aa8d53b1e4a2": {
           "type": "item",
           "settings": {
             "icon": "picto-award-gift",
-            "custom_icon": "shopify:\/\/shop_images\/SAAR-69.jpg",
+            "custom_icon": "{{ product.metafields.custom.review_image_4.value }}",
             "icon_width": 200,
             "mobile_icon_width": 200,
             "title": "",
-            "content": "<p>High quality pieces that I can wear with anything anywhere. The fact they are waterproof makes it even better..<br\/><br\/><strong>@Will<\/strong><\/p>"
+            "content": "{{ product.metafields.custom.review_text_4 | metafield_tag }}"
           }
         },
         "55bc6c89-2303-4e86-860a-cdddf6a7198e": {
           "type": "item",
           "settings": {
             "icon": "picto-award-gift",
-            "custom_icon": "shopify:\/\/shop_images\/IMG-3245.webp",
+            "custom_icon": "{{ product.metafields.custom.review_image_5.value }}",
             "icon_width": 200,
             "mobile_icon_width": 200,
             "title": "",
-            "content": "<p>My partner simply won't shut up about his new chain! Thank you so much.<br\/><br\/><strong>@Nicola<\/strong><\/p>"
-          }
-        },
-        "2274caa9-88db-4874-b77a-5d5de5015a3f": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-award-gift",
-            "custom_icon": "shopify:\/\/shop_images\/SAAR-91.jpg",
-            "icon_width": 200,
-            "mobile_icon_width": 200,
-            "title": "",
-            "content": "<p>My partner simply won't shut up about his new chain! Thank you so much.<br\/><br\/><strong>@Nicola<\/strong><\/p>"
+            "content": "{{ product.metafields.custom.review_text_5 | metafield_tag }}"
           }
         }
       },
@@ -428,8 +329,7 @@
         "template--16431405170819__2a9568ac-7f04-4b99-bdb1-b19a1da46ba9-item-2",
         "template--16431405170819__2a9568ac-7f04-4b99-bdb1-b19a1da46ba9-item-3",
         "07bdfd6c-cb76-46cc-8f33-aa8d53b1e4a2",
-        "55bc6c89-2303-4e86-860a-cdddf6a7198e",
-        "2274caa9-88db-4874-b77a-5d5de5015a3f"
+        "55bc6c89-2303-4e86-860a-cdddf6a7198e"
       ],
       "settings": {
         "separate_section_with_border": true,
@@ -518,8 +418,96 @@
         "competition1_title": "Other Brands",
         "competition2_title": "",
         "competition3_title": "",
-        "box_color": "#EFEFEF",
+        "box_color": "#efefef",
         "first_column_color": "#343434"
+      }
+    },
+    "fe4218ff-e802-4dfb-bf69-2ecddaa008d7": {
+      "type": "faq",
+      "blocks": {
+        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-category-1": {
+          "type": "category",
+          "disabled": true,
+          "settings": {
+            "title": "Order",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-1": {
+          "type": "question",
+          "settings": {
+            "question": "{{ product.metafields.custom.question_1.value }}",
+            "answer": "{{ product.metafields.custom.answer_1_ | metafield_tag }}"
+          }
+        },
+        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-2": {
+          "type": "question",
+          "settings": {
+            "question": "{{ product.metafields.custom.question_2.value }}",
+            "answer": "{{ product.metafields.custom.answer_2 | metafield_tag }}"
+          }
+        },
+        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-3": {
+          "type": "question",
+          "settings": {
+            "question": "{{ product.metafields.custom.question_3.value }}",
+            "answer": "{{ product.metafields.custom.answer_3 | metafield_tag }}"
+          }
+        },
+        "28a9f927-0233-4fb3-8668-aa622efe5471": {
+          "type": "question",
+          "settings": {
+            "question": "{{ product.metafields.custom.question_4.value }}",
+            "answer": "{{ product.metafields.custom.answer_4 | metafield_tag }}"
+          }
+        },
+        "dd5c88b1-b51b-4a70-b286-61980682dd78": {
+          "type": "question",
+          "settings": {
+            "question": "{{ product.metafields.custom.question_5.value }}",
+            "answer": "{{ product.metafields.custom.answer_5 | metafield_tag }}"
+          }
+        },
+        "5c256053-81e3-456e-be63-edcd72395e38": {
+          "type": "question",
+          "settings": {
+            "question": "{{ product.metafields.custom.question_6.value }}",
+            "answer": "{{ product.metafields.custom.answer_6 | metafield_tag }}"
+          }
+        },
+        "d725f841-635f-411d-b957-726e4125baa9": {
+          "type": "question",
+          "settings": {
+            "question": "{{ product.metafields.custom.question_7.value }}",
+            "answer": "{{ product.metafields.custom.answer_7 | metafield_tag }}"
+          }
+        },
+        "b924dd4b-9563-46bf-ac5a-11c8b890030f": {
+          "type": "question",
+          "settings": {
+            "question": "{{ product.metafields.custom.question_8.value }}",
+            "answer": "{{ product.metafields.custom.answer_8 | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-category-1",
+        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-1",
+        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-2",
+        "template--16342372745347__fe4218ff-e802-4dfb-bf69-2ecddaa008d7-question-3",
+        "28a9f927-0233-4fb3-8668-aa622efe5471",
+        "dd5c88b1-b51b-4a70-b286-61980682dd78",
+        "5c256053-81e3-456e-be63-edcd72395e38",
+        "d725f841-635f-411d-b957-726e4125baa9",
+        "b924dd4b-9563-46bf-ac5a-11c8b890030f"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions",
+        "content": ""
       }
     },
     "loox-product-reviews-app-section": {
@@ -566,9 +554,9 @@
     "main",
     "5d6d3d1e-f4ad-4482-9e54-65563e1687e4",
     "cb8cdc52-3333-4840-a2e4-8ee560c759cc",
-    "fe4218ff-e802-4dfb-bf69-2ecddaa008d7",
     "2a9568ac-7f04-4b99-bdb1-b19a1da46ba9",
     "2075ff39-709e-40bc-82ff-ce2a02648392",
+    "fe4218ff-e802-4dfb-bf69-2ecddaa008d7",
     "loox-product-reviews-app-section",
     "related-products"
   ]

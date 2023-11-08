@@ -399,6 +399,10 @@ class SwiperComponent extends HTMLElement {
           1600: {
             centeredSlides: false,
             slidesPerView: 5
+          },
+          1900: {
+            centeredSlides: false,
+            slidesPerView: 6.5
           }
         }
     };
@@ -419,8 +423,17 @@ class ProductGalleryScroller extends ProductGalleryNavigation {
   }
 
   connectedCallback() {
-    this.handleResize()
-    window.addEventListener('resize', this.handleResize);
+    if (window.innerWidth > 999) {
+      this.observeContainerAndMeasureHeight();
+      this.scrollEffect()
+    }
+    window.addEventListener('resize', ()=>{
+      if (window.innerWidth > 999) {
+        const container = document.querySelector('.product-gallery__media.is-initial');
+        const containerHeight = container.getBoundingClientRect().height;
+        this.style.maxHeight=`${containerHeight}px`
+      }
+    });
   }
 
 
@@ -439,7 +452,7 @@ class ProductGalleryScroller extends ProductGalleryNavigation {
       // Calculate the available space for scrolling
       const availableScrollSpace = scrollHeight - clientHeight;
     // Show/hide top shadow when at the bottom
-    if (scrollTop > 0 && availableScrollSpace > 0) {
+    if (scrollTop > 10 && availableScrollSpace > 0) {
       scroller.classList.add('at-top');
     }
     

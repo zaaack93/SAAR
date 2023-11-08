@@ -186,15 +186,15 @@
           .comparison-table td {
             padding: 1rem;
             color: #1C1C1C;
-            font-family: Nunito Sans;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 34.803px; /* 174.014% */
-            text-transform: uppercase;
+            // font-family: Nunito Sans;
+            // font-size: 20px;
+            // font-style: normal;
+            // font-weight: 500;
+            // line-height: 34.803px; /* 174.014% */
+            // text-transform: uppercase;
             @media only screen and (max-width: 990px){
-              font-size: 15px;
-              line-height: normal;
+              // font-size: 15px;
+              // line-height: normal;
               width: 6rem;
             }
           }
@@ -239,7 +239,7 @@
             
             .comparison-table th,
             .comparison-table td {
-              padding: 1rem 1.3rem 1rem 1.5rem;
+              padding: 0.8rem 1.3rem 0.8rem 1.5rem;
             }
           }
 }

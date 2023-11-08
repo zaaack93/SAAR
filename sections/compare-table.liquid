@@ -37,8 +37,11 @@
       {%- endif -%}
     </style>
     {% assign isTrouve = true %}
-    {%- for block in section.blocks -%}
-      {% if block.settings.title != blank or block.settings.content != blank  or block.settings.image != blank %}
+    {%- for item in section.blocks -%}
+      {% if item.settings.comparison_item != blank %}
+        {% assign isTrouve = true %}
+
+      {%elsif item.settings.competition1 != blank or item.settings.competition2 !=blank or item.settings.competition3 != blank or item.settings.competition4 != blank  %}
         {% assign isTrouve = true %}
       {%endif%}
     {% endfor %}

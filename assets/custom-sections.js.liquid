@@ -423,6 +423,9 @@ class ProductGalleryScroller extends ProductGalleryNavigation {
   }
 
   connectedCallback() {
+
+    super.connectedCallback();
+
     if (window.innerWidth > 999) {
       this.observeContainerAndMeasureHeight();
       this.scrollEffect()

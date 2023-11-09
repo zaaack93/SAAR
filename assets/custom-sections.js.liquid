@@ -199,6 +199,7 @@ class ProductPersonalizerWrapper extends HTMLElement {
               labelPlacement.classList.add('label-with-check')
               const newCheckBox = document.createElement("input");
               newCheckBox.type = "checkbox";
+              newCheckBox.setAttribute('required',true);
               labelPlacement.prepend(newCheckBox);
             }
             else{

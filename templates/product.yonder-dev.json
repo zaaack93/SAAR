@@ -40,9 +40,9 @@
           "type": "variant_picker",
           "settings": {
             "hide_sold_out_variants": false,
-            "selector_type": "dropdown",
+            "selector_type": "block",
             "color_selector_type": "color",
-            "size_chart_page": ""
+            "size_chart_page": "size-guide"
           }
         },
         "8ed381e8-19ab-4523-94eb-2d2b130646e0": {
@@ -271,7 +271,6 @@
         "template--16431405170819__2a9568ac-7f04-4b99-bdb1-b19a1da46ba9-item-1": {
           "type": "item",
           "settings": {
-            "icon": "picto-delivery-truck",
             "custom_icon": "{{ product.metafields.custom.review_image_1.value }}",
             "icon_width": 200,
             "mobile_icon_width": 200,
@@ -282,7 +281,6 @@
         "template--16431405170819__2a9568ac-7f04-4b99-bdb1-b19a1da46ba9-item-2": {
           "type": "item",
           "settings": {
-            "icon": "picto-customer-support",
             "custom_icon": "{{ product.metafields.custom.review_image_2.value }}",
             "icon_width": 200,
             "mobile_icon_width": 200,
@@ -293,7 +291,6 @@
         "template--16431405170819__2a9568ac-7f04-4b99-bdb1-b19a1da46ba9-item-3": {
           "type": "item",
           "settings": {
-            "icon": "picto-shield",
             "custom_icon": "{{ product.metafields.custom.review_image_3.value }}",
             "icon_width": 200,
             "mobile_icon_width": 200,
@@ -304,7 +301,6 @@
         "07bdfd6c-cb76-46cc-8f33-aa8d53b1e4a2": {
           "type": "item",
           "settings": {
-            "icon": "picto-award-gift",
             "custom_icon": "{{ product.metafields.custom.review_image_4.value }}",
             "icon_width": 200,
             "mobile_icon_width": 200,
@@ -315,7 +311,6 @@
         "55bc6c89-2303-4e86-860a-cdddf6a7198e": {
           "type": "item",
           "settings": {
-            "icon": "picto-award-gift",
             "custom_icon": "{{ product.metafields.custom.review_image_5.value }}",
             "icon_width": 200,
             "mobile_icon_width": 200,
@@ -358,7 +353,7 @@
         "cfc0db4d-170e-429a-846d-7a33e7fa8e72": {
           "type": "repeatable",
           "settings": {
-            "comparison_item": "Water & sweat resistant",
+            "comparison_item": "Water & Sweat Resistant",
             "competition1": "checklist",
             "competition2": "uncheck",
             "competition3": "checklist",
@@ -378,7 +373,7 @@
         "36000254-8b2f-4dfe-89a2-d94845a6c75e": {
           "type": "repeatable",
           "settings": {
-            "comparison_item": "quality guarantee",
+            "comparison_item": "Quality Guarantee",
             "competition1": "checklist",
             "competition2": "uncheck",
             "competition3": "checklist",
@@ -388,7 +383,7 @@
         "a94ede5c-a853-4ddf-b4cd-7d5b51cb63c8": {
           "type": "repeatable",
           "settings": {
-            "comparison_item": "1 Year warranty",
+            "comparison_item": "1 Year Warranty",
             "competition1": "checklist",
             "competition2": "uncheck",
             "competition3": "checklist",

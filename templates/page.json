@@ -2,11 +2,125 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "16995003666b4ccfb4": {
+      "type": "apps",
+      "settings": {
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "2f4e3184-4104-4ebd-97d8-4151624f6c8a": {
+      "type": "image-with-text",
+      "blocks": {
+        "50318ee4-d780-4abd-a5e1-d85cf2693ba5": {
+          "type": "heading",
+          "settings": {
+            "text": "The beginning",
+            "heading_tag": "h1"
+          }
+        },
+        "template--16342372614275__2f4e3184-4104-4ebd-97d8-4151624f6c8a-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>SAAR was started in 2019 when finding stylish, inexpensive and modern jewellery was near impossible, especially for men. After doing months of research and market analysis, we couldn't find everyday jewellery for the everyday person. Inspecting hundred's of materials and styles, our pieces have become clean, simplistic accessories to accompany any outfit for any occasion.  The goal was simple: create meaningful pieces to challenge the status quo. <\/p>"
+          }
+        },
+        "6dadfaca-fdc9-4d59-9c78-105e50c4ead2": {
+          "type": "heading",
+          "settings": {
+            "text": "our products",
+            "heading_tag": "h1"
+          }
+        },
+        "4484572e-f125-4ece-9639-1b6d35ccedfe": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We deliver handcrafted and trendy necklaces, bracelets and rings designed at our headquarters in Melbourne. With carefully handled premium materials, we are confident in the quality and delivery of every piece made. With a range of engraved and couple sets, we cater to everyone's needs. <\/p>"
+          }
+        },
+        "553351af-3709-4062-8341-e90c8f359776": {
+          "type": "heading",
+          "settings": {
+            "text": "our mission",
+            "heading_tag": "h1"
+          }
+        },
+        "57120900-3d9a-4577-8a9b-d6b495716d2f": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Saar in Hebrew means \"Storm\" and that is exactly what we want to do. We want to bring unique products to the market causing a shift in the everyday buyer's experience. We are so confident you'll love what we do, that we offer a one-year guarantee on anything we make. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "50318ee4-d780-4abd-a5e1-d85cf2693ba5",
+        "template--16342372614275__2f4e3184-4104-4ebd-97d8-4151624f6c8a-richtext-1",
+        "6dadfaca-fdc9-4d59-9c78-105e50c4ead2",
+        "4484572e-f125-4ece-9639-1b6d35ccedfe",
+        "553351af-3709-4062-8341-e90c8f359776",
+        "57120900-3d9a-4577-8a9b-d6b495716d2f"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "image": "shopify:\/\/shop_images\/Copy_of_easter_sale_750_x_1100px_1200_x_628px_Instagram_Story_1080_x_1080px_1200_x_628px_1800_x_1200px_895_x_1450_px_1.png",
+        "mobile_image": "shopify:\/\/shop_images\/Copy_of_easter_sale_750_x_1100px_1200_x_628px_Instagram_Story_1080_x_1080px_1200_x_628px_1800_x_1200px_895_x_1450_px_1.png",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "38ae16e6-5994-4989-af97-afb008f1fd9b": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16342372614275__38ae16e6-5994-4989-af97-afb008f1fd9b-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "buy-best-sellers-online",
+            "image": "shopify:\/\/shop_images\/SAAR_MAY-208.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "shop all jewellery",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16342372614275__38ae16e6-5994-4989-af97-afb008f1fd9b-collection-3"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "circle_button_background": "#ffffff",
+        "circle_button_text_color": "#1c1c1c"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16995003666b4ccfb4",
+    "2f4e3184-4104-4ebd-97d8-4151624f6c8a",
+    "38ae16e6-5994-4989-af97-afb008f1fd9b"
   ]
 }

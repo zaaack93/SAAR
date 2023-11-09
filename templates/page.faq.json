@@ -6,28 +6,80 @@
         "category": {
           "type": "category",
           "settings": {
-            "title": "Order"
+            "title": "Order",
+            "icon": "none",
+            "icon_width": 16
           }
         },
         "question-1": {
           "type": "question",
           "settings": {
             "question": "Do you ship overseas?",
-            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+            "answer": "<p>Yes, we ship all over the world. Shipping costs may apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
           }
         },
         "question-2": {
           "type": "question",
           "settings": {
             "question": "How long will it take to get my orders?",
-            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
+            "answer": "<p>Orders received on weekdays before 11AM (AEST) will be shipped out the same day. Orders placed after this time will be sent the next day. Orders placed on the weekend will be shipped out Monday.<\/p><h2>DELIVERY TIME<\/h2><p><strong>Australia Standard<\/strong> 2-8 business days<strong>Australia Express<\/strong> 1-3 business days<strong>New Zealand Standard<\/strong>3-7business days<strong>New Zealand Express <\/strong>2-4business days<strong>USA<\/strong> 4-9businessdays<strong>Rest of the world <\/strong>4-12 business days <\/p><h2>STORE PICK UP<\/h2><p>Usually ready to be picked up within an hour.<strong>Pickup location:<\/strong>1 Queens Road, Melbourne, 3004<strong>Pick up hours:<\/strong>Monday-Friday 9AM-1PM<\/p>"
           }
         },
         "question-3": {
           "type": "question",
           "settings": {
-            "question": "Any question?",
-            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+            "question": "How do I track my order?",
+            "answer": "<p>As soon as your order has been despatched from our warehouses, you will be notified via email and SMS. This will provide you with your courier tracking link. It may take up to 24 hours for the courier to update it's tracking with relative information on the whereabouts of your order not including weekends or holidays.<\/p><p>If you haven't received your tracking number after 48 hours from purchase, please contact our support team at contact@saarco.com.au<\/p>"
+          }
+        },
+        "599cdc2a-5b48-4184-9a31-ad43253b4f92": {
+          "type": "question",
+          "settings": {
+            "question": "What does same day dispach means?",
+            "answer": "<p>All orders (including engraving orders) received on weekdays before 11AM (AEST) will be shipped out the same day. Orders placed after this time will be sent the next day. Orders placed on the weekend will be shipped out Monday.<\/p>"
+          }
+        },
+        "0dcb64b2-58d6-4ad4-a681-c629cdf493c4": {
+          "type": "question",
+          "settings": {
+            "question": "I want to exchange my product or to get a refund. What's next?",
+            "answer": "<p><a href=\"\/policies\/refund-policy\" title=\"Refund Policy\">Please read our returns and refunds policy here<\/a><\/p>"
+          }
+        },
+        "d5fece32-dbca-43e6-88d8-2b562bed08ce": {
+          "type": "category",
+          "settings": {
+            "title": "Product",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "86150c56-0fad-4a90-8e21-a3e5541a6e88": {
+          "type": "question",
+          "settings": {
+            "question": "Can I get my SAAR CO pieces wet?",
+            "answer": "<p>We have ensured that our products are made from the highest quality and most durable materials on the market.<\/p><p><\/p><p>Our pieces are waterproof but like all metals, to maintain your pieces for a longer lifespan, you will want to keep away from any harsh chemicals. We do recommend that you dry your item as soon as possible using a cloth towel after getting wet.<\/p><p>Every single SAAR CO product is waterproof, sweat-proof and heatproof.<\/p>"
+          }
+        },
+        "7b363c8b-8423-4678-8834-9ca12983a2c9": {
+          "type": "question",
+          "settings": {
+            "question": "Are they safe for sensitive skin?",
+            "answer": "<p>Yes, all our products are hypoallergenic and safe to use on sentitive skin. You can wear your SAAR CO pieces 24\/7, and never have to worry about developing a rash or green skin.<\/p>"
+          }
+        },
+        "139526a4-f686-4fb7-b81f-ff3111ff3d4b": {
+          "type": "question",
+          "settings": {
+            "question": "What are SAAR CO pieces made from?",
+            "answer": "<p>All our products are made of premium 316L stainless steel with rhodium\/18k gold plating and real leather. Our jewellery is water, sweat resistant, so there is no discolouring or tarnishing. It's also hypoallergenic which means no green skin.<\/p>"
+          }
+        },
+        "ad1882ad-4461-4112-ac7a-420aed81b57d": {
+          "type": "question",
+          "settings": {
+            "question": "What does the SAAR CO 1-year Warranty cover?",
+            "answer": "<p><strong>SAAR CO <\/strong>offers a 1 Year Warranty on all products from the date of purchase. For the duration of 1 Year the SAAR CO Warranty covers any manufacturing faults to your jewellery outside fair wear and tear. Please retain your receipt as proof of purchase for the warranty. In the event of broken or snapped jewellery SAAR CO will replace the jewellery at no extra cost, once the faulty jewellery has been returned to our office at the customer's expense.<\/p>"
           }
         }
       },
@@ -35,9 +87,21 @@
         "category",
         "question-1",
         "question-2",
-        "question-3"
+        "question-3",
+        "599cdc2a-5b48-4184-9a31-ad43253b4f92",
+        "0dcb64b2-58d6-4ad4-a681-c629cdf493c4",
+        "d5fece32-dbca-43e6-88d8-2b562bed08ce",
+        "86150c56-0fad-4a90-8e21-a3e5541a6e88",
+        "7b363c8b-8423-4678-8834-9ca12983a2c9",
+        "139526a4-f686-4fb7-b81f-ff3111ff3d4b",
+        "ad1882ad-4461-4112-ac7a-420aed81b57d"
       ],
       "settings": {
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions",
+        "content": ""
       }
     }
   },

@@ -7,8 +7,8 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/SAAR-4_08f6a899-9cec-4cf4-a713-952e0cffc1b2.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/SAAR_JEWELLERY.jpg",
-            "subheading": "Worn by 35,000+ Men",
+            "mobile_image": "shopify:\/\/shop_images\/SAAR_JEWELLERY-1200x1600.jpg",
+            "subheading": "Worn by 35,000+ Individuals",
             "title": "Impeccable Quality, Timeless Design",
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-end-center sm:text-center",
@@ -57,7 +57,7 @@
         "7bc8e59e-666f-4cf4-b327-23fc87c137e4": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saar_Rocket-Black.png"
+            "image": "shopify:\/\/shop_images\/Saar-Icons_Rocket-White_91174803-19b7-4804-a0a9-7cb0980f2509.png"
           }
         },
         "template--16342372515971__59925ca0-6b14-4a5b-adf6-6dcd6bfb6860-text-2": {
@@ -69,7 +69,7 @@
         "bdc6df2a-df71-4725-8eb7-3097bb4aaf12": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saar_Clock-Black.png"
+            "image": "shopify:\/\/shop_images\/Saar-Icons_Clock-White.png"
           }
         },
         "2c33c772-2c63-4efd-ac00-b4d2bebf0aee": {
@@ -81,7 +81,7 @@
         "6bf4b349-9405-4159-80cc-1f3878cc7637": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saar_Hands-Black_66e0df0d-a274-49d5-81e6-f0b74dfd1ccf.png"
+            "image": "shopify:\/\/shop_images\/Saar-Icons_Hands-White.png"
           }
         }
       },
@@ -95,7 +95,7 @@
       ],
       "settings": {
         "separate_section_with_border": false,
-        "scrolling_speed": 0.3,
+        "scrolling_speed": 0.2,
         "scroll_direction": "left",
         "text_font": "heading",
         "text_font_size_mobile": 16,
@@ -104,8 +104,8 @@
         "section_vertical_spacing_desktop": 12,
         "item_horizontal_spacing_mobile": 40,
         "item_horizontal_spacing_desktop": 60,
-        "background": "#a5987f",
-        "text_color": "#1c1c1c"
+        "background": "#1c1c1c",
+        "text_color": "#ffffff"
       }
     },
     "featured-collections": {
@@ -172,7 +172,7 @@
         "cb7d3d65-d647-43f2-b71c-e963ecb4118a": {
           "type": "item",
           "settings": {
-            "custom_icon": "shopify:\/\/shop_images\/Hugh_quality_pieces_that_I_can_wear_with_anything_anywhere._The_fact_they_are_waterproof_makes_it_even_better_1.jpg",
+            "custom_icon": "shopify:\/\/shop_images\/Hugh_quality_pieces_that_I_can_wear_with_anything_anywhere._The_fact_they_are_waterproof_makes_it_even_better_1_8e24346e-a6b5-4cb8-bf52-2608c5ee9797.jpg",
             "icon_width": 200,
             "mobile_icon_width": 200,
             "title": "",

@@ -9,7 +9,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-delivery-truck",
-            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons-01.png",
+            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons_Delivery-Black.png",
             "icon_width": 60,
             "mobile_icon_width": 40,
             "title": "<strong>same day dispatch<\/strong>",
@@ -20,7 +20,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-lock",
-            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons-03.png",
+            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons_Hands-Black.png",
             "icon_width": 60,
             "mobile_icon_width": 40,
             "title": "<strong>1 year warranty<\/strong>",
@@ -31,7 +31,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-award-gift",
-            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons-02_2.png",
+            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons_Clock-Black.png",
             "icon_width": 60,
             "mobile_icon_width": 40,
             "title": "<strong>30 Day Returns<\/strong>",
@@ -42,7 +42,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-plane",
-            "custom_icon": "shopify:\/\/shop_images\/rocket_1.png",
+            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons_Rocket-Black.png",
             "icon_width": 60,
             "mobile_icon_width": 40,
             "title": "<strong>Free & fast shipping<\/strong>",

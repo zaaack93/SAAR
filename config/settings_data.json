@@ -28,6 +28,7 @@
     "round_color_swatches": true,
     "color_swatch_config": "18k Gold:#f0c071",
     "show_quick_buy": false,
+    "cart_type": "drawer",
     "cart_icon": "shopping_bag",
     "cart_show_free_shipping_bar": false,
     "cart_free_shipping_threshold": "0.1",

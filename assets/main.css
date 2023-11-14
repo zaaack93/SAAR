@@ -361,6 +361,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  align-self: flex-end;
 }
 .template--product-Yonder-dev .product-info .product-personalizer .mains-wrapper .pplr-wrapper {
   display: flex;
@@ -842,6 +843,7 @@
 }
 .template--product-Yonder-dev product-personalizer-wrapper.ready-custom .product-personalizer {
   display: flex !important;
+  min-height: 100%;
 }
 .template--product-Yonder-dev .pplr_prev_span {
   display: none;

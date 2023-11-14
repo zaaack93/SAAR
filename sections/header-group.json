@@ -49,10 +49,24 @@
         "transparent_header_text_color": "#ffffff",
         "transparent_logo": "shopify:\/\/shop_images\/SAAR_LOGO_TEXTURED_2fb8a095-95e4-4584-aa97-cd5b1513b64a.png"
       }
+    },
+    "aaf63210-4f5e-4504-a52c-cb4fd2bef714": {
+      "type": "countdown-condensed",
+      "settings": {
+        "content": "BUY ONE GET ONE - CODE: BLACKFRIDAY",
+        "link_text": "SHOP BFCM SPECIAL",
+        "link_url": "shopify:\/\/collections\/shop-all-products",
+        "expiration_date": "2023-11-27 12:00",
+        "expiration_behavior": "hide",
+        "desktop_justification": "space-between",
+        "background": "#1c1c1c",
+        "text_color": "#ffffff"
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "aaf63210-4f5e-4504-a52c-cb4fd2bef714"
   ]
 }

@@ -14,7 +14,7 @@
             "desktop_text_position": "sm:place-self-end-center sm:text-center",
             "content_max_width": 1200,
             "button_1_text": "Shop All Jewellery",
-            "button_1_link": "shopify:\/\/collections\/all",
+            "button_1_link": "shopify:\/\/collections\/shop-all-products",
             "button_1_style": "solid",
             "button_1_background": "#ffffff",
             "button_1_text_color": "#000000",
@@ -48,54 +48,27 @@
     "59925ca0-6b14-4a5b-adf6-6dcd6bfb6860": {
       "type": "scrolling-content",
       "blocks": {
-        "template--16342372515971__59925ca0-6b14-4a5b-adf6-6dcd6bfb6860-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "SAME DAY DISPATCH"
-          }
-        },
-        "7bc8e59e-666f-4cf4-b327-23fc87c137e4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Saar-Icons_Rocket-White_91174803-19b7-4804-a0a9-7cb0980f2509.png"
-          }
-        },
         "template--16342372515971__59925ca0-6b14-4a5b-adf6-6dcd6bfb6860-text-2": {
           "type": "text",
           "settings": {
-            "text": "30-DAY RETURNS"
+            "text": "BUY ONE GET ONE"
           }
         },
-        "bdc6df2a-df71-4725-8eb7-3097bb4aaf12": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Saar-Icons_Clock-White.png"
-          }
-        },
-        "2c33c772-2c63-4efd-ac00-b4d2bebf0aee": {
+        "fe62e3f0-6750-4ff8-8f08-9e48b20b26ae": {
           "type": "text",
           "settings": {
-            "text": "1-YEAR WARRANTY"
-          }
-        },
-        "6bf4b349-9405-4159-80cc-1f3878cc7637": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Saar-Icons_Hands-White.png"
+            "text": "USE CODE: BLACKFRIDAY"
           }
         }
       },
       "block_order": [
-        "template--16342372515971__59925ca0-6b14-4a5b-adf6-6dcd6bfb6860-text-1",
-        "7bc8e59e-666f-4cf4-b327-23fc87c137e4",
         "template--16342372515971__59925ca0-6b14-4a5b-adf6-6dcd6bfb6860-text-2",
-        "bdc6df2a-df71-4725-8eb7-3097bb4aaf12",
-        "2c33c772-2c63-4efd-ac00-b4d2bebf0aee",
-        "6bf4b349-9405-4159-80cc-1f3878cc7637"
+        "fe62e3f0-6750-4ff8-8f08-9e48b20b26ae"
       ],
+      "disabled": true,
       "settings": {
         "separate_section_with_border": false,
-        "scrolling_speed": 0.2,
+        "scrolling_speed": 0.1,
         "scroll_direction": "left",
         "text_font": "heading",
         "text_font_size_mobile": 16,
@@ -134,6 +107,69 @@
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
         "subheading": ""
+      }
+    },
+    "1411abde-2c1a-4b77-a2d7-c28d3b6f39d0": {
+      "type": "scrolling-content",
+      "blocks": {
+        "392fc9a2-31c5-4680-8d05-0a17f21200b0": {
+          "type": "text",
+          "settings": {
+            "text": "SAME DAY DISPATCH"
+          }
+        },
+        "a3e2218e-9e67-4da7-94d6-7d99e725554e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saar-Icons_Rocket-White_91174803-19b7-4804-a0a9-7cb0980f2509.png"
+          }
+        },
+        "dbfdaa55-766a-467d-ba1b-48e7133eb3cf": {
+          "type": "text",
+          "settings": {
+            "text": "30-DAY RETURNS"
+          }
+        },
+        "888ad271-ecfa-43e3-b8c5-63e2eb3ad2a9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saar-Icons_Clock-White.png"
+          }
+        },
+        "5040f87a-3a16-4cc4-afda-622f21583cf7": {
+          "type": "text",
+          "settings": {
+            "text": "1-YEAR WARRANTY"
+          }
+        },
+        "b4c5eb99-cc6e-4e9c-a23b-473c3d64c173": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saar-Icons_Hands-White.png"
+          }
+        }
+      },
+      "block_order": [
+        "392fc9a2-31c5-4680-8d05-0a17f21200b0",
+        "a3e2218e-9e67-4da7-94d6-7d99e725554e",
+        "dbfdaa55-766a-467d-ba1b-48e7133eb3cf",
+        "888ad271-ecfa-43e3-b8c5-63e2eb3ad2a9",
+        "5040f87a-3a16-4cc4-afda-622f21583cf7",
+        "b4c5eb99-cc6e-4e9c-a23b-473c3d64c173"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "scrolling_speed": 0.2,
+        "scroll_direction": "left",
+        "text_font": "heading",
+        "text_font_size_mobile": 16,
+        "text_font_size_desktop": 18,
+        "section_vertical_spacing_mobile": 12,
+        "section_vertical_spacing_desktop": 12,
+        "item_horizontal_spacing_mobile": 40,
+        "item_horizontal_spacing_desktop": 60,
+        "background": "#1c1c1c",
+        "text_color": "#ffffff"
       }
     },
     "20863d68-a9bf-4c04-b4da-436c2d571790": {
@@ -430,6 +466,7 @@
     "slideshow",
     "59925ca0-6b14-4a5b-adf6-6dcd6bfb6860",
     "featured-collections",
+    "1411abde-2c1a-4b77-a2d7-c28d3b6f39d0",
     "20863d68-a9bf-4c04-b4da-436c2d571790",
     "newsletter",
     "collection-list",

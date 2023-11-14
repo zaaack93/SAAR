@@ -1,5 +1,5 @@
 {%- if section.blocks.size > 0 -%}
-  <div class="section-spacing section-spacing--tight {% if section.settings.separate_section_with_border %}bordered-section{% endif %}">
+  <div class="section-spacing section-spacing--tight {% if section.settings.separate_section_with_border %}bordered-section{% endif %}" style="{% render 'surface', background: section.settings.block_background %}">
     <div class="container">
       <div class="v-stack gap-8">
         {%- capture section_content -%}
@@ -61,6 +61,12 @@
     </div>
   </div>
 {%- endif -%}
+<style>
+  #shopify-section-{{section.id}} .section-spacing--tight{
+    margin-block: 0px;
+    padding-block: var(--section-vertical-spacing-tight);
+  }
+</style>
 
 {% schema %}
 {
@@ -93,6 +99,11 @@
       "type": "color",
       "id": "text_color",
       "label": "t:global.text.text"
+    },
+    {
+      "type": "color",
+      "id": "block_background",
+      "label": "t:sections.image_with_text_block.block_background"
     },
     {
       "type": "select",

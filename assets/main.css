@@ -324,6 +324,9 @@
     width: 320px;
   }
 }
+.template--product-Yonder-dev .product-info .product-personalizer .pplr-wrapper[data-main="1"]:not(.pplr-checkbox) .pplrlabel {
+  padding-block-end: 10px !important;
+}
 .template--product-Yonder-dev .product-info .product-personalizer .pplr-wrapper[data-main="1"] .pplrlabel {
   color: #1C1C1C;
   font-family: Nunito Sans;
@@ -336,7 +339,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding-block-end: 15px;
+  row-gap: 10px;
 }
 .template--product-Yonder-dev .product-info .product-personalizer .pplr-wrapper[data-main="1"] .pplrlabel input {
   margin-right: 10px;
@@ -365,6 +368,7 @@
   margin-bottom: 0px;
   justify-content: space-between;
   row-gap: 6px;
+  align-items: flex-end;
 }
 .template--product-Yonder-dev .product-info .product-personalizer .mains-wrapper .pplr-wrapper .oindexlabel {
   width: 100%;
@@ -396,6 +400,7 @@
   padding: 0px;
   height: -moz-fit-content;
   height: fit-content;
+  width: 75%;
 }
 .template--product-Yonder-dev .product-info .product-personalizer .mains-wrapper .pplr-wrapper input[type=text] {
   border-radius: 10px;
@@ -418,7 +423,7 @@
   justify-content: center;
 }
 .template--product-Yonder-dev .product-info .product-personalizer .mains-wrapper .pplr-wrapper .key_layout {
-  bottom: 0px;
+  bottom: -14px;
   visibility: hidden;
 }
 .template--product-Yonder-dev .product-info .product-personalizer .mains-wrapper .pplr-wrapper .pplr-character-count {
@@ -441,6 +446,7 @@
   margin-left: auto;
   width: fit-content;
   top: 3px;
+  width: 25%;
 }
 .template--product-Yonder-dev .product-info .product-personalizer .mains-wrapper .pplr-wrapper .pplr-character-count .lt {
   display: none;
@@ -831,8 +837,11 @@
     display: none;
   }
 }
-.template--product-Yonder-dev .product-personalizer {
-  display: none;
+.template--product-Yonder-dev product-personalizer-wrapper:not(.ready-custom), .template--product-Yonder-dev .product-personalizer {
+  display: none !important;
+}
+.template--product-Yonder-dev product-personalizer-wrapper.ready-custom .product-personalizer {
+  display: flex !important;
 }
 .template--product-Yonder-dev .pplr_prev_span {
   display: none;

@@ -120,7 +120,7 @@ class FormWrappingContainer extends HTMLElement {
     // Implement a function to check if your content is available in the element
     // You can use a specific attribute or element structure to identify it.
     // Return true when your content is found.
-    return element.querySelector(".product-personalizer") !== null;
+        return element.querySelector(".product-personalizer") !== null;
   }
 
   loadThirdPartyApp() {
@@ -135,7 +135,7 @@ class FormWrappingContainer extends HTMLElement {
             "product-personalizer-wrapper"
           );
           //hide the personalizer until we do all the stuff
-          wrapperElement.style.display = "none";
+          //wrapperElement.style.display = "none";
           // Clone the <legend> element
           let clonedLegend = divElement.cloneNode(true);
 
@@ -255,14 +255,24 @@ class ProductPersonalizerWrapper extends HTMLElement {
           wrapperDiv.replaceWith(wrapper);
         }
       });
-      // set the image visible if there's an image to show
+// set the image visible if there's an image to show
       const img = this.querySelector(".pplr_image_loader img");
       // Add event listener for the image load
       img?.addEventListener("load", () => {
-        const loaderDiv = this.querySelector(".pplr_image_loader");
-        loaderDiv.style.display = "initial"; // Make the loader visible
+        if(!img.src.includes('blank.png')) {
+          const loaderDiv = this.querySelector(".pplr_image_loader");
+          loaderDiv.style.display = "initial"; // Make the loader visible
+        }
       });
       this.style.display = "initial";
+      this.classList.add('ready-custom')
+      //trigger click opn the first item
+
+      const label = this.querySelector('.pplr-wrapper[data-main="1"] .pplrlabel')
+      if(label){
+        label.click()
+        label.click()
+      }
       //trigger refressh scroll slider
       const event = new CustomEvent("slider-scroll:refresh", {
         bubbles: true, // Allows the event to bubble up the DOM

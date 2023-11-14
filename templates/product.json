@@ -3,16 +3,30 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "990c160a-bbdf-4543-910f-4f3df60798c2": {
-          "type": "title_with_rating",
+        "loox-rating": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
-            "heading_tag": "h3"
+            "contentSize": 14,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": true,
+            "emptyRatingWidget": false
           }
         },
-        "a1890df7-8075-461e-bcf6-bde2c3987514": {
-          "type": "text",
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
           "settings": {
-            "text": "<h6>{{ product.metafields.custom.product_subtitle.value }}<\/h6>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
           }
         },
         "price": {
@@ -21,10 +35,9 @@
             "show_taxes_notice": false
           }
         },
-        "a7d6fbf9-024a-470b-8df3-f7fa479dcbe5": {
-          "type": "text",
+        "a36d4994-8910-487f-9e7f-ad4742c80342": {
+          "type": "badges",
           "settings": {
-            "text": "{{ product.metafields.custom.product_benefit | metafield_tag }}"
           }
         },
         "0ab34415-7b94-420e-8b0d-dd641ff4dee9": {
@@ -36,17 +49,22 @@
             "color_selector_type": "variant"
           }
         },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "hide_sold_out_variants": false,
             "selector_type": "block",
             "color_selector_type": "color",
-            "size_chart_page": "size-guide"
+            "size_chart_page": ""
           }
         },
-        "8ed381e8-19ab-4523-94eb-2d2b130646e0": {
-          "type": "buy_buttons_with_quantity",
+        "buy_buttons": {
+          "type": "buy_buttons",
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": false,
@@ -56,117 +74,76 @@
             "payment_button_text_color": ""
           }
         },
-        "1dcfe2f8-0ec2-4ff4-b12b-2b71c61a48a0": {
-          "type": "feature_with_icon_v2",
+        "payment_terms": {
+          "type": "payment_terms",
+          "disabled": true,
           "settings": {
-            "text": "Free Shipping",
-            "link": "",
-            "icon": "none",
-            "custom_icon": "shopify:\/\/shop_images\/7082d6e2e5f6c160b0923d998afa89fa_3.png",
-            "icon_width": 46,
-            "background": "",
-            "text_color": "#343434",
-            "border_color": ""
           }
         },
-        "7bff4663-5084-4969-b95d-c2525f0c27d1": {
-          "type": "feature_with_icon_v2",
+        "separator": {
+          "type": "separator",
           "settings": {
-            "text": "Same Day Dispatch",
-            "link": "",
-            "icon": "none",
-            "custom_icon": "shopify:\/\/shop_images\/rocket_1.png",
-            "icon_width": 28,
-            "background": "",
-            "text_color": "#343434",
-            "border_color": ""
-          }
-        },
-        "c20b2077-f52d-4c2a-84fb-6a2a30176ecc": {
-          "type": "feature_with_icon_v2",
-          "settings": {
-            "text": "30-day returns",
-            "link": "",
-            "icon": "none",
-            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons-02_2_1.png",
-            "icon_width": 28,
-            "background": "",
-            "text_color": "#343434",
-            "border_color": ""
-          }
-        },
-        "c2ab1a04-9307-484c-8159-5a2b9fbf5d74": {
-          "type": "feature_with_icon_v2",
-          "settings": {
-            "text": "1-year warranty",
-            "link": "",
-            "icon": "none",
-            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons-03_1.png",
-            "icon_width": 40,
-            "background": "",
-            "text_color": "#343434",
-            "border_color": ""
           }
         },
         "description": {
           "type": "description",
           "settings": {
-            "collapse_content": true,
-            "show_below_gallery": false
+            "collapse_content": false,
+            "show_below_gallery": true
+          }
+        },
+        "complementary_products": {
+          "type": "complementary_products",
+          "settings": {
+            "title": "Make it a set",
+            "products_count": 2,
+            "show_below_gallery": false,
+            "stack_products": false,
+            "show_quick_buy": true
           }
         },
         "12cd3bdd-c55a-4c70-944a-23178c64a6c2": {
           "type": "accordion",
           "settings": {
-            "show_below_gallery": false,
+            "show_below_gallery": true,
             "icon": "none",
-            "title": "SPECS",
-            "content": "{{ product.metafields.custom.specs | metafield_tag }}",
+            "title": "What You'll Love",
+            "content": "<p>Key Benefits Here<\/p>",
             "page": ""
           }
         },
         "32d62489-188b-4994-a3ce-fea926120515": {
           "type": "accordion",
           "settings": {
-            "show_below_gallery": false,
+            "show_below_gallery": true,
             "icon": "none",
-            "title": "SHIPPING + WARRANTY",
-            "content": "{{ product.metafields.custom.shipping_warranty | metafield_tag }}",
+            "title": "WHEN YOU'LL GET IT",
+            "content": "<ul><li><strong>Free Shipping - <\/strong>We provide free shipping on all AUS & NZ orders. <\/li><li><strong>Shipped from Melbourne<\/strong> - All orders are shipped and packed from our warehouse in Melbourne. <\/li><li><strong>Same-Day Shipping<\/strong> - We offer same-day shipping on all weekday orders before 11am AEST. <\/li><\/ul><p><\/p><h5>DELIVERY TIMES<\/h5><ul><li><strong>Australia Standard<\/strong> 2-8 business days<\/li><li><strong>Australia Express<\/strong> 1-3 business days<\/li><li><strong>New Zealand Standard <\/strong>3-7 business days<\/li><li><strong>New Zealand Express <\/strong>2-4 business days <\/li><li><strong>USA<\/strong> 4-9 business days<\/li><li><strong>Rest of the world <\/strong>4-12 business days <\/li><\/ul><p><\/p><p>For more information on Customs Fees and Refunds\/Retuns, please read our <a href=\"\/pages\/shipping-information\" target=\"_blank\" title=\"Shipping Information\">Shipping Page<\/a>.<\/p>",
             "page": ""
-          }
-        },
-        "89897725-a72c-4e98-a0ea-11eee6038dd3": {
-          "type": "complementary_products_v2",
-          "settings": {
-            "title": "Make it a set and save",
-            "products_count": 2,
-            "show_below_gallery": false,
-            "stack_products": false,
-            "show_quick_buy": true
           }
         }
       },
       "block_order": [
-        "990c160a-bbdf-4543-910f-4f3df60798c2",
-        "a1890df7-8075-461e-bcf6-bde2c3987514",
+        "loox-rating",
+        "vendor",
+        "title",
         "price",
-        "a7d6fbf9-024a-470b-8df3-f7fa479dcbe5",
+        "a36d4994-8910-487f-9e7f-ad4742c80342",
         "0ab34415-7b94-420e-8b0d-dd641ff4dee9",
+        "quantity_selector",
         "variant_picker",
-        "8ed381e8-19ab-4523-94eb-2d2b130646e0",
-        "1dcfe2f8-0ec2-4ff4-b12b-2b71c61a48a0",
-        "7bff4663-5084-4969-b95d-c2525f0c27d1",
-        "c20b2077-f52d-4c2a-84fb-6a2a30176ecc",
-        "c2ab1a04-9307-484c-8159-5a2b9fbf5d74",
+        "buy_buttons",
+        "payment_terms",
+        "separator",
         "description",
+        "complementary_products",
         "12cd3bdd-c55a-4c70-944a-23178c64a6c2",
-        "32d62489-188b-4994-a3ce-fea926120515",
-        "89897725-a72c-4e98-a0ea-11eee6038dd3"
+        "32d62489-188b-4994-a3ce-fea926120515"
       ],
       "settings": {
         "container_size": "xl",
         "product_info_size": 44,
-        "sticky_product_gallery": true,
+        "sticky_product_gallery": false,
         "show_sticky_add_to_cart": true,
         "center_basic_info": false,
         "desktop_media_layout": "carousel_thumbnails_left",
@@ -176,245 +153,6 @@
         "enable_video_looping": true,
         "enable_image_zoom": true,
         "max_image_zoom_level": 3
-      }
-    },
-    "5d6d3d1e-f4ad-4482-9e54-65563e1687e4": {
-      "type": "multi-column-v2",
-      "blocks": {
-        "template--16431405170819__5d6d3d1e-f4ad-4482-9e54-65563e1687e4-image_with_text-1": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "{{ product.metafields.custom.style_image_1.value }}",
-            "title": "{{ product.metafields.custom.style_heading_1.value }}",
-            "heading_tag": "h4",
-            "content": "{{ product.metafields.custom.style_paragraph_1 | metafield_tag }}",
-            "link_url": "",
-            "link_text": ""
-          }
-        },
-        "template--16431405170819__5d6d3d1e-f4ad-4482-9e54-65563e1687e4-image_with_text-2": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "{{ product.metafields.custom.style_image_2.value }}",
-            "title": "{{ product.metafields.custom.style_heading_2.value }}",
-            "heading_tag": "h4",
-            "content": "{{ product.metafields.custom.style_paragraph_2 | metafield_tag }}",
-            "link_url": "",
-            "link_text": ""
-          }
-        },
-        "template--16431405170819__5d6d3d1e-f4ad-4482-9e54-65563e1687e4-image_with_text-3": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "{{ product.metafields.custom.style_image_3.value }}",
-            "title": "{{ product.metafields.custom.style_heading_3.value }}",
-            "heading_tag": "h4",
-            "content": "{{ product.metafields.custom.style_paragraph_3 | metafield_tag }}",
-            "link_url": "",
-            "link_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16431405170819__5d6d3d1e-f4ad-4482-9e54-65563e1687e4-image_with_text-1",
-        "template--16431405170819__5d6d3d1e-f4ad-4482-9e54-65563e1687e4-image_with_text-2",
-        "template--16431405170819__5d6d3d1e-f4ad-4482-9e54-65563e1687e4-image_with_text-3"
-      ],
-      "settings": {
-        "container_size": "lg",
-        "separate_section_with_border": false,
-        "columns_per_row": 3,
-        "stack_on_mobile": false,
-        "overlap_image": false,
-        "content_alignment": "center",
-        "text_alignment": "center",
-        "spacing": "md",
-        "subheading": "",
-        "title": "{{ product.metafields.custom.style_section_heading.value }}",
-        "content": "<p>{{ product.metafields.custom.style_section_subheading | metafield_tag }}<\/p>"
-      }
-    },
-    "cb8cdc52-3333-4840-a2e4-8ee560c759cc": {
-      "type": "video",
-      "blocks": {
-        "template--16431405170819__cb8cdc52-3333-4840-a2e4-8ee560c759cc-heading-1": {
-          "type": "heading",
-          "settings": {
-            "text": "{{ product.metafields.custom.video_title.value }}",
-            "heading_tag": "h2"
-          }
-        },
-        "template--16431405170819__cb8cdc52-3333-4840-a2e4-8ee560c759cc-play-1": {
-          "type": "play",
-          "settings": {
-            "icon_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "template--16431405170819__cb8cdc52-3333-4840-a2e4-8ee560c759cc-heading-1",
-        "template--16431405170819__cb8cdc52-3333-4840-a2e4-8ee560c759cc-play-1"
-      ],
-      "settings": {
-        "autoplay": false,
-        "show_controls": true,
-        "video_size": "lg",
-        "video": "{{ product.metafields.custom.video_for_pdp.value }}",
-        "external_video_url": "",
-        "poster": "{{ product.metafields.custom.video_banner_image.value }}",
-        "text_color": "#ffffff"
-      }
-    },
-    "2a9568ac-7f04-4b99-bdb1-b19a1da46ba9": {
-      "type": "text-with-icons-v2",
-      "blocks": {
-        "template--16431405170819__2a9568ac-7f04-4b99-bdb1-b19a1da46ba9-item-1": {
-          "type": "item",
-          "settings": {
-            "custom_icon": "{{ product.metafields.custom.review_image_1.value }}",
-            "icon_width": 200,
-            "mobile_icon_width": 200,
-            "title": "",
-            "content": "{{ product.metafields.custom.review_text_1 | metafield_tag }}"
-          }
-        },
-        "template--16431405170819__2a9568ac-7f04-4b99-bdb1-b19a1da46ba9-item-2": {
-          "type": "item",
-          "settings": {
-            "custom_icon": "{{ product.metafields.custom.review_image_2.value }}",
-            "icon_width": 200,
-            "mobile_icon_width": 200,
-            "title": "",
-            "content": "{{ product.metafields.custom.review_text_2 | metafield_tag }}"
-          }
-        },
-        "template--16431405170819__2a9568ac-7f04-4b99-bdb1-b19a1da46ba9-item-3": {
-          "type": "item",
-          "settings": {
-            "custom_icon": "{{ product.metafields.custom.review_image_3.value }}",
-            "icon_width": 200,
-            "mobile_icon_width": 200,
-            "title": "",
-            "content": "{{ product.metafields.custom.review_text_3 | metafield_tag }}"
-          }
-        },
-        "07bdfd6c-cb76-46cc-8f33-aa8d53b1e4a2": {
-          "type": "item",
-          "settings": {
-            "custom_icon": "{{ product.metafields.custom.review_image_4.value }}",
-            "icon_width": 200,
-            "mobile_icon_width": 200,
-            "title": "",
-            "content": "{{ product.metafields.custom.review_text_4 | metafield_tag }}"
-          }
-        },
-        "55bc6c89-2303-4e86-860a-cdddf6a7198e": {
-          "type": "item",
-          "settings": {
-            "custom_icon": "{{ product.metafields.custom.review_image_5.value }}",
-            "icon_width": 200,
-            "mobile_icon_width": 200,
-            "title": "",
-            "content": "{{ product.metafields.custom.review_text_5 | metafield_tag }}"
-          }
-        }
-      },
-      "block_order": [
-        "template--16431405170819__2a9568ac-7f04-4b99-bdb1-b19a1da46ba9-item-1",
-        "template--16431405170819__2a9568ac-7f04-4b99-bdb1-b19a1da46ba9-item-2",
-        "template--16431405170819__2a9568ac-7f04-4b99-bdb1-b19a1da46ba9-item-3",
-        "07bdfd6c-cb76-46cc-8f33-aa8d53b1e4a2",
-        "55bc6c89-2303-4e86-860a-cdddf6a7198e"
-      ],
-      "settings": {
-        "separate_section_with_border": true,
-        "icon_color": "",
-        "text_color": "",
-        "block_background": "#d9d9d9",
-        "text_alignment": "center",
-        "subheading": "",
-        "title": "<p>Join 25,000+<\/p><p>happy customers <\/p>",
-        "content": "<p>And counting! This isn't just a one night stand.<\/p>"
-      }
-    },
-    "2075ff39-709e-40bc-82ff-ce2a02648392": {
-      "type": "compare-table",
-      "blocks": {
-        "b6a07f1d-0c2b-4a37-b568-c3c3051a5cfc": {
-          "type": "repeatable",
-          "settings": {
-            "comparison_item": "Reinforced Materials",
-            "competition1": "checklist",
-            "competition2": "uncheck",
-            "competition3": "checklist",
-            "competition4": "checklist"
-          }
-        },
-        "cfc0db4d-170e-429a-846d-7a33e7fa8e72": {
-          "type": "repeatable",
-          "settings": {
-            "comparison_item": "Water & Sweat Resistant",
-            "competition1": "checklist",
-            "competition2": "uncheck",
-            "competition3": "checklist",
-            "competition4": "checklist"
-          }
-        },
-        "c373f3e3-45bf-4d99-8ee4-5624474c82d6": {
-          "type": "repeatable",
-          "settings": {
-            "comparison_item": "Hypoallergenic",
-            "competition1": "checklist",
-            "competition2": "uncheck",
-            "competition3": "checklist",
-            "competition4": "checklist"
-          }
-        },
-        "36000254-8b2f-4dfe-89a2-d94845a6c75e": {
-          "type": "repeatable",
-          "settings": {
-            "comparison_item": "Quality Guarantee",
-            "competition1": "checklist",
-            "competition2": "uncheck",
-            "competition3": "checklist",
-            "competition4": "checklist"
-          }
-        },
-        "a94ede5c-a853-4ddf-b4cd-7d5b51cb63c8": {
-          "type": "repeatable",
-          "settings": {
-            "comparison_item": "1 Year Warranty",
-            "competition1": "checklist",
-            "competition2": "uncheck",
-            "competition3": "checklist",
-            "competition4": "checklist"
-          }
-        }
-      },
-      "block_order": [
-        "b6a07f1d-0c2b-4a37-b568-c3c3051a5cfc",
-        "cfc0db4d-170e-429a-846d-7a33e7fa8e72",
-        "c373f3e3-45bf-4d99-8ee4-5624474c82d6",
-        "36000254-8b2f-4dfe-89a2-d94845a6c75e",
-        "a94ede5c-a853-4ddf-b4cd-7d5b51cb63c8"
-      ],
-      "settings": {
-        "container_size": "sm",
-        "separate_section_with_border": true,
-        "columns_per_row": 3,
-        "stack_on_mobile": false,
-        "overlap_image": false,
-        "content_alignment": "center",
-        "subheading": "",
-        "title": "WHAT MAKES SAAR SPECIAL?",
-        "content": "<p>The devil is in the details.<\/p>",
-        "our_company_title": "The Details",
-        "our_company_image": "shopify:\/\/shop_images\/image_9.png",
-        "competition1_title": "Other Brands",
-        "competition2_title": "",
-        "competition3_title": "",
-        "box_color": "#efefef",
-        "first_column_color": "#343434"
       }
     },
     "fe4218ff-e802-4dfb-bf69-2ecddaa008d7": {
@@ -547,10 +285,6 @@
   },
   "order": [
     "main",
-    "5d6d3d1e-f4ad-4482-9e54-65563e1687e4",
-    "cb8cdc52-3333-4840-a2e4-8ee560c759cc",
-    "2a9568ac-7f04-4b99-bdb1-b19a1da46ba9",
-    "2075ff39-709e-40bc-82ff-ce2a02648392",
     "fe4218ff-e802-4dfb-bf69-2ecddaa008d7",
     "loox-product-reviews-app-section",
     "related-products"

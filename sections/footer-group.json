@@ -57,7 +57,7 @@
         "icon-3"
       ],
       "settings": {
-        "separate_section_with_border": false,
+        "separate_section_with_border": true,
         "stack_on_mobile": false,
         "icon_color": "#0500ff",
         "text_color": "#000000",
@@ -94,7 +94,7 @@
           "type": "newsletter",
           "settings": {
             "title": "join our community & save",
-            "content": "<p>Subscribe and receive 10% off your first order. <\/p>",
+            "content": "<p>Subscribe and receive $5 off your first order. <\/p>",
             "button_background": "#0500ff",
             "button_text_color": ""
           }

@@ -173,6 +173,38 @@ class ProductPersonalizerWrapper extends HTMLElement {
     // Find elements within the shadow DOM
     this.updatePriceLineCustomizer();
   }
+  addCheckInputes(){
+    const firstChechkBox=this.querySelector('.pplr-checkbox[data-main="1"]')
+    if(firstChechkBox){
+      var textInputs = this.querySelectorAll('.mains-wrapper input.pplr_text');
+
+      // Add input event listener to each text input
+      textInputs.forEach((textInput) =>{
+        textInput.addEventListener('input', () =>{
+          this.updateCheckboxState();
+        });
+      });
+    }
+  }
+
+
+  // Function to update checkbox state based on text input values
+  updateCheckboxState(){
+    // Get all text inputs with class "pplr_text"
+    let textInputs = document.querySelectorAll('.mains-wrapper input.pplr_text');
+
+    // Check if at least one input is non-empty
+    let atLeastOneNonEmpty = Array.from(textInputs).some(function (textInput) {
+      return textInput.value.trim() !== '';
+    });
+
+    // Get the checkbox with data-frame="2"
+    let checkbox = this.querySelector('.pplr-checkbox[data-main="1"] input[type="checkbox"]')
+
+    // Check or uncheck the checkbox based on whether at least one input is non-empty
+    checkbox.checked = atLeastOneNonEmpty;
+  }
+
 
   updatePriceLineCustomizer() {
     setTimeout(() => {
@@ -219,6 +251,9 @@ class ProductPersonalizerWrapper extends HTMLElement {
                   cloneDiv.querySelector(".oindexlabel").textContent
                 }]`;
             }
+
+
+
             // Get all the span elements inside the key_layout div
             const spanElements = cloneDiv.querySelectorAll(".key_layout span");
 
@@ -280,6 +315,7 @@ class ProductPersonalizerWrapper extends HTMLElement {
 
       // Dispatch the custom event
       this.dispatchEvent(event);
+      this.addCheckInputes();
     }, 300);
   }
 }

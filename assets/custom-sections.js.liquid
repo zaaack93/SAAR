@@ -571,10 +571,32 @@ class BuyButtonsCustom extends BuyButtons {
   }
   connectedCallback() {
     window.addEventListener("pplrAddToCartCompleted", async (e) => {
-      if ($("#ptw-gift-needed").is(":checked")) {
+            if ($("#ptw-gift-needed").is(":checked")) {
         await this.addToCartNote();
       }
     });
+    window.addEventListener("variant:add",(e)=>{
+      //because the wrapping upseel remove the note box
+      const inner_html=ptwBuildHtml()
+
+      // Replace the <wraping-container> tag with another HTML structure
+      var wrapContainer = document.querySelector('wraping-container');
+      var newHtml = inner_html; // Replace this with your desired HTML
+
+      if (wrapContainer) {
+
+        // Manually invoke the connected callback
+        if (window.customElements && window.customElements.get('wraping-container')) {
+          var newWrapContainer = document.querySelector('wraping-container');
+          if (newWrapContainer) {
+            newWrapContainer.connectedCallback();
+            wrapContainer.innerHTML = newHtml;
+          }
+        }
+      }
+      console.log(e,"we need here to re init the warpping")
+      
+    })
   }
 }
 

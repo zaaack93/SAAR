@@ -91,7 +91,7 @@
             table-layout: initial;
             @media only screen and (max-width: 990px){
               min-width: 900px;
-              table-layout: fixed;
+              table-layout: initial;
             }
             @media only screen and (max-width: 660px){
               min-width: calc(100% + 3.5rem);
@@ -134,8 +134,12 @@
             /*第一欄第一列：左上*/
             tr:first-child td:first-child{
               border-top-left-radius: 20px;
+              
               @media only screen and (max-width: 768px){
                 width: calc(100% - 6.2rem);
+              }
+              @media only screen and (max-width: 450px){
+                width: 50%;
               }
             }
             /*第一欄最後列：左下*/

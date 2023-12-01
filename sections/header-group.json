@@ -52,6 +52,7 @@
     },
     "aaf63210-4f5e-4504-a52c-cb4fd2bef714": {
       "type": "countdown-condensed",
+      "disabled": true,
       "settings": {
         "content": "BUY ONE GET ONE - CODE: BLACKFRIDAY",
         "link_text": "SHOP BFCM SPECIAL",

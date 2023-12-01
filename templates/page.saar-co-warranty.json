@@ -1,9 +1,54 @@
 {
   "sections": {
+    "22ffc9a9-917b-4506-9a4e-822bcfaa9f08": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16579061022851__22ffc9a9-917b-4506-9a4e-822bcfaa9f08-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_-_2023-11-30T132001.048.png",
+            "mobile_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-11-30T132546.345.png",
+            "subheading": "",
+            "title": "find your perfect fit",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "template--16579061022851__22ffc9a9-917b-4506-9a4e-822bcfaa9f08-image-1"
+      ],
+      "settings": {
+        "allow_transparent_header": true,
+        "show_next_section_button": false,
+        "media_size": "auto",
+        "autoplay": false,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
-        "show_title": true,
+        "show_title": false,
         "page_width": "xs"
       }
     },
@@ -81,6 +126,24 @@
     "38ae16e6-5994-4989-af97-afb008f1fd9b": {
       "type": "collection-list",
       "blocks": {
+        "75a1d96b-3082-4453-a9f3-91d49162c53a": {
+          "type": "collection",
+          "settings": {
+            "collection": "engraving",
+            "image": "shopify:\/\/shop_images\/8.png",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "shop engravings",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
         "template--16342372614275__38ae16e6-5994-4989-af97-afb008f1fd9b-collection-3": {
           "type": "collection",
           "settings": {
@@ -98,12 +161,31 @@
             "button_background": "",
             "button_text_color": ""
           }
+        },
+        "30eba671-35db-4d38-845b-58b37985e78b": {
+          "type": "collection",
+          "settings": {
+            "collection": "buy-mens-bracelets-online",
+            "image": "shopify:\/\/shop_images\/3_b783587a-3154-4a0e-ae0b-d721ff9482c4.png",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "shop bracelets",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "button_background": "",
+            "button_text_color": ""
+          }
         }
       },
       "block_order": [
-        "template--16342372614275__38ae16e6-5994-4989-af97-afb008f1fd9b-collection-3"
+        "75a1d96b-3082-4453-a9f3-91d49162c53a",
+        "template--16342372614275__38ae16e6-5994-4989-af97-afb008f1fd9b-collection-3",
+        "30eba671-35db-4d38-845b-58b37985e78b"
       ],
-      "disabled": true,
       "settings": {
         "separate_section_with_border": true,
         "image_size": "auto",
@@ -120,6 +202,7 @@
     }
   },
   "order": [
+    "22ffc9a9-917b-4506-9a4e-822bcfaa9f08",
     "main",
     "16995003666b4ccfb4",
     "2f4e3184-4104-4ebd-97d8-4151624f6c8a",

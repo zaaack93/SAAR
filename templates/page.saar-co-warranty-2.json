@@ -1,0 +1,248 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "16995003666b4ccfb4": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "2f4e3184-4104-4ebd-97d8-4151624f6c8a": {
+      "type": "image-with-text",
+      "blocks": {
+        "50318ee4-d780-4abd-a5e1-d85cf2693ba5": {
+          "type": "heading",
+          "settings": {
+            "text": "The beginning",
+            "heading_tag": "h1"
+          }
+        },
+        "template--16342372614275__2f4e3184-4104-4ebd-97d8-4151624f6c8a-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>SAAR was started in 2019 when finding stylish, inexpensive and modern jewellery was near impossible, especially for men. After doing months of research and market analysis, we couldn't find everyday jewellery for the everyday person. Inspecting hundred's of materials and styles, our pieces have become clean, simplistic accessories to accompany any outfit for any occasion.  The goal was simple: create meaningful pieces to challenge the status quo. <\/p>"
+          }
+        },
+        "6dadfaca-fdc9-4d59-9c78-105e50c4ead2": {
+          "type": "heading",
+          "settings": {
+            "text": "our products",
+            "heading_tag": "h1"
+          }
+        },
+        "4484572e-f125-4ece-9639-1b6d35ccedfe": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We deliver handcrafted and trendy necklaces, bracelets and rings designed at our headquarters in Melbourne. With carefully handled premium materials, we are confident in the quality and delivery of every piece made. With a range of engraved and couple sets, we cater to everyone's needs. <\/p>"
+          }
+        },
+        "553351af-3709-4062-8341-e90c8f359776": {
+          "type": "heading",
+          "settings": {
+            "text": "our mission",
+            "heading_tag": "h1"
+          }
+        },
+        "57120900-3d9a-4577-8a9b-d6b495716d2f": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Saar in Hebrew means \"Storm\" and that is exactly what we want to do. We want to bring unique products to the market causing a shift in the everyday buyer's experience. We are so confident you'll love what we do, that we offer a one-year guarantee on anything we make. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "50318ee4-d780-4abd-a5e1-d85cf2693ba5",
+        "template--16342372614275__2f4e3184-4104-4ebd-97d8-4151624f6c8a-richtext-1",
+        "6dadfaca-fdc9-4d59-9c78-105e50c4ead2",
+        "4484572e-f125-4ece-9639-1b6d35ccedfe",
+        "553351af-3709-4062-8341-e90c8f359776",
+        "57120900-3d9a-4577-8a9b-d6b495716d2f"
+      ],
+      "disabled": true,
+      "settings": {
+        "separate_section_with_border": true,
+        "image": "shopify:\/\/shop_images\/Copy_of_easter_sale_750_x_1100px_1200_x_628px_Instagram_Story_1080_x_1080px_1200_x_628px_1800_x_1200px_895_x_1450_px_1.png",
+        "mobile_image": "shopify:\/\/shop_images\/Copy_of_easter_sale_750_x_1100px_1200_x_628px_Instagram_Story_1080_x_1080px_1200_x_628px_1800_x_1200px_895_x_1450_px_1.png",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "1dca96b5-3851-40bf-b475-b1a68fba566f": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16584398995587__1dca96b5-3851-40bf-b475-b1a68fba566f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>GENERAL INFORMATION ABOUT SAAR.CO WARRANTY:<\/strong>",
+            "heading_tag": "h4"
+          }
+        },
+        "template--16584398995587__1dca96b5-3851-40bf-b475-b1a68fba566f-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>SAAR CO offers a 1 Year Warranty on all products from the date of purchase. For the duration of 1 Year the SAAR CO Warranty covers any manufacturing faults to your jewellery outside fair wear and tear. Please retain your receipt as proof of purchase for the warranty. In the event of broken or snapped jewellery SAAR CO will replace the jewellery at no extra cost, once the faulty jewellery has been returned to our office at the customer's expense.The SAAR CO warranty does not cover fair wear and tear, misuse, scratches, loss, theft or fading. <\/p>"
+          }
+        },
+        "fee9a234-d30f-4a99-92ab-21f8f5e6b785": {
+          "type": "subheading",
+          "settings": {
+            "text": "<strong>What do I do if my SAAR CO jewellery is lost or stolen?<\/strong>"
+          }
+        },
+        "9018ee17-83a1-4030-b340-494852dbe24b": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>The SAAR CO warranty does not entitle you to replacements or refunds for lost or stolen items. Please contact our support team at<strong>contact@saarco.com.au<\/strong>for more information if you lost your piece.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16584398995587__1dca96b5-3851-40bf-b475-b1a68fba566f-heading-1",
+        "template--16584398995587__1dca96b5-3851-40bf-b475-b1a68fba566f-richtext-1",
+        "fee9a234-d30f-4a99-92ab-21f8f5e6b785",
+        "9018ee17-83a1-4030-b340-494852dbe24b"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "image": "shopify:\/\/shop_images\/unnamed_89.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/2_666f8862-98f1-4564-abf0-faf8039cd818.png",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "820dfa6f-7ec2-434a-bb71-b8960070df89": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16584398995587__820dfa6f-7ec2-434a-bb71-b8960070df89-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "LIFETIME WARRANTY",
+            "heading_tag": "h4"
+          }
+        },
+        "template--16584398995587__820dfa6f-7ec2-434a-bb71-b8960070df89-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Lifetime warranty has the same T&C as our 1 year warranry stated above only for life time instead of 1 year from the date of purchase.<\/p>"
+          }
+        },
+        "6b3bb355-17a8-4d53-a703-08011635e0c1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h6><strong>IMPORTANT INFORMATION RELATING TO YOUR RIGHTS UNDER AUSTRALIAN CONSUMER LAW<\/strong><\/h6><p><strong>You have rights under the Australian Consumer Law.<\/strong>  If your items do not comply with a consumer guarantee under the Australian Consumer Law (for example, if they are defective) you have other rights and remedies (including a refund, repair or replacement) under that law.<\/p><p><strong>Saar.co’s voluntary warranty does not override your rights under Australian Consumer Law.<\/strong><\/p><p><strong> <\/strong>Saar.co’s voluntary warranty provides benefits in addition to your other rights and remedies under the Australian Consumer Law or any other applicable consumer law in Australia; and does not exclude, restrict, modify, limit, replace or override your rights under the Australian Consumer Law, including the consumer guarantees.<\/p><p>Depending on the relevant circumstances, your rights under the Australian Consumer Law may continue to apply after the end of Saar.co's voluntary warranty period.  <\/p><p><strong>You have the protection of consumer guarantees under the Australian Consumer Law. <\/strong>(Note: The general comments below are not a comprehensive or exhaustive summary of the Australian Consumer Law.)  <\/p><p>Relevantly, the Australian Consumer Law contains certain statutory automatic guarantees (consumer guarantees) which provide you with a basic guaranteed\/automatic level of protection when you purchase Saar.co jewellery in Australia.  For example, there is a consumer guarantee that our jewellery is of acceptable quality (that is, free from defects, safe, durable, acceptable in appearance\/finish, and fit for wearing based on what a reasonable consumer would regard as acceptable given the type of goods, price of goods (if relevant), description\/statements on packaging\/labels, statements made by supplier\/manufacturer about the goods and other relevant circumstances).  <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16584398995587__820dfa6f-7ec2-434a-bb71-b8960070df89-heading-1",
+        "template--16584398995587__820dfa6f-7ec2-434a-bb71-b8960070df89-richtext-1",
+        "6b3bb355-17a8-4d53-a703-08011635e0c1"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "38ae16e6-5994-4989-af97-afb008f1fd9b": {
+      "type": "collection-list",
+      "blocks": {
+        "bdcdf3eb-676c-40f8-a07e-64fbe94efd0a": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/SAAR-44.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "SHOP PEARLS",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "template--16342372614275__38ae16e6-5994-4989-af97-afb008f1fd9b-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "buy-best-sellers-online",
+            "image": "shopify:\/\/shop_images\/SAAR_MAY-208.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "shop all jewellery",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "9b491cde-d2c6-4d34-ae79-b830ed461ef0": {
+          "type": "collection",
+          "settings": {
+            "collection": "engraving",
+            "image": "shopify:\/\/shop_images\/Untitleddesign-2023-11-01T101846.851.png",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "SHOP ENGRAVINGS",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "bdcdf3eb-676c-40f8-a07e-64fbe94efd0a",
+        "template--16342372614275__38ae16e6-5994-4989-af97-afb008f1fd9b-collection-3",
+        "9b491cde-d2c6-4d34-ae79-b830ed461ef0"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "circle_button_background": "#ffffff",
+        "circle_button_text_color": "#1c1c1c"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16995003666b4ccfb4",
+    "2f4e3184-4104-4ebd-97d8-4151624f6c8a",
+    "1dca96b5-3851-40bf-b475-b1a68fba566f",
+    "820dfa6f-7ec2-434a-bb71-b8960070df89",
+    "38ae16e6-5994-4989-af97-afb008f1fd9b"
+  ]
+}

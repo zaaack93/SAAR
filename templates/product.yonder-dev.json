@@ -40,7 +40,7 @@
           "type": "variant_picker",
           "settings": {
             "hide_sold_out_variants": false,
-            "selector_type": "block",
+            "selector_type": "dropdown",
             "color_selector_type": "color",
             "size_chart_page": "size-guide"
           }
@@ -509,7 +509,7 @@
       "type": "apps",
       "blocks": {
         "loox-product-reviews": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,
@@ -543,9 +543,26 @@
         "title": "Related products",
         "content": ""
       }
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {
+      }
+    },
+    "shogun-below": {
+      "type": "shogun-below",
+      "settings": {
+      }
+    },
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {
+      }
     }
   },
   "order": [
+    "shogun-helper",
+    "shogun-above",
     "main",
     "5d6d3d1e-f4ad-4482-9e54-65563e1687e4",
     "cb8cdc52-3333-4840-a2e4-8ee560c759cc",
@@ -553,6 +570,7 @@
     "2075ff39-709e-40bc-82ff-ce2a02648392",
     "fe4218ff-e802-4dfb-bf69-2ecddaa008d7",
     "loox-product-reviews-app-section",
-    "related-products"
+    "related-products",
+    "shogun-below"
   ]
 }

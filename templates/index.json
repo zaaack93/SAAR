@@ -202,7 +202,7 @@
             "icon_width": 200,
             "mobile_icon_width": 200,
             "title": "",
-            "content": "<p>Timeless piece, high quality and fast shipping. Thanks guys ! <\/p><p><strong>@Tim<\/strong><\/p>"
+            "content": "<p>Timeless piece, high quality and fast shipping. Thanks heaps guys ! <\/p><p><strong>@Tim<\/strong><\/p>"
           }
         },
         "cb7d3d65-d647-43f2-b71c-e963ecb4118a": {
@@ -451,6 +451,7 @@
         "template--16342372515971__17d9acea-40a3-4d05-b295-20d15721b6fd-richtext-1",
         "4a3940f9-3760-4ed3-909b-113370ad5083"
       ],
+      "disabled": true,
       "settings": {
         "separate_section_with_border": true,
         "image": "shopify:\/\/shop_images\/SAAR-180.jpg",

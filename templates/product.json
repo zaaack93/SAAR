@@ -1,10 +1,20 @@
 {
   "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {
+      }
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
         "loox-rating": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "contentSize": 14,
             "pattern": "",
@@ -37,6 +47,7 @@
         },
         "a36d4994-8910-487f-9e7f-ad4742c80342": {
           "type": "badges",
+          "disabled": true,
           "settings": {
           }
         },
@@ -104,6 +115,7 @@
         },
         "12cd3bdd-c55a-4c70-944a-23178c64a6c2": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "show_below_gallery": true,
             "icon": "none",
@@ -114,6 +126,7 @@
         },
         "32d62489-188b-4994-a3ce-fea926120515": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "show_below_gallery": true,
             "icon": "none",
@@ -247,7 +260,7 @@
       "type": "apps",
       "blocks": {
         "loox-product-reviews": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,
@@ -281,12 +294,20 @@
         "title": "Related products",
         "content": ""
       }
+    },
+    "shogun-below": {
+      "type": "shogun-below",
+      "settings": {
+      }
     }
   },
   "order": [
+    "shogun-helper",
+    "shogun-above",
     "main",
     "fe4218ff-e802-4dfb-bf69-2ecddaa008d7",
     "loox-product-reviews-app-section",
-    "related-products"
+    "related-products",
+    "shogun-below"
   ]
 }

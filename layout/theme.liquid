@@ -104,5 +104,16 @@
     {%- endif -%}
   
 	{{ shop.metafields.loox["global_html_body"] }}
+
+  {% if template == 'product' %}
+    <style>
+      @media screen and (max-width: 999px) {
+        html.lock .template--product-Yonder-dev .sticky-product-gallery product-gallery, .template--product-yonder-dev .sticky-product-gallery product-gallery {
+          z-index: -2;
+        }
+      }
+    </style>
+  {% endif %}
+  
 </body>
 </html>

@@ -2,6 +2,11 @@
 
   .sticky-product-gallery{
     product-gallery{
+      @media screen and (max-width: 999px) {
+        product-gallery {
+          z-index: -2;
+        }
+      }
       @media screen and (min-width: 1000px) {
         --product-gallery-thumbnail-size: 6.25rem;
         column-gap: 2.438rem;

@@ -410,6 +410,7 @@
         "36000254-8b2f-4dfe-89a2-d94845a6c75e",
         "a94ede5c-a853-4ddf-b4cd-7d5b51cb63c8"
       ],
+      "disabled": true,
       "settings": {
         "container_size": "sm",
         "separate_section_with_border": true,

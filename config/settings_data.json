@@ -27,10 +27,12 @@
     "show_image_zoom_on_hover": false,
     "round_color_swatches": true,
     "color_swatch_config": "18k Gold:#f0c071",
+    "product_image_aspect_ratio": "square",
+    "show_secondary_image": false,
     "show_quick_buy": false,
     "cart_type": "drawer",
     "cart_icon": "shopping_bag",
-    "cart_show_free_shipping_bar": false,
+    "cart_show_free_shipping_bar": true,
     "cart_free_shipping_threshold": "0.1",
     "social_facebook": "https:\/\/www.facebook.com\/saarcoau\/?modal=admin_todo_tour",
     "social_twitter": "https:\/\/twitter.com\/co_saar",
@@ -70,12 +72,6 @@
       },
       "3667842014806057753": {
         "type": "shopify:\/\/apps\/one-click-upsell-zipify-ocu\/blocks\/app-embed\/bfe6e378-b73a-4871-b8d3-7d6ede22678e",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "16278478101612877664": {
-        "type": "shopify:\/\/apps\/pagefly-page-builder\/blocks\/app-embed\/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
         "settings": {
         }

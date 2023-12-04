@@ -16,6 +16,11 @@
 .template--product-Yonder-dev product-gallery .product-gallery__thumbnail[aria-current=true], .template--product-yonder-dev product-gallery .product-gallery__thumbnail[aria-current=true] {
   padding: 0px;
 }
+@media screen and (max-width: 999px) {
+  .template--product-Yonder-dev product-gallery, .template--product-yonder-dev product-gallery {
+    z-index: -2;
+  }
+}
 .template--product-Yonder-dev product-gallery .product-gallery__thumbnail[aria-current=true][aria-current=true], .template--product-yonder-dev product-gallery .product-gallery__thumbnail[aria-current=true][aria-current=true] {
   border-color: #0500FF;
 }
@@ -1325,6 +1330,9 @@ scroll-wrapper-slider.without-scroll .inner_container_items::-webkit-scrollbar {
   .comparatif-table-section .comparison-table td {
     width: 6rem;
   }
+.template-product  product-gallery.product-gallery {
+    z-index: 0 !important;
+}
 }
 .comparatif-table-section .comparison-table td:not(:first-child) {
   text-align: center;

@@ -458,6 +458,8 @@
             width: fit-content;
             top: 3px;
             width: 25%;
+            overflow: visible;
+            white-space: nowrap;
             .lt{
               display: none;
             }

@@ -870,7 +870,7 @@
   }
 
   product-personalizer-wrapper:not(.ready-custom),.product-personalizer{
-    display: none !important;
+    //display: none !important;
   }
   product-personalizer-wrapper.ready-custom{
     .product-personalizer{

@@ -840,9 +840,6 @@
     display: none;
   }
 }
-.template--product-Yonder-dev product-personalizer-wrapper:not(.ready-custom), .template--product-Yonder-dev .product-personalizer, .template--product-yonder-dev product-personalizer-wrapper:not(.ready-custom), .template--product-yonder-dev .product-personalizer {
-  display: none !important;
-}
 .template--product-Yonder-dev product-personalizer-wrapper.ready-custom .product-personalizer, .template--product-yonder-dev product-personalizer-wrapper.ready-custom .product-personalizer {
   display: flex !important;
   min-height: 100%;

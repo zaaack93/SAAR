@@ -293,12 +293,34 @@ class ProductPersonalizerWrapper extends HTMLElement {
 // set the image visible if there's an image to show
       const img = this.querySelector(".pplr_image_loader img");
       // Add event listener for the image load
-      img?.addEventListener("load", () => {
-        if(!img.src.includes('blank.png')) {
-          const loaderDiv = this.querySelector(".pplr_image_loader");
-          loaderDiv.style.display = "initial"; // Make the loader visible
-        }
-      });
+      if(img){
+        img?.addEventListener("load", () => {
+          if(!img.src.includes('blank.png')) {
+            const loaderDiv = this.querySelector(".pplr_image_loader");
+            loaderDiv.style.display = "initial"; // Make the loader visible
+          }
+        });
+      }
+      else if(pplr_image_loader_array.length>0){
+        pplr_image_loader_array.forEach((img) => {
+          if(img.src.includes('blank.png')) return;
+
+          // If no image loader exists, create one
+          const loaderDiv = document.createElement("div");
+          loaderDiv.classList.add("pplr_image_loader");
+          let imgN = document.createElement("img");
+          imgN.src = img.src;
+          loaderDiv.appendChild(imgN);
+            const existingWrapper = this.querySelector(".mains-wrapper");
+            if (existingWrapper) {
+            const newWrapper = loaderDiv;
+            existingWrapper.parentNode.insertBefore(newWrapper,existingWrapper.nextSibling);
+            loaderDiv.style.display = "initial"; // Make the loader visible
+
+            }
+
+        })
+      }
       this.style.display = "initial";
       this.classList.add('ready-custom')
       //trigger click opn the first item

@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "shogun-helper": {
@@ -24,7 +33,7 @@
         "a1890df7-8075-461e-bcf6-bde2c3987514": {
           "type": "text",
           "settings": {
-            "text": "<h6>{{ product.metafields.custom.product_subtitle.value }}<\/h6>"
+            "text": "<h6>{{ product.metafields.custom.product_subtitle.value }}</h6>"
           }
         },
         "price": {
@@ -74,7 +83,7 @@
             "text": "Free Shipping",
             "link": "",
             "icon": "none",
-            "custom_icon": "shopify:\/\/shop_images\/7082d6e2e5f6c160b0923d998afa89fa_3.png",
+            "custom_icon": "shopify://shop_images/7082d6e2e5f6c160b0923d998afa89fa_3.png",
             "icon_width": 46,
             "background": "",
             "text_color": "#343434",
@@ -87,7 +96,7 @@
             "text": "Same Day Dispatch",
             "link": "",
             "icon": "none",
-            "custom_icon": "shopify:\/\/shop_images\/rocket_1.png",
+            "custom_icon": "shopify://shop_images/rocket_1.png",
             "icon_width": 28,
             "background": "",
             "text_color": "#343434",
@@ -100,7 +109,7 @@
             "text": "30-day returns",
             "link": "",
             "icon": "none",
-            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons-02_2_1.png",
+            "custom_icon": "shopify://shop_images/Saar-Icons-02_2_1.png",
             "icon_width": 28,
             "background": "",
             "text_color": "#343434",
@@ -113,7 +122,7 @@
             "text": "1-year warranty",
             "link": "",
             "icon": "none",
-            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons-03_1.png",
+            "custom_icon": "shopify://shop_images/Saar-Icons-03_1.png",
             "icon_width": 40,
             "background": "",
             "text_color": "#343434",
@@ -243,7 +252,7 @@
         "spacing": "md",
         "subheading": "",
         "title": "{{ product.metafields.custom.style_section_heading.value }}",
-        "content": "<p>{{ product.metafields.custom.style_section_subheading | metafield_tag }}<\/p>"
+        "content": "<p>{{ product.metafields.custom.style_section_subheading | metafield_tag }}</p>"
       }
     },
     "cb8cdc52-3333-4840-a2e4-8ee560c759cc": {
@@ -345,8 +354,8 @@
         "block_background": "#d9d9d9",
         "text_alignment": "center",
         "subheading": "",
-        "title": "<p>Join 25,000+<\/p><p>happy customers <\/p>",
-        "content": "<p>And counting! This isn't just a one night stand.<\/p>"
+        "title": "<p>Join 40,000+</p><p>happy customers </p>",
+        "content": "<p>And counting! This isn't just a one night stand.</p>"
       }
     },
     "2075ff39-709e-40bc-82ff-ce2a02648392": {
@@ -420,9 +429,9 @@
         "content_alignment": "center",
         "subheading": "",
         "title": "WHAT MAKES SAAR SPECIAL?",
-        "content": "<p>The devil is in the details.<\/p>",
+        "content": "<p>The devil is in the details.</p>",
         "our_company_title": "The Details",
-        "our_company_image": "shopify:\/\/shop_images\/image_9.png",
+        "our_company_image": "shopify://shop_images/image_9.png",
         "competition1_title": "Other Brands",
         "competition2_title": "",
         "competition3_title": "",
@@ -521,19 +530,56 @@
     "loox-product-reviews-app-section": {
       "type": "apps",
       "blocks": {
+        "loox_reviews_loox_trust_badge_RJkKEf": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-trust-badge/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "layout": "horizontal",
+            "alignment": "center",
+            "scheme-type": "default",
+            "review-title": "Store Reviews",
+            "rating-icon": true,
+            "average-rating": true,
+            "loox-branding": true,
+            "review-count": true,
+            "open-reviews": true,
+            "show-border": true,
+            "border-radius": 8,
+            "font-size": 20,
+            "background-color": "",
+            "secondary-background-color": "",
+            "text-color": "",
+            "rating-icon-color": "",
+            "border-color": ""
+          }
+        },
         "loox-product-reviews": {
-          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
           "settings": {
             "only_photos": false,
             "aggregated": false,
             "limit": 20,
             "hide_thumbnails": false,
-            "maxwidth": 1080
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        },
+        "loox_reviews_loox_dynamic_section_LDNK9K": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": true,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
           }
         }
       },
       "block_order": [
-        "loox-product-reviews"
+        "loox_reviews_loox_trust_badge_RJkKEf",
+        "loox-product-reviews",
+        "loox_reviews_loox_dynamic_section_LDNK9K"
       ],
       "settings": {
         "separate_section_with_border": true,

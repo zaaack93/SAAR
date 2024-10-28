@@ -47,7 +47,7 @@ class WrappingContainer extends HTMLElement {
     // Create a new text node with the label's text content
     const labelText = labelElement.cloneNode(true);
     labelText.querySelector("span").remove();
-    newDiv.innerHTML = "Add gift wrapping and a personal note";
+    newDiv.innerHTML = "Add gift bag and a personal note:";
     noteContainer.prepend(newDiv);
 
     // Get the label element by the 'for' attribute
@@ -58,7 +58,7 @@ class WrappingContainer extends HTMLElement {
     ptwPrice.textContent = ptwPrice.textContent.replace(/[\(\)\s]/g, "");
 
     // Update the text content of the label
-    labelElement1.textContent = "Custom Gift Packing";
+    labelElement1.textContent = "Premium Gift Packaging";
 
     const newDivPrice = document.createElement("div");
     newDivPrice.classList.add("ptw-price");

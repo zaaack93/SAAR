@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "icon_stroke_width": 1.5,
@@ -34,14 +43,14 @@
     "cart_icon": "shopping_bag",
     "cart_show_free_shipping_bar": true,
     "cart_free_shipping_threshold": "0.1",
-    "social_facebook": "https:\/\/www.facebook.com\/saarcoau\/?modal=admin_todo_tour",
-    "social_twitter": "https:\/\/twitter.com\/co_saar",
-    "social_pinterest": "https:\/\/www.pinterest.com.au\/saar_au",
-    "social_instagram": "https:\/\/www.instagram.com\/saar_au\/",
-    "social_tiktok": "https:\/\/www.tiktok.com\/@saarco_au",
-    "social_linkedin": "https:\/\/linkedin.com\/company\/saarco",
-    "favicon": "shopify:\/\/shop_images\/Untitled_design_-_2023-09-19T093201.250.png",
-    "checkout_logo_image": "shopify:\/\/shop_images\/SAAR_LOGO_BLACK.png",
+    "social_facebook": "https://www.facebook.com/saarcoau/?modal=admin_todo_tour",
+    "social_twitter": "https://twitter.com/co_saar",
+    "social_pinterest": "https://www.pinterest.com.au/saar_au",
+    "social_instagram": "https://www.instagram.com/saar_au/",
+    "social_tiktok": "https://www.tiktok.com/@saarco_au",
+    "social_linkedin": "https://linkedin.com/company/saarco",
+    "favicon": "shopify://shop_images/Untitled_design_-_2023-09-19T093201.250.png",
+    "checkout_logo_image": "shopify://shop_images/SAAR_LOGO_BLACK.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "small",
     "checkout_sidebar_background_color": "#efefef",
@@ -53,25 +62,49 @@
     ],
     "blocks": {
       "1692329972272007824": {
-        "type": "shopify:\/\/apps\/zepto-product-personalizer\/blocks\/product_personalizer_main\/7411210d-7b32-4c09-9455-e129e3be4729",
+        "type": "shopify://apps/zepto-product-personalizer/blocks/product_personalizer_main/7411210d-7b32-4c09-9455-e129e3be4729",
         "disabled": false,
         "settings": {
         }
       },
       "11532412952436166569": {
-        "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-inject\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+        "type": "shopify://apps/loox-product-reviews-photos/blocks/loox-inject/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
         "disabled": false,
         "settings": {
         }
       },
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
         }
       },
       "3667842014806057753": {
-        "type": "shopify:\/\/apps\/one-click-upsell-zipify-ocu\/blocks\/app-embed\/bfe6e378-b73a-4871-b8d3-7d6ede22678e",
+        "type": "shopify://apps/one-click-upsell-zipify-ocu/blocks/app-embed/bfe6e378-b73a-4871-b8d3-7d6ede22678e",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "15683396631634586217": {
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": true,
+        "settings": {
+          "button_color": "#202a36",
+          "button_icon": "chat_bubble",
+          "button_text": "no_text",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "greeting_message": "Hello👋\nPlease message us if you have questions, or give an idea of what you’re looking for."
+        }
+      },
+      "2805887610504816285": {
+        "type": "shopify://apps/nestads-attribution-tracking/blocks/app_embed/a261dedc-ac5b-4f5e-aa6d-69ee7cf65f89",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "pagefly-page-builder": {
+        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
         "settings": {
         }

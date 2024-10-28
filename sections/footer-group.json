@@ -1,7 +1,165 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "Footer group",
   "sections": {
+    "ss_featured_collection_6_L3RLbD": {
+      "type": "ss-featured-collection-6",
+      "blocks": {
+        "slide_rJnkfR": {
+          "type": "slide",
+          "settings": {
+            "product": "",
+            "heading": "Slide 1",
+            "button_text": "SHOP NOW"
+          }
+        },
+        "slide_FbaKkL": {
+          "type": "slide",
+          "settings": {
+            "product": "",
+            "heading": "Slide 2",
+            "button_text": "SHOP NOW"
+          }
+        },
+        "slide_pnNNbm": {
+          "type": "slide",
+          "settings": {
+            "product": "",
+            "heading": "Slide 3",
+            "button_text": "SHOP NOW"
+          }
+        },
+        "slide_pFMfAR": {
+          "type": "slide",
+          "settings": {
+            "product": "",
+            "heading": "Slide 4",
+            "button_text": "SHOP NOW"
+          }
+        }
+      },
+      "block_order": [
+        "slide_rJnkfR",
+        "slide_FbaKkL",
+        "slide_pnNNbm",
+        "slide_pFMfAR"
+      ],
+      "disabled": true,
+      "settings": {
+        "collection": "buy-best-sellers-online",
+        "collection_show": 10,
+        "slider_view": 4,
+        "slider_view_mobile": 1.2,
+        "slider_gap": 40,
+        "slider_gap_mobile": 20,
+        "slide_padding_vertical": 28,
+        "slide_padding_vertical_mobile": 16,
+        "slide_padding_horizontal": 16,
+        "slide_padding_horizontal_mobile": 12,
+        "slide_radius": 12,
+        "slide_border_thickness": 0,
+        "slide_ratio": "portrait",
+        "slide_ratio_mobile": "portrait",
+        "slide_overlay": 0,
+        "slide_shadow": false,
+        "content_use_bg": false,
+        "heading": "",
+        "heading_custom": true,
+        "heading_font": "montserrat_n4",
+        "heading_size": 40,
+        "heading_size_mobile": 32,
+        "heading_height": 130,
+        "title_custom": false,
+        "title_font": "montserrat_n4",
+        "title_size": 18,
+        "title_size_mobile": 14,
+        "title_height": 150,
+        "price_custom": false,
+        "price_font": "montserrat_n4",
+        "price_size": 18,
+        "price_size_mobile": 14,
+        "price_height": 150,
+        "price_compare": false,
+        "hide_vendor": true,
+        "vendor_custom": false,
+        "vendor_font": "montserrat_n4",
+        "vendor_size": 16,
+        "vendor_size_mobile": 14,
+        "vendor_height": 130,
+        "vendor_mt": 8,
+        "vendor_mt_mobile": 8,
+        "button_text": "SHOP NOW",
+        "button_custom": true,
+        "button_font": "montserrat_n4",
+        "button_size": 14,
+        "button_size_mobile": 14,
+        "button_height": 100,
+        "button_padding_vertical": 14,
+        "button_padding_vertical_mobile": 12,
+        "button_padding_horizontal": 12,
+        "button_padding_horizontal_mobile": 12,
+        "button_radius": 100,
+        "button_border_thickness": 0,
+        "button_mt_mobile": 16,
+        "button_style": "outline",
+        "arrow_size": 48,
+        "arrow_size_mobile": 48,
+        "arrow_icon_size": 8,
+        "arrow_icon_size_mobile": 8,
+        "arrow_border_thickness": 0,
+        "arrow_radius": 100,
+        "arrow_hover_effect": "color",
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "slide_bg_color": "#f8f8f8",
+        "slide_border_color": "#696660",
+        "slide_shadow_color": "#696660",
+        "slide_overlay_color": "#000000",
+        "heading_color": "#696660",
+        "content_bg": "linear-gradient(180deg, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0.7) 100%)",
+        "title_color": "#ffffff",
+        "price_color": "#ffffff",
+        "price_original_color": "#696660",
+        "vendor_color": "#696660",
+        "button_color": "#696660",
+        "button_hover_color": "#ffffff",
+        "button_bg_color": "#ffffff",
+        "button_bg_hover_color": "#000000",
+        "button_border_color": "#000000",
+        "button_border_hover_color": "#000000",
+        "arrow_color": "#696660",
+        "arrow_hover_color": "#ffffff",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#696660",
+        "arrow_border_color": "#696660",
+        "arrow_border_hover_color": "#696660",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 4,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
     "text-with-icons": {
       "type": "text-with-icons",
       "blocks": {
@@ -9,10 +167,10 @@
           "type": "item",
           "settings": {
             "icon": "picto-delivery-truck",
-            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons_Delivery-Black.png",
+            "custom_icon": "shopify://shop_images/Saar-Icons_Delivery-Black.png",
             "icon_width": 60,
             "mobile_icon_width": 40,
-            "title": "<strong>same day dispatch<\/strong>",
+            "title": "<strong>same day dispatch</strong>",
             "content": ""
           }
         },
@@ -20,10 +178,10 @@
           "type": "item",
           "settings": {
             "icon": "picto-lock",
-            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons_Hands-Black.png",
+            "custom_icon": "shopify://shop_images/Saar-Icons_Hands-Black.png",
             "icon_width": 60,
             "mobile_icon_width": 40,
-            "title": "<strong>1 year warranty<\/strong>",
+            "title": "<strong>1 year warranty</strong>",
             "content": ""
           }
         },
@@ -31,10 +189,10 @@
           "type": "item",
           "settings": {
             "icon": "picto-award-gift",
-            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons_Clock-Black.png",
+            "custom_icon": "shopify://shop_images/Saar-Icons_Clock-Black.png",
             "icon_width": 60,
             "mobile_icon_width": 40,
-            "title": "<strong>30 Day Returns<\/strong>",
+            "title": "<strong>30 Day Returns</strong>",
             "content": ""
           }
         },
@@ -42,10 +200,10 @@
           "type": "item",
           "settings": {
             "icon": "picto-plane",
-            "custom_icon": "shopify:\/\/shop_images\/Saar-Icons_Rocket-Black.png",
+            "custom_icon": "shopify://shop_images/Saar-Icons_Rocket-Black.png",
             "icon_width": 60,
             "mobile_icon_width": 40,
-            "title": "<strong>Free & fast shipping<\/strong>",
+            "title": "<strong>Free & fast shipping</strong>",
             "content": ""
           }
         }
@@ -63,6 +221,14 @@
         "text_color": "#000000",
         "block_background": "#d9d9d9",
         "text_alignment": "center"
+      }
+    },
+    "17288590888cb8e893": {
+      "type": "apps",
+      "settings": {
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
       }
     },
     "1694995039a884850e": {
@@ -87,7 +253,7 @@
           "type": "text",
           "settings": {
             "title": "On a mission",
-            "content": "<p>At SAAR, our mission is to redefine men's jewellery with timeless pieces that elevate your style and inspire confidence. We believe in crafting jewellery that effortlessly complements your individuality and stands the test of time.<\/p>",
+            "content": "<p>At SAAR, our mission is to redefine men's jewellery with timeless pieces that elevate your style and inspire confidence. We believe in crafting jewellery that effortlessly complements your individuality and stands the test of time.</p>",
             "enable_follow_on_shop": false
           }
         },
@@ -95,7 +261,7 @@
           "type": "newsletter",
           "settings": {
             "title": "join our community & save",
-            "content": "<p>Subscribe and receive $5 off your first order. <\/p>",
+            "content": "<p>Subscribe and receive $5 off your first order. </p>",
             "button_background": "#0500ff",
             "button_text_color": ""
           }
@@ -135,7 +301,9 @@
     }
   },
   "order": [
+    "ss_featured_collection_6_L3RLbD",
     "text-with-icons",
+    "17288590888cb8e893",
     "1694995039a884850e",
     "footer"
   ]

@@ -1,12 +1,113 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-cart",
       "settings": {
+        "show_cart_note": true,
+        "show_order_weight": false,
+        "show_shipping_text": true,
+        "show_accelerated_buttons": false,
+        "show_shipping_estimator": true
+      }
+    },
+    "1709164209009698fe": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_cart_reviews_widget_section_tQGUFd": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-cart-reviews-widget-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "hide_on_empty": false,
+            "data-limit": 20,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_cart_reviews_widget_section_tQGUFd"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "170916421069e34089": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_trust_badge_TDMFJc": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-trust-badge/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "layout": "horizontal",
+            "alignment": "fillContainer",
+            "scheme-type": "default",
+            "review-title": "reviews",
+            "rating-icon": true,
+            "average-rating": true,
+            "loox-branding": true,
+            "review-count": true,
+            "open-reviews": true,
+            "show-border": true,
+            "border-radius": 15,
+            "font-size": 20,
+            "background-color": "",
+            "secondary-background-color": "",
+            "text-color": "",
+            "rating-icon-color": "",
+            "border-color": ""
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_trust_badge_TDMFJc"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "1710460915dd4f8c2f": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_cart_reviews_widget_section_LzTJc8": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-cart-reviews-widget-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
+          "settings": {
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "hide_on_empty": false,
+            "data-limit": 20,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_cart_reviews_widget_section_LzTJc8"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1709164209009698fe",
+    "170916421069e34089",
+    "1710460915dd4f8c2f"
   ]
 }

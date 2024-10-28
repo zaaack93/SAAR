@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "header",
   "name": "Header group",
@@ -18,7 +27,7 @@
       "settings": {
         "enable_sticky": false,
         "autoplay": true,
-        "cycle_speed": 5,
+        "cycle_speed": 3,
         "desktop_font_size": 11,
         "mobile_font_size": 10,
         "background": "#1c1c1c",
@@ -47,7 +56,7 @@
         "show_country_flag": true,
         "show_locale_selector": false,
         "transparent_header_text_color": "#ffffff",
-        "transparent_logo": "shopify:\/\/shop_images\/SAAR_LOGO_TEXTURED_2fb8a095-95e4-4584-aa97-cd5b1513b64a.png"
+        "transparent_logo": "shopify://shop_images/SAAR_LOGO_TEXTURED_2fb8a095-95e4-4584-aa97-cd5b1513b64a.png"
       }
     },
     "aaf63210-4f5e-4504-a52c-cb4fd2bef714": {
@@ -56,18 +65,93 @@
       "settings": {
         "content": "BUY ONE GET ONE - CODE: BLACKFRIDAY",
         "link_text": "SHOP BFCM SPECIAL",
-        "link_url": "shopify:\/\/collections\/shop-all-products",
+        "link_url": "shopify://collections/shop-all-products",
         "expiration_date": "2023-11-27 12:00",
         "expiration_behavior": "hide",
         "desktop_justification": "space-between",
         "background": "#1c1c1c",
         "text_color": "#ffffff"
       }
+    },
+    "ss_header_1_acnttc": {
+      "type": "ss-header-1",
+      "disabled": true,
+      "settings": {
+        "show_type": "always",
+        "transparent": false,
+        "body_gap": 40,
+        "body_gap_mobile": 12,
+        "menu": "main-menu",
+        "mega_menu_radius": 0,
+        "list_gap": 48,
+        "list_gap_mobile": 24,
+        "link_custom": false,
+        "link_font": "montserrat_n4",
+        "link_size": 16,
+        "link_size_mobile": 14,
+        "link_height": 130,
+        "menu_icon_size_mobile": 26,
+        "logo": "shopify://shop_images/SAAR_LOGO_TEXTURED_d99d618c-9e65-4d48-a0cf-c4e89f8309d7.png",
+        "second_logo": "shopify://shop_images/SAAR_LOGO_BLACK_a2a2b272-b0bd-4f0d-99ff-02f1340402cc.png",
+        "logo_mobile": "shopify://shop_images/SAAR_LOGO_TEXTURED_2fb8a095-95e4-4584-aa97-cd5b1513b64a.png",
+        "second_logo_mobile": "shopify://shop_images/SAAR_LOGO_BLACK_a2a2b272-b0bd-4f0d-99ff-02f1340402cc.png",
+        "logo_width": 160,
+        "logo_width_mobile": 170,
+        "logo_position": "center",
+        "name_custom": false,
+        "name_font": "josefin_sans_n4",
+        "name_size": 32,
+        "name_size_mobile": 20,
+        "name_height": 130,
+        "right_gap": 48,
+        "right_gap_mobile": 16,
+        "right_link_custom": false,
+        "right_link_font": "josefin_sans_n4",
+        "right_link_size": 16,
+        "right_link_height": 130,
+        "icon_size": 20,
+        "icon_size_mobile": 18,
+        "use_search": true,
+        "search_text": "SEARCH",
+        "search_icon_desktop": false,
+        "account_text": "ACCOUNT",
+        "account_icon_desktop": false,
+        "cart_text": "CART",
+        "cart_icon_desktop": false,
+        "mobile_menu_bg_color": "#f1f0ed",
+        "link_color": "#67645e",
+        "link_hover_color": "#67645e",
+        "link_hero_color": "#ffffff",
+        "link_hover_hero_color": "#67645e",
+        "name_color": "#67645e",
+        "name_hover_color": "#67645e",
+        "name_hero_color": "#ffffff",
+        "name_hover_hero_color": "#67645e",
+        "right_link_color": "#67645e",
+        "right_link_hover_color": "#67645e",
+        "right_link_hero_color": "#ffffff",
+        "right_link_hover_hero_color": "#67645e",
+        "background_color": "#f1f0ed",
+        "border_color": "#000000",
+        "margin_top": 20,
+        "margin_horizontal": 3,
+        "margin_horizontal_mobile": 1,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 2,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 100,
+        "lazy": true
+      }
     }
   },
   "order": [
     "announcement-bar",
     "header",
-    "aaf63210-4f5e-4504-a52c-cb4fd2bef714"
+    "aaf63210-4f5e-4504-a52c-cb4fd2bef714",
+    "ss_header_1_acnttc"
   ]
 }

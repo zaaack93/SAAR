@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "shogun-helper": {
@@ -14,12 +23,13 @@
       "type": "main-product",
       "blocks": {
         "loox-rating": {
-          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify://apps/loox-reviews/blocks/loox-rating/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "contentSize": 14,
             "pattern": "",
             "hideText": false,
             "alignment": "",
+            "layout": "",
             "textColor": "",
             "starColor": "",
             "showAllReviews": false,
@@ -113,6 +123,29 @@
             "show_quick_buy": true
           }
         },
+        "buy_box_inventory_status_wEAPiD": {
+          "type": "shopify://apps/buy-box/blocks/inventory-status/17b7c6ef-0c82-4743-acf4-050c34e5b233",
+          "settings": {
+            "inventory_status": "automatically_tracked",
+            "low_stock_threshold": 10,
+            "text_available": "<strong>IN STOCK - </strong>delivery in 2-3 days",
+            "text_low_stock": "<strong>LOW STOCK - </strong>delivery in 2-3 days",
+            "text_unavailable": "<strong>OUT OF STOCK</strong>",
+            "alignment": "left",
+            "dot_style": "dot_with_animated_ring",
+            "dot_color_available": "#00BF4D",
+            "text_color_available": "#00BF4D",
+            "dot_color_low_stock": "#FFA500",
+            "text_color_low_stock": "#FFA500",
+            "dot_color_unavailable": "#B40C1C",
+            "text_color_unavailable": "#B40C1C",
+            "font_size": 14,
+            "dot_size": 8,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "max-width": "44rem"
+          }
+        },
         "12cd3bdd-c55a-4c70-944a-23178c64a6c2": {
           "type": "accordion",
           "disabled": true,
@@ -120,7 +153,7 @@
             "show_below_gallery": true,
             "icon": "none",
             "title": "What You'll Love",
-            "content": "<p>Key Benefits Here<\/p>",
+            "content": "<p>Key Benefits Here</p>",
             "page": ""
           }
         },
@@ -131,7 +164,7 @@
             "show_below_gallery": true,
             "icon": "none",
             "title": "WHEN YOU'LL GET IT",
-            "content": "<ul><li><strong>Free Shipping - <\/strong>We provide free shipping on all AUS & NZ orders. <\/li><li><strong>Shipped from Melbourne<\/strong> - All orders are shipped and packed from our warehouse in Melbourne. <\/li><li><strong>Same-Day Shipping<\/strong> - We offer same-day shipping on all weekday orders before 11am AEST. <\/li><\/ul><p><\/p><h5>DELIVERY TIMES<\/h5><ul><li><strong>Australia Standard<\/strong> 2-8 business days<\/li><li><strong>Australia Express<\/strong> 1-3 business days<\/li><li><strong>New Zealand Standard <\/strong>3-7 business days<\/li><li><strong>New Zealand Express <\/strong>2-4 business days <\/li><li><strong>USA<\/strong> 4-9 business days<\/li><li><strong>Rest of the world <\/strong>4-12 business days <\/li><\/ul><p><\/p><p>For more information on Customs Fees and Refunds\/Retuns, please read our <a href=\"\/pages\/shipping-information\" target=\"_blank\" title=\"Shipping Information\">Shipping Page<\/a>.<\/p>",
+            "content": "<ul><li><strong>Free Shipping - </strong>We provide free shipping on all AUS & NZ orders. </li><li><strong>Shipped from Melbourne</strong> - All orders are shipped and packed from our warehouse in Melbourne. </li><li><strong>Same-Day Shipping</strong> - We offer same-day shipping on all weekday orders before 11am AEST. </li></ul><p></p><h5>DELIVERY TIMES</h5><ul><li><strong>Australia Standard</strong> 2-8 business days</li><li><strong>Australia Express</strong> 1-3 business days</li><li><strong>New Zealand Standard </strong>3-7 business days</li><li><strong>New Zealand Express </strong>2-4 business days </li><li><strong>USA</strong> 4-9 business days</li><li><strong>Rest of the world </strong>4-12 business days </li></ul><p></p><p>For more information on Customs Fees and Refunds/Retuns, please read our <a href=\"/pages/shipping-information\" target=\"_blank\" title=\"Shipping Information\">Shipping Page</a>.</p>",
             "page": ""
           }
         }
@@ -150,6 +183,7 @@
         "separator",
         "description",
         "complementary_products",
+        "buy_box_inventory_status_wEAPiD",
         "12cd3bdd-c55a-4c70-944a-23178c64a6c2",
         "32d62489-188b-4994-a3ce-fea926120515"
       ],
@@ -260,13 +294,14 @@
       "type": "apps",
       "blocks": {
         "loox-product-reviews": {
-          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,
             "limit": 20,
             "hide_thumbnails": false,
-            "maxwidth": 1080
+            "maxwidth": 1080,
+            "is_sample": true
           }
         }
       },
@@ -299,6 +334,16 @@
       "type": "shogun-below",
       "settings": {
       }
+    },
+    "custom_liquid_kfhnqT": {
+      "type": "custom-liquid",
+      "settings": {
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<script>\nwindow.addEventListener('load', function() {\nvar _learnq = window._learnq || [];\nfunction addedToCart() {\n  fetch(`${window.location.origin}/cart.js`)\n  .then(res => res.clone().json().then(data => {\n    var cart = {\n      total_price: data.total_price/100,\n      $value: data.total_price/100,\n      total_discount: data.total_discount,\n      original_total_price: data.original_total_price/100,\n      items: data.items\n    }\n    if (item !== 'undefined') {\n      cart = Object.assign(cart, item)\n    }\n    if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', cart]);\n        klAjax = false;\n      }\n  }))\n};\n(function (ns, fetch) {\n  ns.fetch = function() {\n    const response = fetch.apply(this, arguments);\n    response.then(res => {\n      if (`${window.location.origin}/cart/add.js`\n      \t.includes(res.url)) {\n        \taddedToCart()\n      }\n    });\n    return response\n  }\n}(window, window.fetch));\nvar klAjax = true;\nvar atcButtons = document.querySelectorAll(\"form[action*='/cart/add'] button[type='submit']\");\nfor (var i = 0; i < atcButtons.length; i++) {\n    atcButtons[i].addEventListener(\"click\", function() {\n      if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', item]);\n        klAjax = false;\n      }\n    })\n}\n});\n</script>",
+        "text_alignment": "center"
+      }
     }
   },
   "order": [
@@ -308,6 +353,7 @@
     "fe4218ff-e802-4dfb-bf69-2ecddaa008d7",
     "loox-product-reviews-app-section",
     "related-products",
-    "shogun-below"
+    "shogun-below",
+    "custom_liquid_kfhnqT"
   ]
 }

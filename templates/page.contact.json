@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -27,7 +36,7 @@
         "template--16342372581507__6c454da1-290c-4f01-88f8-36dfb21f12e5-richtext-1": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Welcome to SAAR CO support!<\/p><p>We're here to assist you with any questions or concerns you may have. Our dedicated customer support team is available to help you with any inquiries or issues you may experience. Whether you need assistance with product information, order status, returns and refunds or anything else, we're here for you. Please don't hesitate to contact us via our email contact@saarco.com.au or our contact form below and one of our team members will get back to you as soon as possible.<\/p><p>We're available to assist you during the following hours:<\/p><ul><li>Monday to Friday: 9:00 AM - 5:00 PM (AEDT)<\/li><\/ul><p><strong>SAAR CO mailing address: <\/strong>503, 1 Queens Road, Melbourne, 3004, Victoria<\/p>"
+            "content": "<p>Welcome to SAAR CO support!</p><p>We're here to assist you with any questions or concerns you may have. Our dedicated customer support team is available to help you with any inquiries or issues you may experience. Whether you need assistance with product information, order status, returns and refunds or anything else, we're here for you. Please don't hesitate to contact us via our email contact@saarco.com.au or our contact form below and one of our team members will get back to you as soon as possible.</p><p>We're available to assist you during the following hours:</p><ul><li>Monday to Friday: 9:00 AM - 5:00 PM (AEDT)</li></ul><p><strong>SAAR CO mailing address: </strong>503, 1 Queens Road, Melbourne, 3004, Victoria</p>"
           }
         }
       },
@@ -38,8 +47,8 @@
       ],
       "settings": {
         "separate_section_with_border": true,
-        "image": "shopify:\/\/shop_images\/SAAR-118_4a5d7f46-0527-4407-81dc-6f95cf80432c.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/SAAR-91.jpg",
+        "image": "shopify://shop_images/SAAR-118_4a5d7f46-0527-4407-81dc-6f95cf80432c.jpg",
+        "mobile_image": "shopify://shop_images/SAAR-91.jpg",
         "reveal_on_scroll": true,
         "image_position": "start",
         "content_width": "sm",

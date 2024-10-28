@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -30,7 +39,7 @@
         "template--16342372614275__2f4e3184-4104-4ebd-97d8-4151624f6c8a-richtext-1": {
           "type": "richtext",
           "settings": {
-            "content": "<p>SAAR was started in 2019 when finding stylish, inexpensive and modern jewellery was near impossible, especially for men. After doing months of research and market analysis, we couldn't find everyday jewellery for the everyday person. Inspecting hundred's of materials and styles, our pieces have become clean, simplistic accessories to accompany any outfit for any occasion.  The goal was simple: create meaningful pieces to challenge the status quo. <\/p>"
+            "content": "<p>SAAR was started in 2019 when finding stylish, inexpensive and modern jewellery was near impossible, especially for men. After doing months of research and market analysis, we couldn't find everyday jewellery for the everyday person. Inspecting hundred's of materials and styles, our pieces have become clean, simplistic accessories to accompany any outfit for any occasion.  The goal was simple: create meaningful pieces to challenge the status quo. </p>"
           }
         },
         "6dadfaca-fdc9-4d59-9c78-105e50c4ead2": {
@@ -43,7 +52,7 @@
         "4484572e-f125-4ece-9639-1b6d35ccedfe": {
           "type": "richtext",
           "settings": {
-            "content": "<p>We deliver handcrafted and trendy necklaces, bracelets and rings designed at our headquarters in Melbourne. With carefully handled premium materials, we are confident in the quality and delivery of every piece made. With a range of engraved and couple sets, we cater to everyone's needs. <\/p>"
+            "content": "<p>We deliver handcrafted and trendy necklaces, bracelets and rings designed at our headquarters in Melbourne. With carefully handled premium materials, we are confident in the quality and delivery of every piece made. With a range of engraved and couple sets, we cater to everyone's needs. </p>"
           }
         },
         "553351af-3709-4062-8341-e90c8f359776": {
@@ -56,7 +65,7 @@
         "57120900-3d9a-4577-8a9b-d6b495716d2f": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Saar in Hebrew means \"Storm\" and that is exactly what we want to do. We want to bring unique products to the market causing a shift in the everyday buyer's experience. We are so confident you'll love what we do, that we offer a one-year guarantee on anything we make. <\/p>"
+            "content": "<p>Saar in Hebrew means \"Storm\" and that is exactly what we want to do. We want to bring unique products to the market causing a shift in the everyday buyer's experience. We are so confident you'll love what we do, that we offer a one-year guarantee on anything we make. </p>"
           }
         }
       },
@@ -71,8 +80,8 @@
       "disabled": true,
       "settings": {
         "separate_section_with_border": true,
-        "image": "shopify:\/\/shop_images\/Copy_of_easter_sale_750_x_1100px_1200_x_628px_Instagram_Story_1080_x_1080px_1200_x_628px_1800_x_1200px_895_x_1450_px_1.png",
-        "mobile_image": "shopify:\/\/shop_images\/Copy_of_easter_sale_750_x_1100px_1200_x_628px_Instagram_Story_1080_x_1080px_1200_x_628px_1800_x_1200px_895_x_1450_px_1.png",
+        "image": "shopify://shop_images/Copy_of_easter_sale_750_x_1100px_1200_x_628px_Instagram_Story_1080_x_1080px_1200_x_628px_1800_x_1200px_895_x_1450_px_1.png",
+        "mobile_image": "shopify://shop_images/Copy_of_easter_sale_750_x_1100px_1200_x_628px_Instagram_Story_1080_x_1080px_1200_x_628px_1800_x_1200px_895_x_1450_px_1.png",
         "reveal_on_scroll": true,
         "image_position": "start",
         "content_width": "sm",
@@ -86,7 +95,7 @@
           "type": "collection",
           "settings": {
             "collection": "buy-best-sellers-online",
-            "image": "shopify:\/\/shop_images\/SAAR_MAY-208.jpg",
+            "image": "shopify://shop_images/SAAR_MAY-208.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -125,8 +134,8 @@
         "template--16584198258819__35520267-66ed-438d-86ff-58584befb76b-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_-_2023-12-01T105122.697.png",
-            "mobile_image": "shopify:\/\/shop_images\/Untitled_design_-_2023-12-01T110513.670.png",
+            "image": "shopify://shop_images/Untitled_design_-_2023-12-01T105122.697.png",
+            "mobile_image": "shopify://shop_images/Untitled_design_-_2023-12-01T110513.670.png",
             "subheading": "",
             "title": "shipping information",
             "mobile_text_position": "place-self-end-center text-center",
@@ -170,7 +179,7 @@
         "template--16584198258819__8934f11b-4e47-4d9d-bbe5-6ea50e0f3cae-richtext-1": {
           "type": "richtext",
           "settings": {
-            "content": "<h3>SAME DAY DISPACH<\/h3><p>Orders received on weekdays before 11AM (AEST) will be shipped out the same day. Orders placed after this time will be sent the next day. Orders placed on the weekend will be shipped out Monday.<\/p><h3>DELIVERY TIME<\/h3><ul><li>Australia Standard- 2-8 business days<\/li><li>Australis Express- 1-3 business days<\/li><li>New Zealand Standard- 3-7 business days<\/li><li>New Zealand Express- 2-4 business days<\/li><li>USA-  4-9 business days<\/li><li>Rest of the world 4-12 business days <\/li><\/ul><h3>STORE PICK UP<\/h3><p>Usually ready to be picked up within an hour.<\/p><p><strong>Pickup location: <\/strong>1 Queens Road, Melbourne, 3004<\/p><p><strong>Pick up hours: <\/strong>Monday-Friday 9AM-1PM<\/p><p><\/p><h4>Customs Fees<\/h4><p>We are not responsible for any import or custom fees associated with your order, please check with your country’s regulations to see if there will be any additional costs. This includes any import fees for orders sent with Free Express shipping.<br\/><br\/><\/p><p><strong>Late or lost orders<\/strong><\/p><p>When placing your order please make sure that you specify the correct delivery address as SAAR CO take no responsibility for missing parcels that have been sent to the wrong address or if requested to leave with neighbour or an outbuilding.<br\/><br\/><\/p><p><em><strong>Items not received but tracking shows they have been delivered<\/strong><\/em><\/p><p>This may happen when items are sent to places of work. In some cases, your item might have been delivered to a post room or colleague within your company and someone else will have signed for it. <\/p><p>Please note we do not refund or replace items that are tracked as being delivered. For this reason, we always recommend that you get items delivered to a secure address.<\/p><p><\/p>"
+            "content": "<p>At SAAR CO, every piece of jewellery is handmade to order, and we aim to ensure a seamless shipping process. Please review our shipping details below:</p><h4>Processing Time</h4><p>All orders are dispatched either the <strong>same day</strong> or the <strong>next business day</strong>. Orders placed after the <strong>11 AM (AEST)</strong> cut-off will be processed the next business day.</p><h4>Delivery Times</h4><p><strong>Australia:</strong></p><p>We partner with AusPost to offer the fastest shipping times. Once your order is ready, please allow:</p><p><strong>Standard Delivery</strong>: 2-5 business days</p><p><strong>Express Delivery</strong>: 1-3 business days</p><p><strong>New Zealand:</strong></p><p>We also use AusPost for shipments to New Zealand. Once your order is ready, please allow:</p><p><strong>Standard Delivery</strong>: 3-8 business days</p><p><strong>Express Delivery: </strong> 2-5 business days</p><h4>Shipping Costs</h4><ul><li><strong>Australia & New Zealand (Standard Shipping)</strong>: Free</li><li><strong>Australia (Express Shipping)</strong>: $9.95</li><li><strong>New Zealand (Express Shipping): </strong>$14.95</li><li><strong>Rest of the World</strong>: $11.50</li></ul><p>If you have any questions or need further assistance, please feel free to contact us at <a>contact@saarco.com.au</a>.</p><p>  </p><h6>ALL ORDERS ARE BEING PACKED AND SHIPPED FROM OUR WAREHOUSE IN MELBOURNE, VICTORIA.</h6>"
           }
         }
       },
@@ -190,8 +199,8 @@
         "template--16584198258819__2ee3fde8-f499-404e-bdb2-ae6542eabefe-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_73.png",
-            "mobile_image": "shopify:\/\/shop_images\/Tai_necklace_saar_co.jpg",
+            "image": "shopify://shop_images/Untitled_design_73.png",
+            "mobile_image": "shopify://shop_images/Tai_necklace_saar_co.jpg",
             "subheading": "",
             "title": "",
             "mobile_text_position": "place-self-end-center text-center",

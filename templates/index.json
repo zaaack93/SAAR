@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow": {
@@ -6,15 +15,15 @@
         "slide-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SAAR-4_08f6a899-9cec-4cf4-a713-952e0cffc1b2.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/SAAR_JEWELLERY-1200x1600.jpg",
-            "subheading": "Worn by 35,000+ Individuals",
-            "title": "Impeccable Quality, Timeless Design",
+            "image": "shopify://shop_images/Untitled_3200_x_1500_px.png",
+            "mobile_image": "shopify://shop_images/925_STERLING_SILVER_NOW_LIVE.png",
+            "subheading": "",
+            "title": "",
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-end-center sm:text-center",
             "content_max_width": 1200,
-            "button_1_text": "Shop All Jewellery",
-            "button_1_link": "shopify:\/\/collections\/buy-best-sellers-online",
+            "button_1_text": "SHOP SILVER",
+            "button_1_link": "shopify://collections/925-sterling-silver-collection-for-men",
             "button_1_style": "solid",
             "button_1_background": "#ffffff",
             "button_1_text_color": "#000000",
@@ -51,7 +60,7 @@
         "template--16342372515971__59925ca0-6b14-4a5b-adf6-6dcd6bfb6860-text-2": {
           "type": "text",
           "settings": {
-            "text": "BUY ONE GET ONE"
+            "text": "BUY ONE GET ONE FREE"
           }
         },
         "fe62e3f0-6750-4ff8-8f08-9e48b20b26ae": {
@@ -84,22 +93,34 @@
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
+        "collection_q8BcTQ": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "925-sterling-silver-collection-for-men",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
         "collection-1": {
           "type": "collection",
           "settings": {
             "collection": "buy-best-sellers-online",
             "products_count": 8,
             "title": "Shop best sellers",
-            "link_url": "shopify:\/\/collections\/buy-best-sellers-online",
+            "link_url": "shopify://collections/buy-best-sellers-online",
             "link_text": "shop best sellers"
           }
         }
       },
       "block_order": [
+        "collection_q8BcTQ",
         "collection-1"
       ],
       "settings": {
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "hide_product_information": false,
         "stack_products": true,
         "products_per_row_mobile": "2",
@@ -121,7 +142,7 @@
         "a3e2218e-9e67-4da7-94d6-7d99e725554e": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saar-Icons_Rocket-White_91174803-19b7-4804-a0a9-7cb0980f2509.png"
+            "image": "shopify://shop_images/Saar-Icons_Rocket-White_91174803-19b7-4804-a0a9-7cb0980f2509.png"
           }
         },
         "dbfdaa55-766a-467d-ba1b-48e7133eb3cf": {
@@ -133,7 +154,7 @@
         "888ad271-ecfa-43e3-b8c5-63e2eb3ad2a9": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saar-Icons_Clock-White.png"
+            "image": "shopify://shop_images/Saar-Icons_Clock-White.png"
           }
         },
         "5040f87a-3a16-4cc4-afda-622f21583cf7": {
@@ -145,7 +166,7 @@
         "b4c5eb99-cc6e-4e9c-a23b-473c3d64c173": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saar-Icons_Hands-White.png"
+            "image": "shopify://shop_images/Saar-Icons_Hands-White.png"
           }
         }
       },
@@ -178,51 +199,51 @@
         "template--16342372515971__20863d68-a9bf-4c04-b4da-436c2d571790-item-1": {
           "type": "item",
           "settings": {
-            "custom_icon": "shopify:\/\/shop_images\/Rings_designs_are_on_point_Shipping_was_super_fast_too._Will_buy_again_1.jpg",
+            "custom_icon": "shopify://shop_images/Rings_designs_are_on_point_Shipping_was_super_fast_too._Will_buy_again_1.jpg",
             "icon_width": 200,
             "mobile_icon_width": 200,
             "title": "",
-            "content": "<p>Rings designs are on point! Shipping was super fast too. Will buy again. <\/p><p><strong>@Daniel<\/strong><\/p>"
+            "content": "<p>Rings designs are on point! Shipping was super fast too. Will buy again. </p><p><strong>@Daniel</strong></p>"
           }
         },
         "template--16342372515971__20863d68-a9bf-4c04-b4da-436c2d571790-item-2": {
           "type": "item",
           "settings": {
-            "custom_icon": "shopify:\/\/shop_images\/My_partner_simply_won_t_shut_up_about_his_new_chain_Thank_you_so_much_1.png",
+            "custom_icon": "shopify://shop_images/My_partner_simply_won_t_shut_up_about_his_new_chain_Thank_you_so_much_1.png",
             "icon_width": 200,
             "mobile_icon_width": 200,
             "title": "",
-            "content": "<p>My partner simply won't shut up about his new chain! Thanks so much.<\/p><p><strong>@Nicola<\/strong><\/p>"
+            "content": "<p>My partner simply won't shut up about his new chain! Thanks so much.</p><p><strong>@Nicola</strong></p>"
           }
         },
         "template--16342372515971__20863d68-a9bf-4c04-b4da-436c2d571790-item-3": {
           "type": "item",
           "settings": {
-            "custom_icon": "shopify:\/\/shop_images\/Timeless_piece_high_quality_and_fast_shipping_2.jpg",
+            "custom_icon": "shopify://shop_images/Timeless_piece_high_quality_and_fast_shipping_2.jpg",
             "icon_width": 200,
             "mobile_icon_width": 200,
             "title": "",
-            "content": "<p>Timeless piece, high quality and fast shipping. Thanks heaps guys ! <\/p><p><strong>@Tim<\/strong><\/p>"
+            "content": "<p>Timeless piece, high quality and fast shipping. Thanks heaps guys ! </p><p><strong>@Tim</strong></p>"
           }
         },
         "cb7d3d65-d647-43f2-b71c-e963ecb4118a": {
           "type": "item",
           "settings": {
-            "custom_icon": "shopify:\/\/shop_images\/Hugh_quality_pieces_that_I_can_wear_with_anything_anywhere._The_fact_they_are_waterproof_makes_it_even_better_1_8e24346e-a6b5-4cb8-bf52-2608c5ee9797.jpg",
+            "custom_icon": "shopify://shop_images/Hugh_quality_pieces_that_I_can_wear_with_anything_anywhere._The_fact_they_are_waterproof_makes_it_even_better_1_8e24346e-a6b5-4cb8-bf52-2608c5ee9797.jpg",
             "icon_width": 200,
             "mobile_icon_width": 200,
             "title": "",
-            "content": "<p>High quality pieces that I can wear with anything anywhere. And waterproof!<\/p><p><strong>@Will<\/strong><\/p>"
+            "content": "<p>High quality pieces that I can wear with anything anywhere. And waterproof!</p><p><strong>@Will</strong></p>"
           }
         },
         "2e6f6e37-4b60-445d-8d37-6cffcc652007": {
           "type": "item",
           "settings": {
-            "custom_icon": "shopify:\/\/shop_images\/Literally_never_took_it_off_from_the_day_it_arrived_best_chain_I_own_for_sure_1_1.jpg",
+            "custom_icon": "shopify://shop_images/Literally_never_took_it_off_from_the_day_it_arrived_best_chain_I_own_for_sure_1_1.jpg",
             "icon_width": 200,
             "mobile_icon_width": 200,
             "title": "",
-            "content": "<p>Literally never took it off from the day it arrived, best chain I own for sure. <\/p><p><strong>@Tommy<\/strong><\/p>"
+            "content": "<p>Literally never took it off from the day it arrived, best chain I own for sure. </p><p><strong>@Tommy</strong></p>"
           }
         }
       },
@@ -240,8 +261,8 @@
         "block_background": "#d9d9d9",
         "text_alignment": "center",
         "subheading": "",
-        "title": "<p>Join 25,000+ <\/p><p>happy customers <\/p>",
-        "content": "<p>This isn't just a one night stand. <\/p>"
+        "title": "<p>Join 40,000+ </p><p>happy customers </p>",
+        "content": "<p>This isn't just a one night stand. </p>"
       }
     },
     "newsletter": {
@@ -252,7 +273,7 @@
         "image_size": "auto",
         "subheading": "Want to save?",
         "title": "Subscribe & Save 10% off your first order",
-        "content": "<p>We hate spam - so you'll only ever receive exclusive promos and styling tips. <\/p>",
+        "content": "<p>We hate spam - so you'll only ever receive exclusive promos and styling tips. </p>",
         "button_text": "Subscribe",
         "text_color": "#1c1c1c",
         "button_background": "",
@@ -268,13 +289,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/unnamed_79_f74c5116-780c-4dac-9495-41931ba23d49.jpg",
+            "image": "shopify://shop_images/unnamed_79_f74c5116-780c-4dac-9495-41931ba23d49.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
             "title": "engravings",
             "button_text": "shop now",
-            "button_link": "shopify:\/\/collections\/engraving",
+            "button_link": "shopify://collections/engraving",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
@@ -286,13 +307,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/2.jpg",
+            "image": "shopify://shop_images/2.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
             "title": "Bracelets",
             "button_text": "shop now",
-            "button_link": "shopify:\/\/collections\/buy-mens-bracelets-online",
+            "button_link": "shopify://collections/buy-mens-bracelets-online",
             "text_color": "#ffffff",
             "overlay_color": "#1c1c1c",
             "overlay_opacity": 0,
@@ -304,13 +325,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/3.png",
+            "image": "shopify://shop_images/3.png",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
             "title": "necklaces",
             "button_text": "shop now",
-            "button_link": "shopify:\/\/collections\/mens-necklaces",
+            "button_link": "shopify://collections/mens-necklaces",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
@@ -322,13 +343,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Untitled_design_92.png",
+            "image": "shopify://shop_images/Untitled_design_92.png",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
             "title": "pearl necklaces",
             "button_text": "shop now",
-            "button_link": "shopify:\/\/collections\/pearl-necklaces",
+            "button_link": "shopify://collections/pearl-necklaces",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
@@ -340,13 +361,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/SaarStudioShoot_AriannaLeggiero-193.jpg",
+            "image": "shopify://shop_images/SaarStudioShoot_AriannaLeggiero-193.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
             "title": "rings",
             "button_text": "shop now",
-            "button_link": "",
+            "button_link": "shopify://collections/buy-rings-onlines",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
@@ -358,13 +379,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Untitled_design_59.png",
+            "image": "shopify://shop_images/Untitled_design_59.png",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
             "title": "zodiac",
             "button_text": "shop now",
-            "button_link": "shopify:\/\/collections\/buy-zodiac-star-sign-necklaces-collection-online-saarco",
+            "button_link": "shopify://collections/buy-zodiac-star-sign-necklaces-collection-online-saarco",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
@@ -408,7 +429,7 @@
         "subheading": "",
         "title": "In the News",
         "content": "",
-        "button_link": "shopify:\/\/blogs\/news",
+        "button_link": "shopify://blogs/news",
         "button_text": "View all articles"
       }
     },
@@ -439,7 +460,7 @@
           "settings": {
             "style": "solid",
             "text": "Enter Competition",
-            "url": "shopify:\/\/pages\/https-saarco-com-au-pages-300-gift-card",
+            "url": "shopify://pages/https-saarco-com-au-pages-300-gift-card",
             "background": "#1c1c1c",
             "text_color": ""
           }
@@ -454,8 +475,7 @@
       "disabled": true,
       "settings": {
         "separate_section_with_border": true,
-        "image": "shopify:\/\/shop_images\/SAAR-180.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/SAAR-69.jpg",
+        "mobile_image": "shopify://shop_images/SAAR-69.jpg",
         "reveal_on_scroll": false,
         "image_position": "start",
         "content_width": "sm",

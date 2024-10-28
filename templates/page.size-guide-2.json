@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -30,7 +39,7 @@
         "template--16342372614275__2f4e3184-4104-4ebd-97d8-4151624f6c8a-richtext-1": {
           "type": "richtext",
           "settings": {
-            "content": "<p>SAAR was started in 2019 when finding stylish, inexpensive and modern jewellery was near impossible, especially for men. After doing months of research and market analysis, we couldn't find everyday jewellery for the everyday person. Inspecting hundred's of materials and styles, our pieces have become clean, simplistic accessories to accompany any outfit for any occasion.  The goal was simple: create meaningful pieces to challenge the status quo. <\/p>"
+            "content": "<p>SAAR was started in 2019 when finding stylish, inexpensive and modern jewellery was near impossible, especially for men. After doing months of research and market analysis, we couldn't find everyday jewellery for the everyday person. Inspecting hundred's of materials and styles, our pieces have become clean, simplistic accessories to accompany any outfit for any occasion.  The goal was simple: create meaningful pieces to challenge the status quo. </p>"
           }
         },
         "6dadfaca-fdc9-4d59-9c78-105e50c4ead2": {
@@ -43,7 +52,7 @@
         "4484572e-f125-4ece-9639-1b6d35ccedfe": {
           "type": "richtext",
           "settings": {
-            "content": "<p>We deliver handcrafted and trendy necklaces, bracelets and rings designed at our headquarters in Melbourne. With carefully handled premium materials, we are confident in the quality and delivery of every piece made. With a range of engraved and couple sets, we cater to everyone's needs. <\/p>"
+            "content": "<p>We deliver handcrafted and trendy necklaces, bracelets and rings designed at our headquarters in Melbourne. With carefully handled premium materials, we are confident in the quality and delivery of every piece made. With a range of engraved and couple sets, we cater to everyone's needs. </p>"
           }
         },
         "553351af-3709-4062-8341-e90c8f359776": {
@@ -56,7 +65,7 @@
         "57120900-3d9a-4577-8a9b-d6b495716d2f": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Saar in Hebrew means \"Storm\" and that is exactly what we want to do. We want to bring unique products to the market causing a shift in the everyday buyer's experience. We are so confident you'll love what we do, that we offer a one-year guarantee on anything we make. <\/p>"
+            "content": "<p>Saar in Hebrew means \"Storm\" and that is exactly what we want to do. We want to bring unique products to the market causing a shift in the everyday buyer's experience. We are so confident you'll love what we do, that we offer a one-year guarantee on anything we make. </p>"
           }
         }
       },
@@ -70,8 +79,8 @@
       ],
       "settings": {
         "separate_section_with_border": true,
-        "image": "shopify:\/\/shop_images\/Copy_of_easter_sale_750_x_1100px_1200_x_628px_Instagram_Story_1080_x_1080px_1200_x_628px_1800_x_1200px_895_x_1450_px_1.png",
-        "mobile_image": "shopify:\/\/shop_images\/Copy_of_easter_sale_750_x_1100px_1200_x_628px_Instagram_Story_1080_x_1080px_1200_x_628px_1800_x_1200px_895_x_1450_px_1.png",
+        "image": "shopify://shop_images/Copy_of_easter_sale_750_x_1100px_1200_x_628px_Instagram_Story_1080_x_1080px_1200_x_628px_1800_x_1200px_895_x_1450_px_1.png",
+        "mobile_image": "shopify://shop_images/Copy_of_easter_sale_750_x_1100px_1200_x_628px_Instagram_Story_1080_x_1080px_1200_x_628px_1800_x_1200px_895_x_1450_px_1.png",
         "reveal_on_scroll": true,
         "image_position": "start",
         "content_width": "sm",
@@ -85,7 +94,7 @@
           "type": "collection",
           "settings": {
             "collection": "buy-best-sellers-online",
-            "image": "shopify:\/\/shop_images\/SAAR_MAY-208.jpg",
+            "image": "shopify://shop_images/SAAR_MAY-208.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",

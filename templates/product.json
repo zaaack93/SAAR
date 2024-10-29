@@ -123,29 +123,6 @@
             "show_quick_buy": true
           }
         },
-        "buy_box_inventory_status_wEAPiD": {
-          "type": "shopify://apps/buy-box/blocks/inventory-status/17b7c6ef-0c82-4743-acf4-050c34e5b233",
-          "settings": {
-            "inventory_status": "automatically_tracked",
-            "low_stock_threshold": 10,
-            "text_available": "<strong>IN STOCK - </strong>delivery in 2-3 days",
-            "text_low_stock": "<strong>LOW STOCK - </strong>delivery in 2-3 days",
-            "text_unavailable": "<strong>OUT OF STOCK</strong>",
-            "alignment": "left",
-            "dot_style": "dot_with_animated_ring",
-            "dot_color_available": "#00BF4D",
-            "text_color_available": "#00BF4D",
-            "dot_color_low_stock": "#FFA500",
-            "text_color_low_stock": "#FFA500",
-            "dot_color_unavailable": "#B40C1C",
-            "text_color_unavailable": "#B40C1C",
-            "font_size": 14,
-            "dot_size": 8,
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "max-width": "44rem"
-          }
-        },
         "12cd3bdd-c55a-4c70-944a-23178c64a6c2": {
           "type": "accordion",
           "disabled": true,
@@ -183,7 +160,6 @@
         "separator",
         "description",
         "complementary_products",
-        "buy_box_inventory_status_wEAPiD",
         "12cd3bdd-c55a-4c70-944a-23178c64a6c2",
         "32d62489-188b-4994-a3ce-fea926120515"
       ],
